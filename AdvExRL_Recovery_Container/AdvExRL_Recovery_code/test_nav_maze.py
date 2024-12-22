@@ -269,7 +269,7 @@ def run(env_name, args):
   # eval_epi_no = 10  # used to be 100, now change it to 10
   epsilon_list = [0.0, 0.25, 0.50, 0.75, 1]
   atk_rate_idx = 2 # choose idx to set the attack rate from the epsilon_list & assign attack rate values.
-  current_path = '/content/drive/MyDrive/XRL/AdvExRL_Submission/AdvExRL_code'
+  current_path = os.path.join(os.getcwd(), "AdvExRL_Recovery_Container", "AdvExRL_Recovery_code")
   NUMPY_SEED = numpy_seed
   extra_dicts_list = list[DictionarySummaryModel]()
   if env_name == "maze":
