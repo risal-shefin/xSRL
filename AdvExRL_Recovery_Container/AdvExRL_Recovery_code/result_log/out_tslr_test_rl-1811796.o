@@ -1,0 +1,4000 @@
+#########################BEGIN-PROLOG#########################
+JobId             = 1811796
+JobName           = gpu-%j
+UserId            = liut18(20383)
+GroupId           = liut18(20383)
+MCS_label         = N/A
+Priority          = 133
+Nice              = 0
+Account           = alqahtanigrp
+QOS               = normal
+Requeue           = 1
+Restarts          = 0
+BatchFlag         = 1
+Reboot            = 0
+ExitCode          = 0:0
+RunTime           = 00:00:00
+TimeLimit         = 2-00:00:00
+TimeMin           = N/A
+SubmitTime        = 2022-10-18T00:01:25
+EligibleTime      = 2022-10-18T00:01:25
+AccrueTime        = 2022-10-18T00:01:25
+StartTime         = 2022-10-18T00:01:25
+EndTime           = 2022-10-20T00:01:25
+Deadline          = N/A
+Partition         = gpu
+AllocNode:Sid     = pegasus:106130
+NodeList          = usb-gpu-01
+BatchHost         = usb-gpu-01
+NumNodes          = 1
+NumCPUs           = 4
+NumTasks          = 1
+CPUs/Task         = 4
+ReqB:S:C:T        = 0:0:*:*
+TRES=cpu=4,mem=32G,node=1,billing= cpu=4,mem=32G,node=1,billing=4
+Socks/Node        = *
+NtasksPerN:B:S:C  = 0:0:*:*
+CoreSpec          = *
+MinCPUsNode       = 4
+MinMemoryNode     = 32G
+MinTmpDiskNode    = 0
+Command           = /deac/csc/alqahtaniGrp/liut18/AdvExRL_Submission/AdvExRL_code/run.slurm
+WorkDir           = /deac/csc/alqahtaniGrp/liut18/AdvExRL_Submission/AdvExRL_code
+StdErr            = /deac/csc/alqahtaniGrp/liut18/AdvExRL_Submission/AdvExRL_code/result_log/err_tslr_tests_rl-1811796.e
+StdOut            = /deac/csc/alqahtaniGrp/liut18/AdvExRL_Submission/AdvExRL_code/result_log/out_tslr_test_rl-1811796.o
+Power             = 
+TresPerNode       = gpu:1
+MailUser          = liut18@wfu.edu
+MailType          = BEGIN,END,FAIL
+NtasksPerTRES:0   = NtasksPerTRES:0
+###########################END-PROLOG#########################
+start running
+state space 2
+action space 2
+#######################
+episode #0
+start state [-50.27545748  -0.88888775]
+state is [-50.27545748  -0.88888775]
+rounded state is [-50.3, -0.9]
+Start of the main loop
+attack True
+safety False
+timestep #1
+angle is 44.999829244252965
+action is [1.         0.99999404]
+action is 1
+entropy is -18.485637664794922
+next state is [-49.35701899   0.15533838]
+rounded next_state is [-49.4, 0.2]
+reward is -50.283314785179044
+done is 0
+
+
+
+\-------------
+state is [-50.27545748  -0.88888775]
+rounded state is [-50.3, -0.9]
+timestep #2
+angle is 44.999508217937745
+action is [1.         0.99998283]
+action is 1
+entropy is -17.077707290649414
+next state is [-48.35214187   1.12354314]
+rounded next_state is [-48.4, 1.1]
+reward is -49.357263428793686
+done is 0
+
+
+
+\-------------
+state is [-49.35701899   0.15533838]
+rounded state is [-49.4, 0.2]
+timestep #3
+angle is 44.99864926640773
+action is [1.         0.99995285]
+action is 1
+entropy is -17.806629180908203
+next state is [-47.34409935   2.11287265]
+rounded next_state is [-47.3, 2.1]
+reward is -48.36519381263917
+done is 0
+
+
+
+\-------------
+state is [-48.35214187   1.12354314]
+rounded state is [-48.4, 1.1]
+timestep #4
+angle is 44.99618653932375
+action is [1.        0.9998669]
+action is 1
+entropy is -17.484922409057617
+next state is [-46.31763941   3.06443492]
+rounded next_state is [-46.3, 3.1]
+reward is -47.391222543647196
+done is 0
+
+
+
+\-------------
+state is [-47.34409935   2.11287265]
+rounded state is [-47.3, 2.1]
+timestep #5
+angle is 44.9896621944327
+action is [1.        0.9996392]
+action is 1
+entropy is -16.768213272094727
+next state is [-45.33109836   4.0651498 ]
+rounded next_state is [-45.3, 4.1]
+reward is -46.41890220223887
+done is 0
+
+
+
+\-------------
+state is [-46.31763941   3.06443492]
+rounded state is [-46.3, 3.1]
+timestep #6
+angle is 44.97262664161726
+action is [1.         0.99904495]
+action is 1
+entropy is -16.33592987060547
+next state is [-44.28994475   5.04123745]
+rounded next_state is [-44.3, 5.0]
+reward is -45.51300826606
+done is 0
+
+
+
+\-------------
+state is [-45.33109836   4.0651498 ]
+rounded state is [-45.3, 4.1]
+timestep #7
+angle is 44.93062373136358
+action is [1.         0.99758124]
+action is 1
+entropy is -16.2133731842041
+next state is [-43.27132677   6.04595744]
+rounded next_state is [-43.3, 6.0]
+reward is -44.57592714401409
+done is 0
+
+
+
+\-------------
+state is [-44.28994475   5.04123745]
+rounded state is [-44.3, 5.0]
+timestep #8
+angle is 44.824447385496576
+action is [1.         0.99389076]
+action is 1
+entropy is -16.133861541748047
+next state is [-42.24204372   6.99971256]
+rounded next_state is [-42.2, 7.0]
+reward is -43.69166192793307
+done is 0
+
+
+
+\-------------
+state is [-43.27132677   6.04595744]
+rounded state is [-43.3, 6.0]
+timestep #9
+angle is 44.56320202349461
+action is [1.         0.98486793]
+action is 1
+entropy is -15.706985473632812
+next state is [-41.21405697   7.92185588]
+rounded next_state is [-41.2, 7.9]
+reward is -42.81805966256961
+done is 0
+
+
+
+\-------------
+state is [-42.24204372   6.99971256]
+rounded state is [-42.2, 7.0]
+timestep #10
+angle is 43.89225613177675
+action is [1.        0.9620612]
+action is 1
+entropy is -14.07034683227539
+next state is [-40.35027086   8.9111161 ]
+rounded next_state is [-40.4, 8.9]
+reward is -41.96849166634152
+done is 0
+
+
+
+\-------------
+state is [-41.21405697   7.92185588]
+rounded state is [-41.2, 7.9]
+timestep #11
+angle is 42.33400405863991
+action is [1.         0.91101545]
+action is 1
+entropy is -12.104849815368652
+next state is [-39.35076062   9.74318581]
+rounded next_state is [-39.4, 9.7]
+reward is -41.32254044179887
+done is 0
+
+
+
+\-------------
+state is [-40.35027086   8.9111161 ]
+rounded state is [-40.4, 8.9]
+Triggered Attack
+timestep #12
+angle is 315.0
+action is [ 1. -1.]
+action is 7
+entropy is -28.950469970703125
+next state is [-38.31803488   8.75666475]
+rounded next_state is [-38.3, 8.8]
+reward is -40.539018623289344
+done is 0
+
+
+
+\-------------
+state is [-39.35076062   9.74318581]
+rounded state is [-39.4, 9.7]
+Triggered Attack
+timestep #13
+angle is 315.00009220785057
+action is [ 1.        -0.9999968]
+action is 7
+entropy is -26.704547882080078
+next state is [-37.35785234   7.80187185]
+rounded next_state is [-37.4, 7.8]
+reward is -39.305864382964174
+done is 0
+
+
+
+\-------------
+state is [-38.31803488   8.75666475]
+rounded state is [-38.3, 8.8]
+Triggered Attack
+timestep #14
+angle is 315.0267694541923
+action is [ 1.       -0.999066]
+action is 7
+entropy is -25.918834686279297
+next state is [-36.35349786   6.80828013]
+rounded next_state is [-36.4, 6.8]
+reward is -38.16383544419971
+done is 0
+
+
+
+\-------------
+state is [-37.35785234   7.80187185]
+rounded state is [-37.4, 7.8]
+Triggered Attack
+timestep #15
+angle is 324.81669128316173
+action is [ 1.        -0.7049862]
+action is 7
+entropy is -25.585159301757812
+next state is [-35.32818022   6.08391527]
+rounded next_state is [-35.3, 6.1]
+reward is -36.9855307532693
+done is 0
+
+
+
+\-------------
+state is [-36.35349786   6.80828013]
+rounded state is [-36.4, 6.8]
+Triggered Attack
+timestep #16
+angle is 37.947290268367
+action is [1.        0.7798052]
+action is 1
+entropy is -24.59006690979004
+next state is [-34.32358566   6.85380152]
+rounded next_state is [-34.3, 6.9]
+reward is -35.84821254647066
+done is 0
+
+
+
+\-------------
+state is [-35.32818022   6.08391527]
+rounded state is [-35.3, 6.1]
+Triggered Attack
+timestep #17
+angle is 315.2984863109151
+action is [ 1.         -0.98963475]
+action is 7
+entropy is -22.931089401245117
+next state is [-33.23837832   5.87126924]
+rounded next_state is [-33.2, 5.9]
+reward is -35.001187523642166
+done is 0
+
+
+
+\-------------
+state is [-34.32358566   6.85380152]
+rounded state is [-34.3, 6.9]
+Triggered Attack
+timestep #18
+angle is 11.783566503347467
+action is [1.         0.20861156]
+action is 0
+entropy is -22.59628677368164
+next state is [-32.22303414   6.12136394]
+rounded next_state is [-32.2, 6.1]
+reward is -33.75294943675528
+done is 0
+
+
+
+\-------------
+state is [-33.23837832   5.87126924]
+rounded state is [-33.2, 5.9]
+Triggered Attack
+timestep #19
+angle is 317.800466256444
+action is [ 1.        -0.9067298]
+action is 7
+entropy is -22.636554718017578
+next state is [-31.30062696   5.24197513]
+rounded next_state is [-31.3, 5.2]
+reward is -32.799314411423246
+done is 0
+
+
+
+\-------------
+state is [-32.22303414   6.12136394]
+rounded state is [-32.2, 6.1]
+Triggered Attack
+timestep #20
+angle is 38.70026964503324
+action is [1.        0.8011588]
+action is 1
+entropy is -19.911094665527344
+next state is [-30.40615944   6.03175343]
+rounded next_state is [-30.4, 6.0]
+reward is -31.73653338533283
+done is 0
+
+
+
+\-------------
+state is [-31.30062696   5.24197513]
+rounded state is [-31.3, 5.2]
+Triggered Attack
+timestep #21
+angle is 315.3205451175754
+action is [ 1.       -0.988873]
+action is 7
+entropy is -16.137279510498047
+next state is [-29.40081579   5.09519761]
+rounded next_state is [-29.4, 5.1]
+reward is -30.998654512266643
+done is 1
+
+
+
+\-------------
+state is [-30.40615944   6.03175343]
+rounded state is [-30.4, 6.0]
+#######################
+episode #1
+start state [-47.15371425   1.66478503]
+state is [-47.15371425   1.66478503]
+rounded state is [-47.2, 1.7]
+Start of the main loop
+attack True
+safety False
+timestep #1
+angle is 44.997202764429595
+action is [1.         0.99990237]
+action is 1
+entropy is -15.080623626708984
+next state is [-46.15504653   2.70444467]
+rounded next_state is [-46.2, 2.7]
+reward is -47.18309312604561
+done is 0
+
+
+
+\-------------
+state is [-47.15371425   1.66478503]
+rounded state is [-47.2, 1.7]
+timestep #2
+angle is 44.99188258195405
+action is [1.        0.9997167]
+action is 1
+entropy is -16.71759796142578
+next state is [-45.20981165   3.71149287]
+rounded next_state is [-45.2, 3.7]
+reward is -46.234211807926556
+done is 0
+
+
+
+\-------------
+state is [-46.15504653   2.70444467]
+rounded state is [-46.2, 2.7]
+timestep #3
+angle is 44.97821050194527
+action is [1.        0.9992397]
+action is 1
+entropy is -15.055900573730469
+next state is [-44.28047872   4.72994039]
+rounded next_state is [-44.3, 4.7]
+reward is -45.36190305686776
+done is 0
+
+
+
+\-------------
+state is [-45.20981165   3.71149287]
+rounded state is [-45.2, 3.7]
+timestep #4
+angle is 44.94412612283837
+action is [1.        0.9980515]
+action is 1
+entropy is -16.153621673583984
+next state is [-43.33294659   5.72158965]
+rounded next_state is [-43.3, 5.7]
+reward is -44.53238295969151
+done is 0
+
+
+
+\-------------
+state is [-44.28047872   4.72994039]
+rounded state is [-44.3, 4.7]
+timestep #5
+angle is 44.86196193794236
+action is [1.        0.9951931]
+action is 1
+entropy is -15.696637153625488
+next state is [-42.2972028   6.7745656]
+rounded next_state is [-42.3, 6.8]
+reward is -43.70904767501992
+done is 0
+
+
+
+\-------------
+state is [-43.33294659   5.72158965]
+rounded state is [-43.3, 5.7]
+timestep #6
+angle is 44.63373548154674
+action is [1.       0.987296]
+action is 1
+entropy is -14.550107955932617
+next state is [-41.19640515   7.78111199]
+rounded next_state is [-41.2, 7.8]
+reward is -42.83629423338393
+done is 0
+
+
+
+\-------------
+state is [-42.2972028   6.7745656]
+rounded state is [-42.3, 6.8]
+timestep #7
+angle is 43.99491147962227
+action is [1.         0.96551716]
+action is 1
+entropy is -13.758359909057617
+next state is [-40.28208193   8.71354446]
+rounded next_state is [-40.3, 8.7]
+reward is -41.92480770351564
+done is 0
+
+
+
+\-------------
+state is [-41.19640515   7.78111199]
+rounded state is [-41.2, 7.8]
+timestep #8
+angle is 42.6329424172749
+action is [1.        0.9206088]
+action is 1
+entropy is -14.877969741821289
+next state is [-39.34656517   9.57567585]
+rounded next_state is [-39.3, 9.6]
+reward is -41.21373534960098
+done is 0
+
+
+
+\-------------
+state is [-40.28208193   8.71354446]
+rounded state is [-40.3, 8.7]
+Triggered Attack
+timestep #9
+angle is 315.0
+action is [ 1. -1.]
+action is 7
+entropy is -25.710357666015625
+next state is [-38.32438485   8.59591055]
+rounded next_state is [-38.3, 8.6]
+reward is -40.49500905610225
+done is 0
+
+
+
+\-------------
+state is [-39.34656517   9.57567585]
+rounded state is [-39.3, 9.6]
+Triggered Attack
+timestep #10
+angle is 315.00031419214764
+action is [ 1.         -0.99998903]
+action is 7
+entropy is -27.666671752929688
+next state is [-37.34627725   7.61028372]
+rounded next_state is [-37.3, 7.6]
+reward is -39.27655982794489
+done is 0
+
+
+
+\-------------
+state is [-38.32438485   8.59591055]
+rounded state is [-38.3, 8.6]
+Triggered Attack
+timestep #11
+angle is 315.1120403435605
+action is [ 1.        -0.9960967]
+action is 7
+entropy is -26.584617614746094
+next state is [-36.333401     6.63386967]
+rounded next_state is [-36.3, 6.6]
+reward is -38.113788091058694
+done is 0
+
+
+
+\-------------
+state is [-37.34627725   7.61028372]
+rounded state is [-37.3, 7.6]
+Triggered Attack
+timestep #12
+angle is 346.6896263719734
+action is [ 1.         -0.23658116]
+action is 0
+entropy is -24.595077514648438
+next state is [-35.27653802   6.34661953]
+rounded next_state is [-35.3, 6.3]
+reward is -36.934052780479334
+done is 0
+
+
+
+\-------------
+state is [-36.333401     6.63386967]
+rounded state is [-36.3, 6.6]
+Triggered Attack
+timestep #13
+angle is 0.7859797405812815
+action is [1.        0.0137188]
+action is 0
+entropy is -24.48623275756836
+next state is [-34.3744126    6.36787675]
+rounded next_state is [-34.4, 6.4]
+reward is -35.84290325963505
+done is 0
+
+
+
+\-------------
+state is [-35.27653802   6.34661953]
+rounded state is [-35.3, 6.3]
+Triggered Attack
+timestep #14
+angle is 327.2387539528181
+action is [ 1.         -0.64349914]
+action is 7
+entropy is -23.68202018737793
+next state is [-33.36728493   5.69563903]
+rounded next_state is [-33.4, 5.7]
+reward is -34.959263375327495
+done is 0
+
+
+
+\-------------
+state is [-34.3744126    6.36787675]
+rounded state is [-34.4, 6.4]
+Triggered Attack
+timestep #15
+angle is 37.09243793513113
+action is [1.        0.7560866]
+action is 1
+entropy is -23.16469955444336
+next state is [-32.368916     6.43505574]
+rounded next_state is [-32.4, 6.4]
+reward is -33.84990409682346
+done is 0
+
+
+
+\-------------
+state is [-33.36728493   5.69563903]
+rounded state is [-33.4, 5.7]
+Triggered Attack
+timestep #16
+angle is 315.33002422026595
+action is [ 1.         -0.98854584]
+action is 7
+entropy is -22.728412628173828
+next state is [-31.3893983    5.41910685]
+rounded next_state is [-31.4, 5.4]
+reward is -33.002373635137204
+done is 0
+
+
+
+\-------------
+state is [-32.368916     6.43505574]
+rounded state is [-32.4, 6.4]
+Triggered Attack
+timestep #17
+angle is 23.79221656545992
+action is [1.         0.44089028]
+action is 1
+entropy is -21.79531478881836
+next state is [-30.28628184   5.88305944]
+rounded next_state is [-30.3, 5.9]
+reward is -31.85374458952179
+done is 0
+
+
+
+\-------------
+state is [-31.3893983    5.41910685]
+rounded state is [-31.4, 5.4]
+Triggered Attack
+timestep #18
+angle is 315.81784313167975
+action is [ 1.         -0.97185177]
+action is 7
+entropy is -20.997339248657227
+next state is [-29.24700596   4.93859121]
+rounded next_state is [-29.2, 4.9]
+reward is -30.852378450454434
+done is 1
+
+
+
+\-------------
+state is [-30.28628184   5.88305944]
+rounded state is [-30.3, 5.9]
+#######################
+episode #2
+start state [-48.13250388   0.31197824]
+state is [-48.13250388   0.31197824]
+rounded state is [-48.1, 0.3]
+Start of the main loop
+attack True
+safety False
+timestep #1
+angle is 44.99925378239619
+action is [1.         0.99997395]
+action is 1
+entropy is -17.45088768005371
+next state is [-47.18512905   1.33380201]
+rounded next_state is [-47.2, 1.3]
+reward is -48.13351493467644
+done is 0
+
+
+
+\-------------
+state is [-48.13250388   0.31197824]
+rounded state is [-48.1, 0.3]
+timestep #2
+angle is 44.99787736145021
+action is [1.        0.9999259]
+action is 1
+entropy is -17.0615177154541
+next state is [-46.13653187   2.31062602]
+rounded next_state is [-46.1, 2.3]
+reward is -47.203976859099164
+done is 0
+
+
+
+\-------------
+state is [-47.18512905   1.33380201]
+rounded state is [-47.2, 1.3]
+timestep #3
+angle is 44.994041982371776
+action is [1.         0.99979204]
+action is 1
+entropy is -16.976455688476562
+next state is [-45.07293484   3.37142362]
+rounded next_state is [-45.1, 3.4]
+reward is -46.19435642510314
+done is 0
+
+
+
+\-------------
+state is [-46.13653187   2.31062602]
+rounded state is [-46.1, 2.3]
+timestep #4
+angle is 44.982488649235194
+action is [1.         0.99938893]
+action is 1
+entropy is -16.2559757232666
+next state is [-44.02473594   4.40728505]
+rounded next_state is [-44.0, 4.4]
+reward is -45.1988490124604
+done is 0
+
+
+
+\-------------
+state is [-45.07293484   3.37142362]
+rounded state is [-45.1, 3.4]
+timestep #5
+angle is 44.95275632534567
+action is [1.        0.9983522]
+action is 1
+entropy is -15.760918617248535
+next state is [-42.97841538   5.35032263]
+rounded next_state is [-43.0, 5.4]
+reward is -44.244791057123784
+done is 0
+
+
+
+\-------------
+state is [-44.02473594   4.40728505]
+rounded state is [-44.0, 4.4]
+timestep #6
+angle is 44.88424968479875
+action is [1.        0.9959677]
+action is 1
+entropy is -15.90355110168457
+next state is [-42.03859413   6.36255448]
+rounded next_state is [-42.0, 6.4]
+reward is -43.31016209603995
+done is 0
+
+
+
+\-------------
+state is [-42.97841538   5.35032263]
+rounded state is [-43.0, 5.4]
+timestep #7
+angle is 44.70833751789694
+action is [1.         0.98987055]
+action is 1
+entropy is -14.893026351928711
+next state is [-41.12350084   7.24822389]
+rounded next_state is [-41.1, 7.2]
+reward is -42.51735523667149
+done is 0
+
+
+
+\-------------
+state is [-42.03859413   6.36255448]
+rounded state is [-42.0, 6.4]
+timestep #8
+angle is 44.31244283166617
+action is [1.        0.9762832]
+action is 1
+entropy is -11.64880084991455
+next state is [-40.01625557   8.21491673]
+rounded next_state is [-40.0, 8.2]
+reward is -41.757383428227406
+done is 0
+
+
+
+\-------------
+state is [-41.12350084   7.24822389]
+rounded state is [-41.1, 7.2]
+timestep #9
+angle is 43.21258202110006
+action is [1.         0.93947583]
+action is 1
+entropy is -14.668627738952637
+next state is [-39.01187182   9.11576045]
+rounded next_state is [-39.0, 9.1]
+reward is -40.85077192314237
+done is 0
+
+
+
+\-------------
+state is [-40.01625557   8.21491673]
+rounded state is [-40.0, 8.2]
+Triggered Attack
+timestep #10
+angle is 315.00001878303254
+action is [ 1.         -0.99999934]
+action is 7
+entropy is -26.515586853027344
+next state is [-37.8906487    8.09247217]
+rounded next_state is [-37.9, 8.1]
+reward is -40.062741183374406
+done is 0
+
+
+
+\-------------
+state is [-39.01187182   9.11576045]
+rounded state is [-39.0, 9.1]
+Triggered Attack
+timestep #11
+angle is 315.00713163871
+action is [ 1.        -0.9997511]
+action is 7
+entropy is -27.01769256591797
+next state is [-36.94268797   7.07449042]
+rounded next_state is [-36.9, 7.1]
+reward is -38.74518505293392
+done is 0
+
+
+
+\-------------
+state is [-37.8906487    8.09247217]
+rounded state is [-37.9, 8.1]
+Triggered Attack
+timestep #12
+angle is 318.37398167654015
+action is [ 1.         -0.88865393]
+action is 7
+entropy is -26.03813934326172
+next state is [-35.92109858   6.25527322]
+rounded next_state is [-35.9, 6.3]
+reward is -37.61396827029069
+done is 0
+
+
+
+\-------------
+state is [-36.94268797   7.07449042]
+rounded state is [-36.9, 7.1]
+Triggered Attack
+timestep #13
+angle is 34.72766992939188
+action is [1.         0.69314754]
+action is 1
+entropy is -21.42644691467285
+next state is [-35.01198388   7.07892413]
+rounded next_state is [-35.0, 7.1]
+reward is -36.46167531029036
+done is 0
+
+
+
+\-------------
+state is [-35.92109858   6.25527322]
+rounded state is [-35.9, 6.3]
+Triggered Attack
+timestep #14
+angle is 315.1600738221265
+action is [ 1.        -0.9944279]
+action is 7
+entropy is -24.875431060791016
+next state is [-34.03028603   6.14390271]
+rounded next_state is [-34.0, 6.1]
+reward is -35.72044487897777
+done is 0
+
+
+
+\-------------
+state is [-35.01198388   7.07892413]
+rounded state is [-35.0, 7.1]
+Triggered Attack
+timestep #15
+angle is 349.1622439312395
+action is [ 1.         -0.19144323]
+action is 0
+entropy is -23.42736053466797
+next state is [-33.05424605   5.90134466]
+rounded next_state is [-33.1, 5.9]
+reward is -34.580455576892646
+done is 0
+
+
+
+\-------------
+state is [-34.03028603   6.14390271]
+rounded state is [-34.0, 6.1]
+Triggered Attack
+timestep #16
+angle is 357.5244068709842
+action is [ 1.         -0.04323416]
+action is 0
+entropy is -22.157867431640625
+next state is [-31.95709922   5.88373617]
+rounded next_state is [-32.0, 5.9]
+reward is -33.57691246347936
+done is 0
+
+
+
+\-------------
+state is [-33.05424605   5.90134466]
+rounded state is [-33.1, 5.9]
+Triggered Attack
+timestep #17
+angle is 325.8291677279228
+action is [ 1.         -0.67885536]
+action is 7
+entropy is -21.742847442626953
+next state is [-30.91831963   5.19279899]
+rounded next_state is [-30.9, 5.2]
+reward is -32.49422321121502
+done is 0
+
+
+
+\-------------
+state is [-31.95709922   5.88373617]
+rounded state is [-32.0, 5.9]
+Triggered Attack
+timestep #18
+angle is 37.07094542452645
+action is [1.        0.7554972]
+action is 1
+entropy is -21.010021209716797
+next state is [-29.82628466   5.97445642]
+rounded next_state is [-29.8, 6.0]
+reward is -31.351358027948628
+done is 1
+
+
+
+\-------------
+state is [-30.91831963   5.19279899]
+rounded state is [-30.9, 5.2]
+#######################
+episode #3
+start state [-49.87819999  -0.6221584 ]
+state is [-49.87819999  -0.6221584 ]
+rounded state is [-49.9, -0.6]
+Start of the main loop
+attack True
+safety False
+timestep #1
+angle is 44.999767771685725
+action is [1.        0.9999919]
+action is 1
+entropy is -17.107011795043945
+next state is [-48.86099655   0.39578067]
+rounded next_state is [-48.9, 0.4]
+reward is -49.88208009757078
+done is 0
+
+
+
+\-------------
+state is [-49.87819999  -0.6221584 ]
+rounded state is [-49.9, -0.6]
+timestep #2
+angle is 44.999330625821344
+action is [1.         0.99997663]
+action is 1
+entropy is -17.197370529174805
+next state is [-47.75916583   1.35412136]
+rounded next_state is [-47.8, 1.4]
+reward is -48.86259945839774
+done is 0
+
+
+
+\-------------
+state is [-48.86099655   0.39578067]
+rounded state is [-48.9, 0.4]
+timestep #3
+angle is 44.99811986704641
+action is [1.        0.9999344]
+action is 1
+entropy is -16.852500915527344
+next state is [-46.74631958   2.42392073]
+rounded next_state is [-46.7, 2.4]
+reward is -47.77835875500658
+done is 0
+
+
+
+\-------------
+state is [-47.75916583   1.35412136]
+rounded state is [-47.8, 1.4]
+timestep #4
+angle is 44.994366547649285
+action is [1.         0.99980336]
+action is 1
+entropy is -16.31153106689453
+next state is [-45.82980452   3.54275164]
+rounded next_state is [-45.8, 3.5]
+reward is -46.809120753777584
+done is 0
+
+
+
+\-------------
+state is [-46.74631958   2.42392073]
+rounded state is [-46.7, 2.4]
+timestep #5
+angle is 44.98337763225459
+action is [1.        0.9994199]
+action is 1
+entropy is -15.756863594055176
+next state is [-44.87694419   4.47729053]
+rounded next_state is [-44.9, 4.5]
+reward is -45.96653208520521
+done is 0
+
+
+
+\-------------
+state is [-45.82980452   3.54275164]
+rounded state is [-45.8, 3.5]
+timestep #6
+angle is 44.959311189879074
+action is [1.        0.9985807]
+action is 1
+entropy is -13.28994369506836
+next state is [-43.80810802   5.51544143]
+rounded next_state is [-43.8, 5.5]
+reward is -45.09973670264602
+done is 0
+
+
+
+\-------------
+state is [-44.87694419   4.47729053]
+rounded state is [-44.9, 4.5]
+timestep #7
+angle is 44.8929202770719
+action is [1.         0.99626917]
+action is 1
+entropy is -14.614352226257324
+next state is [-42.79936141   6.51471081]
+rounded next_state is [-42.8, 6.5]
+reward is -44.153940053775614
+done is 0
+
+
+
+\-------------
+state is [-43.80810802   5.51544143]
+rounded state is [-43.8, 5.5]
+timestep #8
+angle is 44.728257134500566
+action is [1.        0.9905591]
+action is 1
+entropy is -15.80724811553955
+next state is [-41.73847379   7.47163841]
+rounded next_state is [-41.7, 7.5]
+reward is -43.29234105412814
+done is 0
+
+
+
+\-------------
+state is [-42.79936141   6.51471081]
+rounded state is [-42.8, 6.5]
+timestep #9
+angle is 44.29889204840199
+action is [1.        0.9758214]
+action is 1
+entropy is -13.22286605834961
+next state is [-40.72858255   8.40490993]
+rounded next_state is [-40.7, 8.4]
+reward is -42.40195249227548
+done is 0
+
+
+
+\-------------
+state is [-41.73847379   7.47163841]
+rounded state is [-41.7, 7.5]
+timestep #10
+angle is 43.270248859472275
+action is [1.         0.94137245]
+action is 1
+entropy is -12.286293029785156
+next state is [-39.72420439   9.31454439]
+rounded next_state is [-39.7, 9.3]
+reward is -41.58677611343442
+done is 0
+
+
+
+\-------------
+state is [-40.72858255   8.40490993]
+rounded state is [-40.7, 8.4]
+Triggered Attack
+timestep #11
+angle is 315.000011952836
+action is [ 1.        -0.9999996]
+action is 7
+entropy is -28.90506362915039
+next state is [-38.68254795   8.30594512]
+rounded next_state is [-38.7, 8.3]
+reward is -40.801631732497384
+done is 0
+
+
+
+\-------------
+state is [-39.72420439   9.31454439]
+rounded state is [-39.7, 9.3]
+Triggered Attack
+timestep #12
+angle is 315.00496042989386
+action is [ 1.         -0.99982685]
+action is 7
+entropy is -27.52878189086914
+next state is [-37.713143     7.30520823]
+rounded next_state is [-37.7, 7.3]
+reward is -39.56422930361683
+done is 0
+
+
+
+\-------------
+state is [-38.68254795   8.30594512]
+rounded state is [-38.7, 8.3]
+Triggered Attack
+timestep #13
+angle is 316.985803238272
+action is [ 1.         -0.93297845]
+action is 7
+entropy is -26.669517517089844
+next state is [-36.72509371   6.41865569]
+rounded next_state is [-36.7, 6.4]
+reward is -38.414153929486055
+done is 0
+
+
+
+\-------------
+state is [-37.713143     7.30520823]
+rounded state is [-37.7, 7.3]
+Triggered Attack
+timestep #14
+angle is 34.968262780186144
+action is [1.         0.69938236]
+action is 1
+entropy is -25.541927337646484
+next state is [-35.72880959   7.13945124]
+rounded next_state is [-35.7, 7.1]
+reward is -37.2817870953036
+done is 0
+
+
+
+\-------------
+state is [-36.72509371   6.41865569]
+rounded state is [-36.7, 6.4]
+Triggered Attack
+timestep #15
+angle is 315.3120005835482
+action is [ 1.       -0.989168]
+action is 7
+entropy is -21.127912521362305
+next state is [-34.68763422   6.11176853]
+rounded next_state is [-34.7, 6.1]
+reward is -36.43514235808831
+done is 0
+
+
+
+\-------------
+state is [-35.72880959   7.13945124]
+rounded state is [-35.7, 7.1]
+Triggered Attack
+timestep #16
+angle is 22.274084719219466
+action is [1.        0.4096016]
+action is 1
+entropy is -22.789752960205078
+next state is [-33.75395441   6.50430292]
+rounded next_state is [-33.8, 6.5]
+reward is -35.22194886999476
+done is 0
+
+
+
+\-------------
+state is [-34.68763422   6.11176853]
+rounded state is [-34.7, 6.1]
+Triggered Attack
+timestep #17
+angle is 316.71104980355767
+action is [ 1.        -0.9419883]
+action is 7
+entropy is -23.818058013916016
+next state is [-32.87927731   5.60609025]
+rounded next_state is [-32.9, 5.6]
+reward is -34.37492392621983
+done is 0
+
+
+
+\-------------
+state is [-33.75395441   6.50430292]
+rounded state is [-33.8, 6.5]
+Triggered Attack
+timestep #18
+angle is 36.402509849363184
+action is [1.        0.7373312]
+action is 1
+entropy is -18.073944091796875
+next state is [-31.89016865   6.29184746]
+rounded next_state is [-31.9, 6.3]
+reward is -33.353787255550216
+done is 0
+
+
+
+\-------------
+state is [-32.87927731   5.60609025]
+rounded state is [-32.9, 5.6]
+Triggered Attack
+timestep #19
+angle is 315.46008946980874
+action is [ 1.         -0.98406744]
+action is 7
+entropy is -21.735591888427734
+next state is [-30.88855529   5.30592038]
+rounded next_state is [-30.9, 5.3]
+reward is -32.50492579161621
+done is 0
+
+
+
+\-------------
+state is [-31.89016865   6.29184746]
+rounded state is [-31.9, 6.3]
+Triggered Attack
+timestep #20
+angle is 25.316480306133275
+action is [1.        0.4730498]
+action is 1
+entropy is -21.039871215820312
+next state is [-29.9379228    5.79201621]
+rounded next_state is [-29.9, 5.8]
+reward is -31.34095785465456
+done is 1
+
+
+
+\-------------
+state is [-30.88855529   5.30592038]
+rounded state is [-30.9, 5.3]
+#######################
+episode #4
+start state [-49.74727487   0.32087871]
+state is [-49.74727487   0.32087871]
+rounded state is [-49.7, 0.3]
+Start of the main loop
+attack True
+safety False
+timestep #1
+angle is 44.99948943426032
+action is [1.        0.9999822]
+action is 1
+entropy is -14.753742218017578
+next state is [-48.73157227   1.24683032]
+rounded next_state is [-48.7, 1.2]
+reward is -49.74830971893995
+done is 0
+
+
+
+\-------------
+state is [-49.74727487   0.32087871]
+rounded state is [-49.7, 0.3]
+timestep #2
+angle is 44.99863731244451
+action is [1.         0.99995244]
+action is 1
+entropy is -16.38855743408203
+next state is [-47.6977349    2.18100612]
+rounded next_state is [-47.7, 2.2]
+reward is -48.747520155946525
+done is 0
+
+
+
+\-------------
+state is [-48.73157227   1.24683032]
+rounded state is [-48.7, 1.2]
+timestep #3
+angle is 44.996300974996494
+action is [1.        0.9998709]
+action is 1
+entropy is -16.893075942993164
+next state is [-46.73822219   3.26048035]
+rounded next_state is [-46.7, 3.3]
+reward is -47.747572741563225
+done is 0
+
+
+
+\-------------
+state is [-47.6977349    2.18100612]
+rounded state is [-47.7, 2.2]
+timestep #4
+angle is 44.9891256274685
+action is [1.        0.9996205]
+action is 1
+entropy is -13.015449523925781
+next state is [-45.74157303   4.24024058]
+rounded next_state is [-45.7, 4.2]
+reward is -46.85181048173422
+done is 0
+
+
+
+\-------------
+state is [-46.73822219   3.26048035]
+rounded state is [-46.7, 3.3]
+timestep #5
+angle is 44.97184050157794
+action is [1.         0.99901754]
+action is 1
+entropy is -15.466608047485352
+next state is [-44.80122047   5.2574101 ]
+rounded next_state is [-44.8, 5.3]
+reward is -45.937687615704604
+done is 0
+
+
+
+\-------------
+state is [-45.74157303   4.24024058]
+rounded state is [-45.7, 4.2]
+timestep #6
+angle is 44.92851996627028
+action is [1.       0.997508]
+action is 1
+entropy is -15.639935493469238
+next state is [-43.82736714   6.34227934]
+rounded next_state is [-43.8, 6.3]
+reward is -45.10864347843774
+done is 0
+
+
+
+\-------------
+state is [-44.80122047   5.2574101 ]
+rounded state is [-44.8, 5.3]
+timestep #7
+angle is 44.81037165213552
+action is [1.         0.99340254]
+action is 1
+entropy is -16.270986557006836
+next state is [-42.72813936   7.2908061 ]
+rounded next_state is [-42.7, 7.3]
+reward is -44.283886656724
+done is 0
+
+
+
+\-------------
+state is [-43.82736714   6.34227934]
+rounded state is [-43.8, 6.3]
+timestep #8
+angle is 44.51838516680323
+action is [1.        0.9833282]
+action is 1
+entropy is -12.859379768371582
+next state is [-41.71207612   8.33077612]
+rounded next_state is [-41.7, 8.3]
+reward is -43.34570043678978
+done is 0
+
+
+
+\-------------
+state is [-42.72813936   7.2908061 ]
+rounded state is [-42.7, 7.3]
+timestep #9
+angle is 43.68831186906026
+action is [1.         0.95523053]
+action is 1
+entropy is -14.025835037231445
+next state is [-40.68197916   9.23663101]
+rounded next_state is [-40.7, 9.2]
+reward is -42.535856928926115
+done is 0
+
+
+
+\-------------
+state is [-41.71207612   8.33077612]
+rounded state is [-41.7, 8.3]
+timestep #10
+angle is 41.91730712796682
+action is [1.         0.89779407]
+action is 1
+entropy is -15.451484680175781
+next state is [-39.66831716  10.12487562]
+rounded next_state is [-39.7, 10.1]
+reward is -41.71736785980007
+done is 0
+
+
+
+\-------------
+state is [-40.68197916   9.23663101]
+rounded state is [-40.7, 9.2]
+Triggered Attack
+timestep #11
+angle is 315.0
+action is [ 1. -1.]
+action is 7
+entropy is -29.387630462646484
+next state is [-38.69738836   9.17758206]
+rounded next_state is [-38.7, 9.2]
+reward is -40.940059758049685
+done is 0
+
+
+
+\-------------
+state is [-39.66831716  10.12487562]
+rounded state is [-39.7, 10.1]
+Triggered Attack
+timestep #12
+angle is 315.0000068301908
+action is [ 1.         -0.99999976]
+action is 7
+entropy is -27.781204223632812
+next state is [-37.7446351    8.15521276]
+rounded next_state is [-37.7, 8.2]
+reward is -39.770791772387234
+done is 0
+
+
+
+\-------------
+state is [-38.69738836   9.17758206]
+rounded state is [-38.7, 9.2]
+Triggered Attack
+timestep #13
+angle is 315.0035640945638
+action is [ 1.        -0.9998756]
+action is 7
+entropy is -25.923534393310547
+next state is [-36.71890992   7.26388005]
+rounded next_state is [-36.7, 7.3]
+reward is -38.61560532038771
+done is 0
+
+
+
+\-------------
+state is [-37.7446351    8.15521276]
+rounded state is [-37.7, 8.2]
+Triggered Attack
+timestep #14
+angle is 315.5746574496822
+action is [ 1.        -0.9801392]
+action is 7
+entropy is -25.85619354248047
+next state is [-35.79441302   6.37202898]
+rounded next_state is [-35.8, 6.4]
+reward is -37.43049957861057
+done is 0
+
+
+
+\-------------
+state is [-36.71890992   7.26388005]
+rounded state is [-36.7, 7.3]
+Triggered Attack
+timestep #15
+angle is 17.18537954403502
+action is [1.        0.3092721]
+action is 0
+entropy is -24.21369743347168
+next state is [-34.86922988   6.70368059]
+rounded next_state is [-34.9, 6.7]
+reward is -36.3571555115899
+done is 0
+
+
+
+\-------------
+state is [-35.79441302   6.37202898]
+rounded state is [-35.8, 6.4]
+Triggered Attack
+timestep #16
+angle is 317.1743190982537
+action is [ 1.         -0.92684305]
+action is 7
+entropy is -23.768558502197266
+next state is [-33.79161268   5.8334824 ]
+rounded next_state is [-33.8, 5.8]
+reward is -35.507781196669136
+done is 0
+
+
+
+\-------------
+state is [-34.86922988   6.70368059]
+rounded state is [-34.9, 6.7]
+Triggered Attack
+timestep #17
+angle is 33.284960598692436
+action is [1.         0.65650153]
+action is 1
+entropy is -23.000377655029297
+next state is [-32.74926958   6.4755771 ]
+rounded next_state is [-32.7, 6.5]
+reward is -34.29143631809032
+done is 0
+
+
+
+\-------------
+state is [-33.79161268   5.8334824 ]
+rounded state is [-33.8, 5.8]
+Triggered Attack
+timestep #18
+angle is 315.4412696207955
+action is [ 1.        -0.9847142]
+action is 7
+entropy is -22.86042594909668
+next state is [-31.74367777   5.56781532]
+rounded next_state is [-31.7, 5.6]
+reward is -33.3833455010541
+done is 0
+
+
+
+\-------------
+state is [-32.74926958   6.4755771 ]
+rounded state is [-32.7, 6.5]
+Triggered Attack
+timestep #19
+angle is 10.549703911045178
+action is [1.         0.18623649]
+action is 0
+entropy is -20.961002349853516
+next state is [-30.66644827   5.76379934]
+rounded next_state is [-30.7, 5.8]
+reward is -32.22827401364285
+done is 0
+
+
+
+\-------------
+state is [-31.74367777   5.56781532]
+rounded state is [-31.7, 5.6]
+Triggered Attack
+timestep #20
+angle is 318.6349731720496
+action is [ 1.         -0.88053435]
+action is 7
+entropy is -20.070438385009766
+next state is [-29.6603077   4.9571881]
+rounded next_state is [-29.7, 5.0]
+reward is -31.203404177224183
+done is 1
+
+
+
+\-------------
+state is [-30.66644827   5.76379934]
+rounded state is [-30.7, 5.8]
+#######################
+episode #5
+start state [-50.37030543   0.4665328 ]
+state is [-50.37030543   0.4665328 ]
+rounded state is [-50.4, 0.5]
+Start of the main loop
+attack True
+safety False
+timestep #1
+angle is 44.99950651033172
+action is [1.        0.9999828]
+action is 1
+entropy is -18.12359619140625
+next state is [-49.34660233   1.44305548]
+rounded next_state is [-49.3, 1.4]
+reward is -50.3724659077456
+done is 0
+
+
+
+\-------------
+state is [-50.37030543   0.4665328 ]
+rounded state is [-50.4, 0.5]
+timestep #2
+angle is 44.9986202353369
+action is [1.         0.99995184]
+action is 1
+entropy is -18.13441276550293
+next state is [-48.3981937   2.5100551]
+rounded next_state is [-48.4, 2.5]
+reward is -49.367697646869125
+done is 0
+
+
+
+\-------------
+state is [-49.34660233   1.44305548]
+rounded state is [-49.3, 1.4]
+timestep #3
+angle is 44.995938876901874
+action is [1.         0.99985826]
+action is 1
+entropy is -15.959249496459961
+next state is [-47.41020646   3.60009295]
+rounded next_state is [-47.4, 3.6]
+reward is -48.46323895928465
+done is 0
+
+
+
+\-------------
+state is [-48.3981937   2.5100551]
+rounded state is [-48.4, 2.5]
+timestep #4
+angle is 44.988054996707284
+action is [1.        0.9995831]
+action is 1
+entropy is -16.311588287353516
+next state is [-46.38183609   4.61201603]
+rounded next_state is [-46.4, 4.6]
+reward is -47.546696471601265
+done is 0
+
+
+
+\-------------
+state is [-47.41020646   3.60009295]
+rounded state is [-47.4, 3.6]
+timestep #5
+angle is 44.96849528870198
+action is [1.        0.9989009]
+action is 1
+entropy is -17.170196533203125
+next state is [-45.32881558   5.58387223]
+rounded next_state is [-45.3, 5.6]
+reward is -46.610571883909685
+done is 0
+
+
+
+\-------------
+state is [-46.38183609   4.61201603]
+rounded state is [-46.4, 4.6]
+timestep #6
+angle is 44.921021291898484
+action is [1.        0.9972469]
+action is 1
+entropy is -15.518682479858398
+next state is [-44.33227365   6.63893202]
+rounded next_state is [-44.3, 6.6]
+reward is -45.67144787687357
+done is 0
+
+
+
+\-------------
+state is [-45.32881558   5.58387223]
+rounded state is [-45.3, 5.6]
+timestep #7
+angle is 44.79256571345862
+action is [1.        0.9927853]
+action is 1
+entropy is -15.264984130859375
+next state is [-43.22886993   7.70603919]
+rounded next_state is [-43.2, 7.7]
+reward is -44.82662049970903
+done is 0
+
+
+
+\-------------
+state is [-44.33227365   6.63893202]
+rounded state is [-44.3, 6.6]
+timestep #8
+angle is 44.41667752231358
+action is [1.        0.9798427]
+action is 1
+entropy is -15.660087585449219
+next state is [-42.22546234   8.79348775]
+rounded next_state is [-42.2, 8.8]
+reward is -43.91034314777653
+done is 0
+
+
+
+\-------------
+state is [-43.22886993   7.70603919]
+rounded state is [-43.2, 7.7]
+timestep #9
+angle is 43.396745166366046
+action is [1.        0.9455454]
+action is 1
+entropy is -15.908811569213867
+next state is [-41.19593109   9.76762054]
+rounded next_state is [-41.2, 9.8]
+reward is -43.13137021482381
+done is 0
+
+
+
+\-------------
+state is [-42.22546234   8.79348775]
+rounded state is [-42.2, 8.8]
+timestep #10
+angle is 41.072756179519004
+action is [1.        0.8715186]
+action is 1
+entropy is -15.572092056274414
+next state is [-40.26763214  10.70316781]
+rounded next_state is [-40.3, 10.7]
+reward is -42.33805792581131
+done is 0
+
+
+
+\-------------
+state is [-41.19593109   9.76762054]
+rounded state is [-41.2, 9.8]
+timestep #11
+angle is 36.153760756145886
+action is [1.        0.7306508]
+action is 1
+entropy is -11.741722106933594
+next state is [-39.25721856  11.42555437]
+rounded next_state is [-39.3, 11.4]
+reward is -41.66581331198673
+done is 0
+
+
+
+\-------------
+state is [-40.26763214  10.70316781]
+rounded state is [-40.3, 10.7]
+Triggered Attack
+timestep #12
+angle is 315.0
+action is [ 1. -1.]
+action is 7
+entropy is -30.19268035888672
+next state is [-38.23359732  10.40569768]
+rounded next_state is [-38.2, 10.4]
+reward is -40.88609179409855
+done is 0
+
+
+
+\-------------
+state is [-39.25721856  11.42555437]
+rounded state is [-39.3, 11.4]
+Triggered Attack
+timestep #13
+angle is 315.0
+action is [ 1. -1.]
+action is 7
+entropy is -27.49283218383789
+next state is [-37.29585408   9.50165303]
+rounded next_state is [-37.3, 9.5]
+reward is -39.62431713091082
+done is 0
+
+
+
+\-------------
+state is [-38.23359732  10.40569768]
+rounded state is [-38.2, 10.4]
+Triggered Attack
+timestep #14
+angle is 315.0
+action is [ 1. -1.]
+action is 7
+entropy is -26.213104248046875
+next state is [-36.30256195   8.53924063]
+rounded next_state is [-36.3, 8.5]
+reward is -38.48716853674792
+done is 0
+
+
+
+\-------------
+state is [-37.29585408   9.50165303]
+rounded state is [-37.3, 9.5]
+Triggered Attack
+timestep #15
+angle is 315.0000204905822
+action is [ 1.        -0.9999993]
+action is 7
+entropy is -24.86060905456543
+next state is [-35.29181049   7.60335202]
+rounded next_state is [-35.3, 7.6]
+reward is -37.29335912108483
+done is 0
+
+
+
+\-------------
+state is [-36.30256195   8.53924063]
+rounded state is [-36.3, 8.5]
+Triggered Attack
+timestep #16
+angle is 315.0048946667049
+action is [ 1.        -0.9998292]
+action is 7
+entropy is -15.27415943145752
+next state is [-34.30181972   6.59673157]
+rounded next_state is [-34.3, 6.6]
+reward is -36.10156298204435
+done is 0
+
+
+
+\-------------
+state is [-35.29181049   7.60335202]
+rounded state is [-35.3, 7.6]
+Triggered Attack
+timestep #17
+angle is 317.0073711092569
+action is [ 1.        -0.9322746]
+action is 7
+entropy is -23.739791870117188
+next state is [-33.28474055   5.61176826]
+rounded next_state is [-33.3, 5.6]
+reward is -34.93038367629481
+done is 0
+
+
+
+\-------------
+state is [-34.30181972   6.59673157]
+rounded state is [-34.3, 6.6]
+Triggered Attack
+timestep #18
+angle is 40.32308611667932
+action is [1.         0.84875464]
+action is 1
+entropy is -23.014286041259766
+next state is [-32.19376      6.40934935]
+rounded next_state is [-32.2, 6.4]
+reward is -33.75449446383073
+done is 0
+
+
+
+\-------------
+state is [-33.28474055   5.61176826]
+rounded state is [-33.3, 5.6]
+Triggered Attack
+timestep #19
+angle is 315.30451540956363
+action is [ 1.        -0.9894265]
+action is 7
+entropy is -19.161354064941406
+next state is [-31.21019287   5.32458089]
+rounded next_state is [-31.2, 5.3]
+reward is -32.82556842369281
+done is 0
+
+
+
+\-------------
+state is [-32.19376      6.40934935]
+rounded state is [-32.2, 6.4]
+Triggered Attack
+timestep #20
+angle is 31.18974176566189
+action is [1.         0.60537684]
+action is 1
+entropy is -20.74175262451172
+next state is [-30.24845489   5.98441416]
+rounded next_state is [-30.2, 6.0]
+reward is -31.66113233270376
+done is 0
+
+
+
+\-------------
+state is [-31.21019287   5.32458089]
+rounded state is [-31.2, 5.3]
+Triggered Attack
+timestep #21
+angle is 315.3580648413645
+action is [ 1.         -0.98757863]
+action is 7
+entropy is -20.400253295898438
+next state is [-29.15775302   4.91515856]
+rounded next_state is [-29.2, 4.9]
+reward is -30.834756953605762
+done is 1
+
+
+
+\-------------
+state is [-30.24845489   5.98441416]
+rounded state is [-30.2, 6.0]
+#######################
+episode #6
+start state [-48.88213715   1.26981836]
+state is [-48.88213715   1.26981836]
+rounded state is [-48.9, 1.3]
+Start of the main loop
+attack True
+safety False
+timestep #1
+angle is 44.99866122036096
+action is [1.         0.99995327]
+action is 1
+entropy is -17.635746002197266
+next state is [-47.92968171   2.21093404]
+rounded next_state is [-47.9, 2.2]
+reward is -48.898627497214335
+done is 0
+
+
+
+\-------------
+state is [-48.88213715   1.26981836]
+rounded state is [-48.9, 1.3]
+timestep #2
+angle is 44.996417117729614
+action is [1.         0.99987495]
+action is 1
+entropy is -16.408327102661133
+next state is [-47.027771     3.15763343]
+rounded next_state is [-47.0, 3.2]
+reward is -47.98064836996223
+done is 0
+
+
+
+\-------------
+state is [-47.92968171   2.21093404]
+rounded state is [-47.9, 2.2]
+timestep #3
+angle is 44.990622496601
+action is [1.        0.9996727]
+action is 1
+entropy is -17.401430130004883
+next state is [-46.02582405   4.24525936]
+rounded next_state is [-46.0, 4.2]
+reward is -47.13365988384729
+done is 0
+
+
+
+\-------------
+state is [-47.027771     3.15763343]
+rounded state is [-47.0, 3.2]
+timestep #4
+angle is 44.97355130609873
+action is [1.        0.9990772]
+action is 1
+entropy is -16.878002166748047
+next state is [-44.98581576   5.29336957]
+rounded next_state is [-45.0, 5.3]
+reward is -46.221193265911694
+done is 0
+
+
+
+\-------------
+state is [-46.02582405   4.24525936]
+rounded state is [-46.0, 4.2]
+timestep #5
+angle is 44.92980182398453
+action is [1.         0.99755263]
+action is 1
+entropy is -16.750457763671875
+next state is [-44.01045047   6.14811783]
+rounded next_state is [-44.0, 6.1]
+reward is -45.29617402540296
+done is 0
+
+
+
+\-------------
+state is [-44.98581576   5.29336957]
+rounded state is [-45.0, 5.3]
+timestep #6
+angle is 44.84124791337061
+action is [1.        0.9944738]
+action is 1
+entropy is -15.55527114868164
+next state is [-43.02607327   7.10215409]
+rounded next_state is [-43.0, 7.1]
+reward is -44.43781164521576
+done is 0
+
+
+
+\-------------
+state is [-44.01045047   6.14811783]
+rounded state is [-44.0, 6.1]
+timestep #7
+angle is 44.60940144963732
+action is [1.         0.98645765]
+action is 1
+entropy is -15.027995109558105
+next state is [-41.99345665   8.13746855]
+rounded next_state is [-42.0, 8.1]
+reward is -43.60829707316894
+done is 0
+
+
+
+\-------------
+state is [-43.02607327   7.10215409]
+rounded state is [-43.0, 7.1]
+timestep #8
+angle is 43.92464176038874
+action is [1.        0.9631502]
+action is 1
+entropy is -15.449552536010742
+next state is [-40.99793833   9.13862756]
+rounded next_state is [-41.0, 9.1]
+reward is -42.77462794277049
+done is 0
+
+
+
+\-------------
+state is [-41.99345665   8.13746855]
+rounded state is [-42.0, 8.1]
+timestep #9
+angle is 42.315181783172484
+action is [1.         0.91041446]
+action is 1
+entropy is -14.928293228149414
+next state is [-39.91666452  10.01904095]
+rounded next_state is [-39.9, 10.0]
+reward is -42.00411243144602
+done is 0
+
+
+
+\-------------
+state is [-40.99793833   9.13862756]
+rounded state is [-41.0, 9.1]
+Triggered Attack
+timestep #10
+angle is 315.0
+action is [ 1. -1.]
+action is 7
+entropy is -27.97384262084961
+next state is [-38.9090602    9.10644367]
+rounded next_state is [-38.9, 9.1]
+reward is -41.15484525068042
+done is 0
+
+
+
+\-------------
+state is [-39.91666452  10.01904095]
+rounded state is [-39.9, 10.0]
+Triggered Attack
+timestep #11
+angle is 315.00001707548313
+action is [ 1.        -0.9999994]
+action is 7
+entropy is -28.296510696411133
+next state is [-37.97856008   8.04750954]
+rounded next_state is [-38.0, 8.0]
+reward is -39.960509030240516
+done is 0
+
+
+
+\-------------
+state is [-38.9090602    9.10644367]
+rounded state is [-38.9, 9.1]
+Triggered Attack
+timestep #12
+angle is 315.0113126977196
+action is [ 1.        -0.9996052]
+action is 7
+entropy is -26.655563354492188
+next state is [-37.04256529   6.97134351]
+rounded next_state is [-37.0, 7.0]
+reward is -38.82181648733211
+done is 0
+
+
+
+\-------------
+state is [-37.97856008   8.04750954]
+rounded state is [-38.0, 8.0]
+Triggered Attack
+timestep #13
+angle is 323.45930299737137
+action is [ 1.         -0.74106085]
+action is 7
+entropy is -25.14160919189453
+next state is [-36.0279959    6.21699312]
+rounded next_state is [-36.0, 6.2]
+reward is -37.69285440685128
+done is 0
+
+
+
+\-------------
+state is [-37.04256529   6.97134351]
+rounded state is [-37.0, 7.0]
+Triggered Attack
+timestep #14
+angle is 38.51605781176745
+action is [1.        0.7958936]
+action is 1
+entropy is -24.969749450683594
+next state is [-35.09136924   6.93081792]
+rounded next_state is [-35.1, 6.9]
+reward is -36.560463513774295
+done is 0
+
+
+
+\-------------
+state is [-36.0279959    6.21699312]
+rounded state is [-36.0, 6.2]
+Triggered Attack
+timestep #15
+angle is 315.55562577228056
+action is [ 1.        -0.9807907]
+action is 7
+entropy is -24.583099365234375
+next state is [-34.07638762   5.99841569]
+rounded next_state is [-34.1, 6.0]
+reward is -35.76926659116111
+done is 0
+
+
+
+\-------------
+state is [-35.09136924   6.93081792]
+rounded state is [-35.1, 6.9]
+Triggered Attack
+timestep #16
+angle is 20.173909770405142
+action is [1.         0.36741143]
+action is 1
+entropy is -22.67242431640625
+next state is [-33.08678324   6.35189388]
+rounded next_state is [-33.1, 6.4]
+reward is -34.60030612953467
+done is 0
+
+
+
+\-------------
+state is [-34.07638762   5.99841569]
+rounded state is [-34.1, 6.0]
+Triggered Attack
+timestep #17
+angle is 316.90217094312374
+action is [ 1.        -0.9357124]
+action is 7
+entropy is -22.936616897583008
+next state is [-32.05611158   5.46775014]
+rounded next_state is [-32.1, 5.5]
+reward is -33.690974771246
+done is 0
+
+
+
+\-------------
+state is [-33.08678324   6.35189388]
+rounded state is [-33.1, 6.4]
+Triggered Attack
+timestep #18
+angle is 34.081747326487886
+action is [1.        0.6765864]
+action is 1
+entropy is -21.527523040771484
+next state is [-31.13254757   6.16419423]
+rounded next_state is [-31.1, 6.2]
+reward is -32.519080268546524
+done is 0
+
+
+
+\-------------
+state is [-32.05611158   5.46775014]
+rounded state is [-32.1, 5.5]
+Triggered Attack
+timestep #19
+angle is 315.36799961287176
+action is [ 1.        -0.9872362]
+action is 7
+entropy is -21.778533935546875
+next state is [-30.17072086   5.13504799]
+rounded next_state is [-30.2, 5.1]
+reward is -31.73693130368751
+done is 0
+
+
+
+\-------------
+state is [-31.13254757   6.16419423]
+rounded state is [-31.1, 6.2]
+Triggered Attack
+timestep #20
+angle is 28.4416958522477
+action is [1.         0.54163885]
+action is 1
+entropy is -19.835399627685547
+next state is [-29.21750653   5.65988215]
+rounded next_state is [-29.2, 5.7]
+reward is -30.604593034701303
+done is 1
+
+
+
+\-------------
+state is [-30.17072086   5.13504799]
+rounded state is [-30.2, 5.1]
+#######################
+episode #7
+start state [-49.03085749   1.07687867]
+state is [-49.03085749   1.07687867]
+rounded state is [-49.0, 1.1]
+Start of the main loop
+attack True
+safety False
+timestep #1
+angle is 44.998895174294745
+action is [1.         0.99996144]
+action is 1
+entropy is -17.559547424316406
+next state is [-48.10994469   1.96647611]
+rounded next_state is [-48.1, 2.0]
+reward is -49.04268196452425
+done is 0
+
+
+
+\-------------
+state is [-49.03085749   1.07687867]
+rounded state is [-49.0, 1.1]
+timestep #2
+angle is 44.997172022542685
+action is [1.        0.9999013]
+action is 1
+entropy is -17.56555938720703
+next state is [-47.15131428   2.89882892]
+rounded next_state is [-47.2, 2.9]
+reward is -48.150117405574655
+done is 0
+
+
+
+\-------------
+state is [-48.10994469   1.96647611]
+rounded state is [-48.1, 2.0]
+timestep #3
+angle is 44.992540345193866
+action is [1.         0.99973965]
+action is 1
+entropy is -17.39013671875
+next state is [-46.16189272   3.90705824]
+rounded next_state is [-46.2, 3.9]
+reward is -47.24033919820739
+done is 0
+
+
+
+\-------------
+state is [-47.15131428   2.89882892]
+rounded state is [-47.2, 2.9]
+timestep #4
+angle is 44.979893187087235
+action is [1.        0.9992984]
+action is 1
+entropy is -15.687492370605469
+next state is [-45.10715781   4.82069968]
+rounded next_state is [-45.1, 4.8]
+reward is -46.32694079947163
+done is 0
+
+
+
+\-------------
+state is [-46.16189272   3.90705824]
+rounded state is [-46.2, 3.9]
+timestep #5
+angle is 44.950874266826226
+action is [1.         0.99828666]
+action is 1
+entropy is -16.445449829101562
+next state is [-44.11020031   5.83880132]
+rounded next_state is [-44.1, 5.8]
+reward is -45.36402573619932
+done is 0
+
+
+
+\-------------
+state is [-45.10715781   4.82069968]
+rounded state is [-45.1, 4.8]
+timestep #6
+angle is 44.874969266304085
+action is [1.        0.9956451]
+action is 1
+entropy is -13.774259567260742
+next state is [-43.08160574   6.83326986]
+rounded next_state is [-43.1, 6.8]
+reward is -44.49495895096203
+done is 0
+
+
+
+\-------------
+state is [-44.11020031   5.83880132]
+rounded state is [-44.1, 5.8]
+timestep #7
+angle is 44.682099953042716
+action is [1.        0.9889643]
+action is 1
+entropy is -16.144775390625
+next state is [-42.07220201   7.87280773]
+rounded next_state is [-42.1, 7.9]
+reward is -43.620159673204704
+done is 0
+
+
+
+\-------------
+state is [-43.08160574   6.83326986]
+rounded state is [-43.1, 6.8]
+timestep #8
+angle is 44.12753513656337
+action is [1.         0.96999973]
+action is 1
+entropy is -15.427591323852539
+next state is [-41.13260633   8.82839034]
+rounded next_state is [-41.1, 8.8]
+reward is -42.80246819867567
+done is 0
+
+
+
+\-------------
+state is [-42.07220201   7.87280773]
+rounded state is [-42.1, 7.9]
+timestep #9
+angle is 42.89183579897353
+action is [1.         0.92899185]
+action is 1
+entropy is -14.355037689208984
+next state is [-40.11387286   9.78344201]
+rounded next_state is [-40.1, 9.8]
+reward is -42.06936866086285
+done is 0
+
+
+
+\-------------
+state is [-41.13260633   8.82839034]
+rounded state is [-41.1, 8.8]
+timestep #10
+angle is 39.95215471218488
+action is [1.        0.8376776]
+action is 1
+entropy is -15.172937393188477
+next state is [-39.09983977  10.5721868 ]
+rounded next_state is [-39.1, 10.6]
+reward is -41.28969039826666
+done is 0
+
+
+
+\-------------
+state is [-40.11387286   9.78344201]
+rounded state is [-40.1, 9.8]
+Triggered Attack
+timestep #11
+angle is 315.0
+action is [ 1. -1.]
+action is 7
+entropy is -27.33735466003418
+next state is [-38.0647798    9.57104373]
+rounded next_state is [-38.1, 9.6]
+reward is -40.503933186880026
+done is 0
+
+
+
+\-------------
+state is [-39.09983977  10.5721868 ]
+rounded state is [-39.1, 10.6]
+Triggered Attack
+timestep #12
+angle is 315.0
+action is [ 1. -1.]
+action is 7
+entropy is -27.603551864624023
+next state is [-37.01818569   8.60774831]
+rounded next_state is [-37.0, 8.6]
+reward is -39.24961578224142
+done is 0
+
+
+
+\-------------
+state is [-38.0647798    9.57104373]
+rounded state is [-38.1, 9.6]
+Triggered Attack
+timestep #13
+angle is 315.000035858538
+action is [ 1.         -0.99999875]
+action is 7
+entropy is -26.875741958618164
+next state is [-35.95354651   7.64419987]
+rounded next_state is [-36.0, 7.6]
+reward is -38.00578117797006
+done is 0
+
+
+
+\-------------
+state is [-37.01818569   8.60774831]
+rounded state is [-37.0, 8.6]
+Triggered Attack
+timestep #14
+angle is 315.0100831996114
+action is [ 1.        -0.9996481]
+action is 7
+entropy is -24.22838592529297
+next state is [-34.99847577   6.63937104]
+rounded next_state is [-35.0, 6.6]
+reward is -36.757193828645235
+done is 0
+
+
+
+\-------------
+state is [-35.95354651   7.64419987]
+rounded state is [-36.0, 7.6]
+Triggered Attack
+timestep #15
+angle is 319.2885061007946
+action is [ 1.        -0.8604848]
+action is 7
+entropy is -22.380393981933594
+next state is [-33.98936269   5.75208116]
+rounded next_state is [-34.0, 5.8]
+reward is -35.62266910080678
+done is 0
+
+
+
+\-------------
+state is [-34.99847577   6.63937104]
+rounded state is [-35.0, 6.6]
+Triggered Attack
+timestep #16
+angle is 40.48471183894078
+action is [1.         0.85361934]
+action is 1
+entropy is -23.32659912109375
+next state is [-32.98735047   6.5512954 ]
+rounded next_state is [-33.0, 6.6]
+reward is -34.472644424935865
+done is 0
+
+
+
+\-------------
+state is [-33.98936269   5.75208116]
+rounded state is [-34.0, 5.8]
+Triggered Attack
+timestep #17
+angle is 315.3615350162944
+action is [ 1.       -0.987459]
+action is 7
+entropy is -20.500329971313477
+next state is [-31.94351539   5.58350172]
+rounded next_state is [-31.9, 5.6]
+reward is -33.63160362584641
+done is 0
+
+
+
+\-------------
+state is [-32.98735047   6.5512954 ]
+rounded state is [-33.0, 6.6]
+Triggered Attack
+timestep #18
+angle is 15.488690003617407
+action is [1.         0.27711198]
+action is 0
+entropy is -21.731233596801758
+next state is [-30.89451236   5.84201511]
+rounded next_state is [-30.9, 5.8]
+reward is -32.427822420343965
+done is 0
+
+
+
+\-------------
+state is [-31.94351539   5.58350172]
+rounded state is [-31.9, 5.6]
+Triggered Attack
+timestep #19
+angle is 317.88387042761104
+action is [ 1.        -0.9040808]
+action is 7
+entropy is -18.0960693359375
+next state is [-29.96724864   4.98895591]
+rounded next_state is [-30.0, 5.0]
+reward is -31.442010664967903
+done is 1
+
+
+
+\-------------
+state is [-30.89451236   5.84201511]
+rounded state is [-30.9, 5.8]
+#######################
+episode #8
+start state [-48.58968466  -0.62393957]
+state is [-48.58968466  -0.62393957]
+rounded state is [-48.6, -0.6]
+Start of the main loop
+attack True
+safety False
+timestep #1
+angle is 44.999684100267494
+action is [1.       0.999989]
+action is 1
+entropy is -17.08047103881836
+next state is [-47.63213499   0.48090505]
+rounded next_state is [-47.6, 0.5]
+reward is -48.59369049342967
+done is 0
+
+
+
+\-------------
+state is [-48.58968466  -0.62393957]
+rounded state is [-48.6, -0.6]
+timestep #2
+angle is 44.99903861861266
+action is [1.         0.99996644]
+action is 1
+entropy is -16.264644622802734
+next state is [-46.57798785   1.47848642]
+rounded next_state is [-46.6, 1.5]
+reward is -47.63456259590187
+done is 0
+
+
+
+\-------------
+state is [-47.63213499   0.48090505]
+rounded state is [-47.6, 0.5]
+timestep #3
+angle is 44.99723862988093
+action is [1.        0.9999036]
+action is 1
+entropy is -16.727285385131836
+next state is [-45.56071687   2.45734212]
+rounded next_state is [-45.6, 2.5]
+reward is -46.60144712408272
+done is 0
+
+
+
+\-------------
+state is [-46.57798785   1.47848642]
+rounded state is [-46.6, 1.5]
+timestep #4
+angle is 44.992311412843335
+action is [1.         0.99973166]
+action is 1
+entropy is -12.648368835449219
+next state is [-44.52324074   3.40397735]
+rounded next_state is [-44.5, 3.4]
+reward is -45.626937786821394
+done is 0
+
+
+
+\-------------
+state is [-45.56071687   2.45734212]
+rounded state is [-45.6, 2.5]
+timestep #5
+angle is 44.97957940865729
+action is [1.        0.9992874]
+action is 1
+entropy is -15.835308074951172
+next state is [-43.46686991   4.35558202]
+rounded next_state is [-43.5, 4.4]
+reward is -44.65317489071661
+done is 0
+
+
+
+\-------------
+state is [-44.52324074   3.40397735]
+rounded state is [-44.5, 3.4]
+timestep #6
+angle is 44.94812055078344
+action is [1.        0.9981907]
+action is 1
+entropy is -15.964335441589355
+next state is [-42.45828203   5.36108216]
+rounded next_state is [-42.5, 5.4]
+reward is -43.68454961386875
+done is 0
+
+
+
+\-------------
+state is [-43.46686991   4.35558202]
+rounded state is [-43.5, 4.4]
+timestep #7
+angle is 44.86840331366434
+action is [1.         0.99541694]
+action is 1
+entropy is -15.75357437133789
+next state is [-41.42864564   6.34090619]
+rounded next_state is [-41.4, 6.3]
+reward is -42.79540763303721
+done is 0
+
+
+
+\-------------
+state is [-42.45828203   5.36108216]
+rounded state is [-42.5, 5.4]
+timestep #8
+angle is 44.66887236115649
+action is [1.         0.98850775]
+action is 1
+entropy is -15.410781860351562
+next state is [-40.43829096   7.23861234]
+rounded next_state is [-40.4, 7.2]
+reward is -41.911093644323
+done is 0
+
+
+
+\-------------
+state is [-41.42864564   6.34090619]
+rounded state is [-41.4, 6.3]
+timestep #9
+angle is 44.194379846027864
+action is [1.        0.9722667]
+action is 1
+entropy is -14.820598602294922
+next state is [-39.3363046    8.37075158]
+rounded next_state is [-39.3, 8.4]
+reward is -41.08105261728985
+done is 0
+
+
+
+\-------------
+state is [-40.43829096   7.23861234]
+rounded state is [-40.4, 7.2]
+Triggered Attack
+timestep #10
+angle is 315.00830706448505
+action is [ 1.        -0.9997101]
+action is 7
+entropy is -27.886531829833984
+next state is [-38.33603327   7.4076155 ]
+rounded next_state is [-38.3, 7.4]
+reward is -40.21709017080013
+done is 0
+
+
+
+\-------------
+state is [-39.3363046    8.37075158]
+rounded state is [-39.3, 8.4]
+Triggered Attack
+timestep #11
+angle is 317.42341087570026
+action is [ 1.        -0.9187933]
+action is 7
+entropy is -27.012306213378906
+next state is [-37.43350575   6.54710177]
+rounded next_state is [-37.4, 6.5]
+reward is -39.04515609365858
+done is 0
+
+
+
+\-------------
+state is [-38.33603327   7.4076155 ]
+rounded state is [-38.3, 7.4]
+Triggered Attack
+timestep #12
+angle is 36.233206000499166
+action is [1.         0.73277974]
+action is 1
+entropy is -25.59790802001953
+next state is [-36.44044964   7.24861357]
+rounded next_state is [-36.4, 7.2]
+reward is -38.001735416756
+done is 0
+
+
+
+\-------------
+state is [-37.43350575   6.54710177]
+rounded state is [-37.4, 6.5]
+Triggered Attack
+timestep #13
+angle is 315.4171145763894
+action is [ 1.        -0.9855449]
+action is 7
+entropy is -25.238548278808594
+next state is [-35.49417702   6.33130774]
+rounded next_state is [-35.5, 6.3]
+reward is -37.15439097288737
+done is 0
+
+
+
+\-------------
+state is [-36.44044964   7.24861357]
+rounded state is [-36.4, 7.2]
+Triggered Attack
+timestep #14
+angle is 13.221720291160109
+action is [1.         0.23494786]
+action is 0
+entropy is -24.583072662353516
+next state is [-34.55882231   6.5934313 ]
+rounded next_state is [-34.6, 6.6]
+reward is -36.05443190892636
+done is 0
+
+
+
+\-------------
+state is [-35.49417702   6.33130774]
+rounded state is [-35.5, 6.3]
+Triggered Attack
+timestep #15
+angle is 318.06281608663966
+action is [ 1.        -0.8984208]
+action is 7
+entropy is -23.818511962890625
+next state is [-33.61726944   5.6773691 ]
+rounded next_state is [-33.6, 5.7]
+reward is -35.18217639280328
+done is 0
+
+
+
+\-------------
+state is [-34.55882231   6.5934313 ]
+rounded state is [-34.6, 6.6]
+Triggered Attack
+timestep #16
+angle is 40.42233067240844
+action is [1.       0.851739]
+action is 1
+entropy is -23.16375160217285
+next state is [-32.5794848    6.55289191]
+rounded next_state is [-32.6, 6.6]
+reward is -34.09330322189191
+done is 0
+
+
+
+\-------------
+state is [-33.61726944   5.6773691 ]
+rounded state is [-33.6, 5.7]
+Triggered Attack
+timestep #17
+angle is 315.1882684236784
+action is [ 1.        -0.9934497]
+action is 7
+entropy is -22.946908950805664
+next state is [-31.51562334   5.53374924]
+rounded next_state is [-31.5, 5.5]
+reward is -33.231960852943374
+done is 0
+
+
+
+\-------------
+state is [-32.5794848    6.55289191]
+rounded state is [-32.6, 6.6]
+Triggered Attack
+timestep #18
+angle is 7.872548194502021
+action is [1.         0.13827315]
+action is 0
+entropy is -21.06999969482422
+next state is [-30.461331     5.68786255]
+rounded next_state is [-30.5, 5.7]
+reward is -31.997763913017796
+done is 0
+
+
+
+\-------------
+state is [-31.51562334   5.53374924]
+rounded state is [-31.5, 5.5]
+Triggered Attack
+timestep #19
+angle is 319.6630860346983
+action is [ 1.        -0.8491699]
+action is 7
+entropy is -21.36764144897461
+next state is [-29.43349794   4.8438317 ]
+rounded next_state is [-29.4, 4.8]
+reward is -30.98781158331363
+done is 1
+
+
+
+\-------------
+state is [-30.461331     5.68786255]
+rounded state is [-30.5, 5.7]
+#######################
+episode #9
+start state [-49.70111356   0.76708171]
+state is [-49.70111356   0.76708171]
+rounded state is [-49.7, 0.8]
+Start of the main loop
+attack True
+safety False
+timestep #1
+angle is 44.9992691511142
+action is [1.        0.9999745]
+action is 1
+entropy is -17.346424102783203
+next state is [-48.7369243    1.75715334]
+rounded next_state is [-48.7, 1.8]
+reward is -49.707032740935006
+done is 0
+
+
+
+\-------------
+state is [-49.70111356   0.76708171]
+rounded state is [-49.7, 0.8]
+timestep #2
+angle is 44.99793884213069
+action is [1.         0.99992806]
+action is 1
+entropy is -17.9085636138916
+next state is [-47.76244173   2.71492576]
+rounded next_state is [-47.8, 2.7]
+reward is -48.76859007967806
+done is 0
+
+
+
+\-------------
+state is [-48.7369243    1.75715334]
+rounded state is [-48.7, 1.8]
+timestep #3
+angle is 44.994429751611065
+action is [1.         0.99980557]
+action is 1
+entropy is -16.67559814453125
+next state is [-46.72794447   3.74714377]
+rounded next_state is [-46.7, 3.7]
+reward is -47.83954077359533
+done is 0
+
+
+
+\-------------
+state is [-47.76244173   2.71492576]
+rounded state is [-47.8, 2.7]
+timestep #4
+angle is 44.98436143281848
+action is [1.         0.99945426]
+action is 1
+entropy is -16.864261627197266
+next state is [-45.72124612   4.77378119]
+rounded next_state is [-45.7, 4.8]
+reward is -46.8779466337262
+done is 0
+
+
+
+\-------------
+state is [-46.72794447   3.74714377]
+rounded state is [-46.7, 3.7]
+timestep #5
+angle is 44.95877091656768
+action is [1.         0.99856186]
+action is 1
+entropy is -14.741678237915039
+next state is [-44.80330304   5.79570609]
+rounded next_state is [-44.8, 5.8]
+reward is -45.96978717806426
+done is 0
+
+
+
+\-------------
+state is [-45.72124612   4.77378119]
+rounded state is [-45.7, 4.8]
+timestep #6
+angle is 44.89671400315333
+action is [1.         0.99640113]
+action is 1
+entropy is -16.512903213500977
+next state is [-43.7389128    6.76318963]
+rounded next_state is [-43.7, 6.8]
+reward is -45.176610903785004
+done is 0
+
+
+
+\-------------
+state is [-44.80330304   5.79570609]
+rounded state is [-44.8, 5.8]
+timestep #7
+angle is 44.74022976341923
+action is [1.        0.9909732]
+action is 1
+entropy is -16.102956771850586
+next state is [-42.71009941   7.7667326 ]
+rounded next_state is [-42.7, 7.8]
+reward is -44.258707921447574
+done is 0
+
+
+
+\-------------
+state is [-43.7389128    6.76318963]
+rounded state is [-43.7, 6.8]
+timestep #8
+angle is 44.30778099984989
+action is [1.        0.9761243]
+action is 1
+entropy is -15.559744834899902
+next state is [-41.65149094   8.77747549]
+rounded next_state is [-41.7, 8.8]
+reward is -43.410537047428974
+done is 0
+
+
+
+\-------------
+state is [-42.71009941   7.7667326 ]
+rounded state is [-42.7, 7.8]
+timestep #9
+angle is 43.19160256926004
+action is [1.         0.93878675]
+action is 1
+entropy is -15.587776184082031
+next state is [-40.61625847   9.63079643]
+rounded next_state is [-40.6, 9.6]
+reward is -42.56631031143735
+done is 0
+
+
+
+\-------------
+state is [-41.65149094   8.77747549]
+rounded state is [-41.7, 8.8]
+timestep #10
+angle is 40.91689730800317
+action is [1.        0.8667435]
+action is 1
+entropy is -15.119400978088379
+next state is [-39.56961057  10.59430457]
+rounded next_state is [-39.6, 10.6]
+reward is -41.74245670826342
+done is 0
+
+
+
+\-------------
+state is [-40.61625847   9.63079643]
+rounded state is [-40.6, 9.6]
+Triggered Attack
+timestep #11
+angle is 315.0
+action is [ 1. -1.]
+action is 7
+entropy is -29.65481185913086
+next state is [-38.54037348   9.59260066]
+rounded next_state is [-38.5, 9.6]
+reward is -40.96331737128751
+done is 0
+
+
+
+\-------------
+state is [-39.56961057  10.59430457]
+rounded state is [-39.6, 10.6]
+Triggered Attack
+timestep #12
+angle is 315.0
+action is [ 1. -1.]
+action is 7
+entropy is -28.38258171081543
+next state is [-37.53993492   8.52245366]
+rounded next_state is [-37.5, 8.5]
+reward is -39.71622307007313
+done is 0
+
+
+
+\-------------
+state is [-38.54037348   9.59260066]
+rounded state is [-38.5, 9.6]
+Triggered Attack
+timestep #13
+angle is 315.0001588027785
+action is [ 1.         -0.99999446]
+action is 7
+entropy is -25.732358932495117
+next state is [-36.53627815   7.50087714]
+rounded next_state is [-36.5, 7.5]
+reward is -38.495180613310474
+done is 0
+
+
+
+\-------------
+state is [-37.53993492   8.52245366]
+rounded state is [-37.5, 8.5]
+Triggered Attack
+timestep #14
+angle is 315.07189275795207
+action is [ 1.        -0.9974936]
+action is 7
+entropy is -26.026718139648438
+next state is [-35.50522495   6.4719092 ]
+rounded next_state is [-35.5, 6.5]
+reward is -37.29829457883984
+done is 0
+
+
+
+\-------------
+state is [-36.53627815   7.50087714]
+rounded state is [-36.5, 7.5]
+Triggered Attack
+timestep #15
+angle is 344.86986029865096
+action is [ 1.         -0.27038512]
+action is 0
+entropy is -24.328365325927734
+next state is [-34.45143017   6.17998528]
+rounded next_state is [-34.5, 6.2]
+reward is -36.09025640790222
+done is 0
+
+
+
+\-------------
+state is [-35.50522495   6.4719092 ]
+rounded state is [-35.5, 6.5]
+Triggered Attack
+timestep #16
+angle is 359.8522964733215
+action is [ 1.         -0.00257792]
+action is 0
+entropy is -23.56531524658203
+next state is [-33.44165763   6.19108782]
+rounded next_state is [-33.4, 6.2]
+reward is -35.00133224222412
+done is 0
+
+
+
+\-------------
+state is [-34.45143017   6.17998528]
+rounded state is [-34.5, 6.2]
+Triggered Attack
+timestep #17
+angle is 325.85377492392985
+action is [ 1.         -0.67822814]
+action is 7
+entropy is -22.63066864013672
+next state is [-32.42973049   5.59036455]
+rounded next_state is [-32.4, 5.6]
+reward is -34.009910810849895
+done is 0
+
+
+
+\-------------
+state is [-33.44165763   6.19108782]
+rounded state is [-33.4, 6.2]
+Triggered Attack
+timestep #18
+angle is 29.50462484962864
+action is [1.         0.56587934]
+action is 1
+entropy is -22.41960906982422
+next state is [-31.46691061   6.19344898]
+rounded next_state is [-31.5, 6.2]
+reward is -32.90804758250442
+done is 0
+
+
+
+\-------------
+state is [-32.42973049   5.59036455]
+rounded state is [-32.4, 5.6]
+Triggered Attack
+timestep #19
+angle is 315.49851530306944
+action is [ 1.        -0.9827482]
+action is 7
+entropy is -22.086116790771484
+next state is [-30.49193655   5.23700796]
+rounded next_state is [-30.5, 5.2]
+reward is -32.070629459861095
+done is 0
+
+
+
+\-------------
+state is [-31.46691061   6.19344898]
+rounded state is [-31.5, 6.2]
+Triggered Attack
+timestep #20
+angle is 23.43794325619229
+action is [1.         0.43352512]
+action is 1
+entropy is -20.92706298828125
+next state is [-29.5047499    5.68271923]
+rounded next_state is [-29.5, 5.7]
+reward is -30.938397611622214
+done is 1
+
+
+
+\-------------
+state is [-30.49193655   5.23700796]
+rounded state is [-30.5, 5.2]
+finally
+{(-46.2, 2.7), (-33.1, 6.4), (-50.4, 0.5), (-42.8, 6.5), (-38.7, 8.3), (-49.9, -0.6), (-46.2, 3.9), (-49.4, 0.2), (-35.3, 6.1), (-36.4, 7.2), (-37.7, 7.3), (-44.0, 6.1), (-40.0, 8.2), (-37.5, 8.5), (-30.3, 5.9), (-44.9, 4.5), (-45.3, 4.1), (-32.1, 5.5), (-45.2, 3.7), (-36.7, 6.4), (-35.8, 6.4), (-34.4, 6.4), (-33.3, 5.6), (-47.2, 1.3), (-41.1, 8.8), (-33.8, 5.8), (-43.0, 7.1), (-48.7, 1.2), (-39.6, 10.6), (-41.1, 7.2), (-34.3, 6.6), (-42.1, 7.9), (-40.1, 9.8), (-49.3, 1.4), (-42.0, 8.1), (-46.7, 2.4), (-45.0, 5.3), (-38.7, 9.2), (-34.6, 6.6), (-42.2, 7.0), (-47.0, 3.2), (-43.8, 6.3), (-38.5, 9.6), (-40.4, 7.2), (-33.2, 5.9), (-39.0, 9.1), (-33.8, 6.5), (-32.7, 6.5), (-46.7, 3.7), (-34.9, 6.7), (-30.4, 6.0), (-50.3, -0.9), (-32.9, 5.6), (-35.0, 6.6), (-39.7, 9.3), (-46.0, 4.2), (-35.5, 6.3), (-31.1, 6.2), (-34.7, 6.1), (-33.1, 5.9), (-41.4, 6.3), (-36.0, 7.6), (-45.7, 4.2), (-33.0, 6.6), (-39.3, 11.4), (-40.4, 8.9), (-33.4, 5.7), (-48.7, 1.8), (-37.3, 9.5), (-36.3, 8.5), (-46.4, 4.6), (-42.2, 8.8), (-46.7, 3.3), (-40.7, 8.4), (-40.6, 9.6), (-48.4, 2.5), (-37.3, 7.6), (-36.3, 6.6), (-37.7, 8.2), (-30.2, 5.1), (-41.7, 7.5), (-30.7, 5.8), (-40.7, 9.2), (-48.9, 0.4), (-31.2, 5.3), (-43.5, 4.4), (-38.3, 8.6), (-35.3, 7.6), (-32.4, 5.6), (-44.0, 4.4), (-32.6, 6.6), (-36.7, 7.3), (-45.7, 4.8), (-33.6, 5.7), (-34.0, 5.8), (-35.3, 6.3), (-46.1, 2.3), (-45.3, 5.6), (-34.1, 6.0), (-47.7, 2.2), (-47.6, 0.5), (-47.8, 1.4), (-45.1, 3.4), (-36.5, 7.5), (-38.3, 7.4), (-49.7, 0.3), (-44.5, 3.4), (-49.7, 0.8), (-43.0, 5.4), (-32.2, 6.4), (-39.9, 10.0), (-43.3, 5.7), (-37.9, 8.1), (-36.9, 7.1), (-31.7, 5.6), (-43.2, 7.7), (-39.1, 10.6), (-38.1, 9.6), (-47.8, 2.7), (-44.3, 6.6), (-42.0, 6.4), (-43.7, 6.8), (-34.5, 6.2), (-30.9, 5.2), (-39.7, 10.1), (-42.7, 7.3), (-42.7, 7.8), (-37.0, 8.6), (-38.2, 10.4), (-48.1, 2.0), (-34.3, 6.9), (-35.7, 7.1), (-47.4, 3.6), (-41.2, 7.8), (-41.2, 9.8), (-48.6, -0.6), (-30.2, 6.0), (-35.1, 6.9), (-35.0, 7.1), (-34.0, 6.1), (-41.2, 7.9), (-30.9, 5.3), (-30.9, 5.8), (-44.1, 5.8), (-31.5, 6.2), (-35.5, 6.5), (-42.5, 5.4), (-37.4, 7.8), (-36.4, 6.8), (-32.0, 5.9), (-33.4, 6.2), (-31.9, 6.3), (-39.3, 9.6), (-47.9, 2.2), (-44.3, 5.0), (-47.3, 2.1), (-37.4, 6.5), (-32.2, 6.1), (-43.3, 6.0), (-38.3, 8.8), (-44.3, 4.7), (-40.3, 8.7), (-39.4, 9.7), (-46.6, 1.5), (-37.0, 7.0), (-43.1, 6.8), (-31.4, 5.4), (-41.7, 8.3), (-41.7, 8.8), (-39.3, 8.4), (-45.8, 3.5), (-38.0, 8.0), (-49.0, 1.1), (-46.3, 3.1), (-31.5, 5.5), (-32.4, 6.4), (-38.9, 9.1), (-40.3, 10.7), (-48.1, 0.3), (-45.6, 2.5), (-48.9, 1.3), (-47.2, 1.7), (-44.8, 5.3), (-31.9, 5.6), (-44.8, 5.8), (-30.5, 5.7), (-48.4, 1.1), (-30.5, 5.2), (-31.3, 5.2), (-35.9, 6.3), (-36.0, 6.2), (-45.1, 4.8), (-47.2, 2.9), (-41.0, 9.1), (-43.8, 5.5), (-42.3, 6.8)}
+196
+Using GPU: GPU requested and available.
+State: (-46.2, 2.7), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-33.1, 6.4), Failure Probability: 1.0, Expected Timestep to Finish 4
+State: (-50.4, 0.5), Failure Probability: 1.0, Expected Timestep to Finish 21
+State: (-42.8, 6.5), Failure Probability: 1.0, Expected Timestep to Finish 13
+State: (-38.7, 8.3), Failure Probability: 1.0, Expected Timestep to Finish 9
+State: (-49.9, -0.6), Failure Probability: 1.0, Expected Timestep to Finish 21
+State: (-46.2, 3.9), Failure Probability: 1.0, Expected Timestep to Finish 17
+State: (-49.4, 0.2), Failure Probability: 1.0, Expected Timestep to Finish 20
+State: (-35.3, 6.1), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-36.4, 7.2), Failure Probability: 1.0, Expected Timestep to Finish 7
+State: (-37.7, 7.3), Failure Probability: 1.0, Expected Timestep to Finish 8
+State: (-44.0, 6.1), Failure Probability: 1.0, Expected Timestep to Finish 15
+State: (-40.0, 8.2), Failure Probability: 1.0, Expected Timestep to Finish 11
+State: (-37.5, 8.5), Failure Probability: 1.0, Expected Timestep to Finish 8
+State: (-30.3, 5.9), Failure Probability: 1.0, Expected Timestep to Finish 1
+State: (-44.9, 4.5), Failure Probability: 1.0, Expected Timestep to Finish 15
+State: (-45.3, 4.1), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-32.1, 5.5), Failure Probability: 1.0, Expected Timestep to Finish 3
+State: (-45.2, 3.7), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-36.7, 6.4), Failure Probability: 1.0, Expected Timestep to Finish 7
+State: (-35.8, 6.4), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-34.4, 6.4), Failure Probability: 1.0, Expected Timestep to Finish 5
+State: (-33.3, 5.6), Failure Probability: 1.0, Expected Timestep to Finish 4
+State: (-47.2, 1.3), Failure Probability: 1.0, Expected Timestep to Finish 18
+State: (-41.1, 8.8), Failure Probability: 1.0, Expected Timestep to Finish 12
+State: (-33.8, 5.8), Failure Probability: 1.0, Expected Timestep to Finish 5
+State: (-43.0, 7.1), Failure Probability: 1.0, Expected Timestep to Finish 14
+State: (-48.7, 1.2), Failure Probability: 1.0, Expected Timestep to Finish 19
+State: (-39.6, 10.6), Failure Probability: 1.0, Expected Timestep to Finish 10
+State: (-41.1, 7.2), Failure Probability: 1.0, Expected Timestep to Finish 11
+State: (-34.3, 6.6), Failure Probability: 1.0, Expected Timestep to Finish 5
+State: (-42.1, 7.9), Failure Probability: 1.0, Expected Timestep to Finish 13
+State: (-40.1, 9.8), Failure Probability: 1.0, Expected Timestep to Finish 10
+State: (-49.3, 1.4), Failure Probability: 1.0, Expected Timestep to Finish 20
+State: (-42.0, 8.1), Failure Probability: 1.0, Expected Timestep to Finish 12
+State: (-46.7, 2.4), Failure Probability: 1.0, Expected Timestep to Finish 17
+State: (-45.0, 5.3), Failure Probability: 1.0, Expected Timestep to Finish 15
+State: (-38.7, 9.2), Failure Probability: 1.0, Expected Timestep to Finish 9
+State: (-34.6, 6.6), Failure Probability: 1.0, Expected Timestep to Finish 5
+State: (-42.2, 7.0), Failure Probability: 1.0, Expected Timestep to Finish 13
+State: (-47.0, 3.2), Failure Probability: 1.0, Expected Timestep to Finish 17
+State: (-43.8, 6.3), Failure Probability: 1.0, Expected Timestep to Finish 14
+State: (-38.5, 9.6), Failure Probability: 1.0, Expected Timestep to Finish 9
+State: (-40.4, 7.2), Failure Probability: 1.0, Expected Timestep to Finish 11
+State: (-33.2, 5.9), Failure Probability: 1.0, Expected Timestep to Finish 4
+State: (-39.0, 9.1), Failure Probability: 1.0, Expected Timestep to Finish 9
+State: (-33.8, 6.5), Failure Probability: 1.0, Expected Timestep to Finish 4
+State: (-32.7, 6.5), Failure Probability: 1.0, Expected Timestep to Finish 3
+State: (-46.7, 3.7), Failure Probability: 1.0, Expected Timestep to Finish 17
+State: (-34.9, 6.7), Failure Probability: 1.0, Expected Timestep to Finish 5
+State: (-30.4, 6.0), Failure Probability: 1.0, Expected Timestep to Finish 1
+State: (-50.3, -0.9), Failure Probability: 1.0, Expected Timestep to Finish 21
+State: (-32.9, 5.6), Failure Probability: 1.0, Expected Timestep to Finish 4
+State: (-35.0, 6.6), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-39.7, 9.3), Failure Probability: 1.0, Expected Timestep to Finish 10
+State: (-46.0, 4.2), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-35.5, 6.3), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-31.1, 6.2), Failure Probability: 1.0, Expected Timestep to Finish 2
+State: (-34.7, 6.1), Failure Probability: 1.0, Expected Timestep to Finish 5
+State: (-33.1, 5.9), Failure Probability: 1.0, Expected Timestep to Finish 4
+State: (-41.4, 6.3), Failure Probability: 1.0, Expected Timestep to Finish 12
+State: (-36.0, 7.6), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-45.7, 4.2), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-33.0, 6.6), Failure Probability: 1.0, Expected Timestep to Finish 3
+State: (-39.3, 11.4), Failure Probability: 1.0, Expected Timestep to Finish 10
+State: (-40.4, 8.9), Failure Probability: 1.0, Expected Timestep to Finish 11
+State: (-33.4, 5.7), Failure Probability: 1.0, Expected Timestep to Finish 4
+State: (-48.7, 1.8), Failure Probability: 1.0, Expected Timestep to Finish 19
+State: (-37.3, 9.5), Failure Probability: 1.0, Expected Timestep to Finish 8
+State: (-36.3, 8.5), Failure Probability: 1.0, Expected Timestep to Finish 7
+State: (-46.4, 4.6), Failure Probability: 1.0, Expected Timestep to Finish 17
+State: (-42.2, 8.8), Failure Probability: 1.0, Expected Timestep to Finish 13
+State: (-46.7, 3.3), Failure Probability: 1.0, Expected Timestep to Finish 17
+State: (-40.7, 8.4), Failure Probability: 1.0, Expected Timestep to Finish 11
+State: (-40.6, 9.6), Failure Probability: 1.0, Expected Timestep to Finish 11
+State: (-48.4, 2.5), Failure Probability: 1.0, Expected Timestep to Finish 19
+State: (-37.3, 7.6), Failure Probability: 1.0, Expected Timestep to Finish 8
+State: (-36.3, 6.6), Failure Probability: 1.0, Expected Timestep to Finish 7
+State: (-37.7, 8.2), Failure Probability: 1.0, Expected Timestep to Finish 8
+State: (-30.2, 5.1), Failure Probability: 1.0, Expected Timestep to Finish 1
+State: (-41.7, 7.5), Failure Probability: 1.0, Expected Timestep to Finish 12
+State: (-30.7, 5.8), Failure Probability: 1.0, Expected Timestep to Finish 1
+State: (-40.7, 9.2), Failure Probability: 1.0, Expected Timestep to Finish 11
+State: (-48.9, 0.4), Failure Probability: 1.0, Expected Timestep to Finish 19
+State: (-31.2, 5.3), Failure Probability: 1.0, Expected Timestep to Finish 2
+State: (-43.5, 4.4), Failure Probability: 1.0, Expected Timestep to Finish 14
+State: (-38.3, 8.6), Failure Probability: 1.0, Expected Timestep to Finish 9
+State: (-35.3, 7.6), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-32.4, 5.6), Failure Probability: 1.0, Expected Timestep to Finish 3
+State: (-44.0, 4.4), Failure Probability: 1.0, Expected Timestep to Finish 14
+State: (-32.6, 6.6), Failure Probability: 1.0, Expected Timestep to Finish 3
+State: (-36.7, 7.3), Failure Probability: 1.0, Expected Timestep to Finish 7
+State: (-45.7, 4.8), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-33.6, 5.7), Failure Probability: 1.0, Expected Timestep to Finish 4
+State: (-34.0, 5.8), Failure Probability: 1.0, Expected Timestep to Finish 5
+State: (-35.3, 6.3), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-46.1, 2.3), Failure Probability: 1.0, Expected Timestep to Finish 17
+State: (-45.3, 5.6), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-34.1, 6.0), Failure Probability: 1.0, Expected Timestep to Finish 5
+State: (-47.7, 2.2), Failure Probability: 1.0, Expected Timestep to Finish 18
+State: (-47.6, 0.5), Failure Probability: 1.0, Expected Timestep to Finish 18
+State: (-47.8, 1.4), Failure Probability: 1.0, Expected Timestep to Finish 18
+State: (-45.1, 3.4), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-36.5, 7.5), Failure Probability: 1.0, Expected Timestep to Finish 7
+State: (-38.3, 7.4), Failure Probability: 1.0, Expected Timestep to Finish 9
+State: (-49.7, 0.3), Failure Probability: 1.0, Expected Timestep to Finish 20
+State: (-44.5, 3.4), Failure Probability: 1.0, Expected Timestep to Finish 15
+State: (-49.7, 0.8), Failure Probability: 1.0, Expected Timestep to Finish 20
+State: (-43.0, 5.4), Failure Probability: 1.0, Expected Timestep to Finish 14
+State: (-32.2, 6.4), Failure Probability: 1.0, Expected Timestep to Finish 3
+State: (-39.9, 10.0), Failure Probability: 1.0, Expected Timestep to Finish 10
+State: (-43.3, 5.7), Failure Probability: 1.0, Expected Timestep to Finish 14
+State: (-37.9, 8.1), Failure Probability: 1.0, Expected Timestep to Finish 8
+State: (-36.9, 7.1), Failure Probability: 1.0, Expected Timestep to Finish 7
+State: (-31.7, 5.6), Failure Probability: 1.0, Expected Timestep to Finish 2
+State: (-43.2, 7.7), Failure Probability: 1.0, Expected Timestep to Finish 14
+State: (-39.1, 10.6), Failure Probability: 1.0, Expected Timestep to Finish 9
+State: (-38.1, 9.6), Failure Probability: 1.0, Expected Timestep to Finish 8
+State: (-47.8, 2.7), Failure Probability: 1.0, Expected Timestep to Finish 18
+State: (-44.3, 6.6), Failure Probability: 1.0, Expected Timestep to Finish 15
+State: (-42.0, 6.4), Failure Probability: 1.0, Expected Timestep to Finish 12
+State: (-43.7, 6.8), Failure Probability: 1.0, Expected Timestep to Finish 14
+State: (-34.5, 6.2), Failure Probability: 1.0, Expected Timestep to Finish 5
+State: (-30.9, 5.2), Failure Probability: 1.0, Expected Timestep to Finish 1
+State: (-39.7, 10.1), Failure Probability: 1.0, Expected Timestep to Finish 10
+State: (-42.7, 7.3), Failure Probability: 1.0, Expected Timestep to Finish 13
+State: (-42.7, 7.8), Failure Probability: 1.0, Expected Timestep to Finish 13
+State: (-37.0, 8.6), Failure Probability: 1.0, Expected Timestep to Finish 8
+State: (-38.2, 10.4), Failure Probability: 1.0, Expected Timestep to Finish 9
+State: (-48.1, 2.0), Failure Probability: 1.0, Expected Timestep to Finish 19
+State: (-34.3, 6.9), Failure Probability: 1.0, Expected Timestep to Finish 5
+State: (-35.7, 7.1), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-47.4, 3.6), Failure Probability: 1.0, Expected Timestep to Finish 18
+State: (-41.2, 7.8), Failure Probability: 1.0, Expected Timestep to Finish 12
+State: (-41.2, 9.8), Failure Probability: 1.0, Expected Timestep to Finish 12
+State: (-48.6, -0.6), Failure Probability: 1.0, Expected Timestep to Finish 19
+State: (-30.2, 6.0), Failure Probability: 1.0, Expected Timestep to Finish 1
+State: (-35.1, 6.9), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-35.0, 7.1), Failure Probability: 1.0, Expected Timestep to Finish 5
+State: (-34.0, 6.1), Failure Probability: 1.0, Expected Timestep to Finish 4
+State: (-41.2, 7.9), Failure Probability: 1.0, Expected Timestep to Finish 12
+State: (-30.9, 5.3), Failure Probability: 1.0, Expected Timestep to Finish 1
+State: (-30.9, 5.8), Failure Probability: 1.0, Expected Timestep to Finish 1
+State: (-44.1, 5.8), Failure Probability: 1.0, Expected Timestep to Finish 15
+State: (-31.5, 6.2), Failure Probability: 1.0, Expected Timestep to Finish 2
+State: (-35.5, 6.5), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-42.5, 5.4), Failure Probability: 1.0, Expected Timestep to Finish 13
+State: (-37.4, 7.8), Failure Probability: 1.0, Expected Timestep to Finish 8
+State: (-36.4, 6.8), Failure Probability: 1.0, Expected Timestep to Finish 7
+State: (-32.0, 5.9), Failure Probability: 1.0, Expected Timestep to Finish 3
+State: (-33.4, 6.2), Failure Probability: 1.0, Expected Timestep to Finish 4
+State: (-31.9, 6.3), Failure Probability: 1.0, Expected Timestep to Finish 2
+State: (-39.3, 9.6), Failure Probability: 1.0, Expected Timestep to Finish 10
+State: (-47.9, 2.2), Failure Probability: 1.0, Expected Timestep to Finish 18
+State: (-44.3, 5.0), Failure Probability: 1.0, Expected Timestep to Finish 15
+State: (-47.3, 2.1), Failure Probability: 1.0, Expected Timestep to Finish 18
+State: (-37.4, 6.5), Failure Probability: 1.0, Expected Timestep to Finish 8
+State: (-32.2, 6.1), Failure Probability: 1.0, Expected Timestep to Finish 3
+State: (-43.3, 6.0), Failure Probability: 1.0, Expected Timestep to Finish 14
+State: (-38.3, 8.8), Failure Probability: 1.0, Expected Timestep to Finish 9
+State: (-44.3, 4.7), Failure Probability: 1.0, Expected Timestep to Finish 15
+State: (-40.3, 8.7), Failure Probability: 1.0, Expected Timestep to Finish 11
+State: (-39.4, 9.7), Failure Probability: 1.0, Expected Timestep to Finish 10
+State: (-46.6, 1.5), Failure Probability: 1.0, Expected Timestep to Finish 17
+State: (-37.0, 7.0), Failure Probability: 1.0, Expected Timestep to Finish 8
+State: (-43.1, 6.8), Failure Probability: 1.0, Expected Timestep to Finish 14
+State: (-31.4, 5.4), Failure Probability: 1.0, Expected Timestep to Finish 2
+State: (-41.7, 8.3), Failure Probability: 1.0, Expected Timestep to Finish 12
+State: (-41.7, 8.8), Failure Probability: 1.0, Expected Timestep to Finish 12
+State: (-39.3, 8.4), Failure Probability: 1.0, Expected Timestep to Finish 10
+State: (-45.8, 3.5), Failure Probability: 1.0, Expected Timestep to Finish 17
+State: (-38.0, 8.0), Failure Probability: 1.0, Expected Timestep to Finish 9
+State: (-49.0, 1.1), Failure Probability: 1.0, Expected Timestep to Finish 19
+State: (-46.3, 3.1), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-31.5, 5.5), Failure Probability: 1.0, Expected Timestep to Finish 2
+State: (-32.4, 6.4), Failure Probability: 1.0, Expected Timestep to Finish 3
+State: (-38.9, 9.1), Failure Probability: 1.0, Expected Timestep to Finish 9
+State: (-40.3, 10.7), Failure Probability: 1.0, Expected Timestep to Finish 11
+State: (-48.1, 0.3), Failure Probability: 1.0, Expected Timestep to Finish 18
+State: (-45.6, 2.5), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-48.9, 1.3), Failure Probability: 1.0, Expected Timestep to Finish 20
+State: (-47.2, 1.7), Failure Probability: 1.0, Expected Timestep to Finish 18
+State: (-44.8, 5.3), Failure Probability: 1.0, Expected Timestep to Finish 15
+State: (-31.9, 5.6), Failure Probability: 1.0, Expected Timestep to Finish 2
+State: (-44.8, 5.8), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-30.5, 5.7), Failure Probability: 1.0, Expected Timestep to Finish 1
+State: (-48.4, 1.1), Failure Probability: 1.0, Expected Timestep to Finish 19
+State: (-30.5, 5.2), Failure Probability: 1.0, Expected Timestep to Finish 1
+State: (-31.3, 5.2), Failure Probability: 1.0, Expected Timestep to Finish 2
+State: (-35.9, 6.3), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-36.0, 6.2), Failure Probability: 1.0, Expected Timestep to Finish 6
+State: (-45.1, 4.8), Failure Probability: 1.0, Expected Timestep to Finish 16
+State: (-47.2, 2.9), Failure Probability: 1.0, Expected Timestep to Finish 17
+State: (-41.0, 9.1), Failure Probability: 1.0, Expected Timestep to Finish 12
+State: (-43.8, 5.5), Failure Probability: 1.0, Expected Timestep to Finish 14
+State: (-42.3, 6.8), Failure Probability: 1.0, Expected Timestep to Finish 13
+{(-46.2, 2.7): 1.0, (-33.1, 6.4): 1.0, (-50.4, 0.5): 1.0, (-42.8, 6.5): 1.0, (-38.7, 8.3): 1.0, (-49.9, -0.6): 1.0, (-46.2, 3.9): 1.0, (-49.4, 0.2): 1.0, (-35.3, 6.1): 1.0, (-36.4, 7.2): 1.0, (-37.7, 7.3): 1.0, (-44.0, 6.1): 1.0, (-40.0, 8.2): 1.0, (-37.5, 8.5): 1.0, (-30.3, 5.9): 1.0, (-44.9, 4.5): 1.0, (-45.3, 4.1): 1.0, (-32.1, 5.5): 1.0, (-45.2, 3.7): 1.0, (-36.7, 6.4): 1.0, (-35.8, 6.4): 1.0, (-34.4, 6.4): 1.0, (-33.3, 5.6): 1.0, (-47.2, 1.3): 1.0, (-41.1, 8.8): 1.0, (-33.8, 5.8): 1.0, (-43.0, 7.1): 1.0, (-48.7, 1.2): 1.0, (-39.6, 10.6): 1.0, (-41.1, 7.2): 1.0, (-34.3, 6.6): 1.0, (-42.1, 7.9): 1.0, (-40.1, 9.8): 1.0, (-49.3, 1.4): 1.0, (-42.0, 8.1): 1.0, (-46.7, 2.4): 1.0, (-45.0, 5.3): 1.0, (-38.7, 9.2): 1.0, (-34.6, 6.6): 1.0, (-42.2, 7.0): 1.0, (-47.0, 3.2): 1.0, (-43.8, 6.3): 1.0, (-38.5, 9.6): 1.0, (-40.4, 7.2): 1.0, (-33.2, 5.9): 1.0, (-39.0, 9.1): 1.0, (-33.8, 6.5): 1.0, (-32.7, 6.5): 1.0, (-46.7, 3.7): 1.0, (-34.9, 6.7): 1.0, (-30.4, 6.0): 1.0, (-50.3, -0.9): 1.0, (-32.9, 5.6): 1.0, (-35.0, 6.6): 1.0, (-39.7, 9.3): 1.0, (-46.0, 4.2): 1.0, (-35.5, 6.3): 1.0, (-31.1, 6.2): 1.0, (-34.7, 6.1): 1.0, (-33.1, 5.9): 1.0, (-41.4, 6.3): 1.0, (-36.0, 7.6): 1.0, (-45.7, 4.2): 1.0, (-33.0, 6.6): 1.0, (-39.3, 11.4): 1.0, (-40.4, 8.9): 1.0, (-33.4, 5.7): 1.0, (-48.7, 1.8): 1.0, (-37.3, 9.5): 1.0, (-36.3, 8.5): 1.0, (-46.4, 4.6): 1.0, (-42.2, 8.8): 1.0, (-46.7, 3.3): 1.0, (-40.7, 8.4): 1.0, (-40.6, 9.6): 1.0, (-48.4, 2.5): 1.0, (-37.3, 7.6): 1.0, (-36.3, 6.6): 1.0, (-37.7, 8.2): 1.0, (-30.2, 5.1): 1.0, (-41.7, 7.5): 1.0, (-30.7, 5.8): 1.0, (-40.7, 9.2): 1.0, (-48.9, 0.4): 1.0, (-31.2, 5.3): 1.0, (-43.5, 4.4): 1.0, (-38.3, 8.6): 1.0, (-35.3, 7.6): 1.0, (-32.4, 5.6): 1.0, (-44.0, 4.4): 1.0, (-32.6, 6.6): 1.0, (-36.7, 7.3): 1.0, (-45.7, 4.8): 1.0, (-33.6, 5.7): 1.0, (-34.0, 5.8): 1.0, (-35.3, 6.3): 1.0, (-46.1, 2.3): 1.0, (-45.3, 5.6): 1.0, (-34.1, 6.0): 1.0, (-47.7, 2.2): 1.0, (-47.6, 0.5): 1.0, (-47.8, 1.4): 1.0, (-45.1, 3.4): 1.0, (-36.5, 7.5): 1.0, (-38.3, 7.4): 1.0, (-49.7, 0.3): 1.0, (-44.5, 3.4): 1.0, (-49.7, 0.8): 1.0, (-43.0, 5.4): 1.0, (-32.2, 6.4): 1.0, (-39.9, 10.0): 1.0, (-43.3, 5.7): 1.0, (-37.9, 8.1): 1.0, (-36.9, 7.1): 1.0, (-31.7, 5.6): 1.0, (-43.2, 7.7): 1.0, (-39.1, 10.6): 1.0, (-38.1, 9.6): 1.0, (-47.8, 2.7): 1.0, (-44.3, 6.6): 1.0, (-42.0, 6.4): 1.0, (-43.7, 6.8): 1.0, (-34.5, 6.2): 1.0, (-30.9, 5.2): 1.0, (-39.7, 10.1): 1.0, (-42.7, 7.3): 1.0, (-42.7, 7.8): 1.0, (-37.0, 8.6): 1.0, (-38.2, 10.4): 1.0, (-48.1, 2.0): 1.0, (-34.3, 6.9): 1.0, (-35.7, 7.1): 1.0, (-47.4, 3.6): 1.0, (-41.2, 7.8): 1.0, (-41.2, 9.8): 1.0, (-48.6, -0.6): 1.0, (-30.2, 6.0): 1.0, (-35.1, 6.9): 1.0, (-35.0, 7.1): 1.0, (-34.0, 6.1): 1.0, (-41.2, 7.9): 1.0, (-30.9, 5.3): 1.0, (-30.9, 5.8): 1.0, (-44.1, 5.8): 1.0, (-31.5, 6.2): 1.0, (-35.5, 6.5): 1.0, (-42.5, 5.4): 1.0, (-37.4, 7.8): 1.0, (-36.4, 6.8): 1.0, (-32.0, 5.9): 1.0, (-33.4, 6.2): 1.0, (-31.9, 6.3): 1.0, (-39.3, 9.6): 1.0, (-47.9, 2.2): 1.0, (-44.3, 5.0): 1.0, (-47.3, 2.1): 1.0, (-37.4, 6.5): 1.0, (-32.2, 6.1): 1.0, (-43.3, 6.0): 1.0, (-38.3, 8.8): 1.0, (-44.3, 4.7): 1.0, (-40.3, 8.7): 1.0, (-39.4, 9.7): 1.0, (-46.6, 1.5): 1.0, (-37.0, 7.0): 1.0, (-43.1, 6.8): 1.0, (-31.4, 5.4): 1.0, (-41.7, 8.3): 1.0, (-41.7, 8.8): 1.0, (-39.3, 8.4): 1.0, (-45.8, 3.5): 1.0, (-38.0, 8.0): 1.0, (-49.0, 1.1): 1.0, (-46.3, 3.1): 1.0, (-31.5, 5.5): 1.0, (-32.4, 6.4): 1.0, (-38.9, 9.1): 1.0, (-40.3, 10.7): 1.0, (-48.1, 0.3): 1.0, (-45.6, 2.5): 1.0, (-48.9, 1.3): 1.0, (-47.2, 1.7): 1.0, (-44.8, 5.3): 1.0, (-31.9, 5.6): 1.0, (-44.8, 5.8): 1.0, (-30.5, 5.7): 1.0, (-48.4, 1.1): 1.0, (-30.5, 5.2): 1.0, (-31.3, 5.2): 1.0, (-35.9, 6.3): 1.0, (-36.0, 6.2): 1.0, (-45.1, 4.8): 1.0, (-47.2, 2.9): 1.0, (-41.0, 9.1): 1.0, (-43.8, 5.5): 1.0, (-42.3, 6.8): 1.0}
+{(-46.2, 2.7): 16, (-33.1, 6.4): 4, (-50.4, 0.5): 21, (-42.8, 6.5): 13, (-38.7, 8.3): 9, (-49.9, -0.6): 21, (-46.2, 3.9): 17, (-49.4, 0.2): 20, (-35.3, 6.1): 6, (-36.4, 7.2): 7, (-37.7, 7.3): 8, (-44.0, 6.1): 15, (-40.0, 8.2): 11, (-37.5, 8.5): 8, (-30.3, 5.9): 1, (-44.9, 4.5): 15, (-45.3, 4.1): 16, (-32.1, 5.5): 3, (-45.2, 3.7): 16, (-36.7, 6.4): 7, (-35.8, 6.4): 6, (-34.4, 6.4): 5, (-33.3, 5.6): 4, (-47.2, 1.3): 18, (-41.1, 8.8): 12, (-33.8, 5.8): 5, (-43.0, 7.1): 14, (-48.7, 1.2): 19, (-39.6, 10.6): 10, (-41.1, 7.2): 11, (-34.3, 6.6): 5, (-42.1, 7.9): 13, (-40.1, 9.8): 10, (-49.3, 1.4): 20, (-42.0, 8.1): 12, (-46.7, 2.4): 17, (-45.0, 5.3): 15, (-38.7, 9.2): 9, (-34.6, 6.6): 5, (-42.2, 7.0): 13, (-47.0, 3.2): 17, (-43.8, 6.3): 14, (-38.5, 9.6): 9, (-40.4, 7.2): 11, (-33.2, 5.9): 4, (-39.0, 9.1): 9, (-33.8, 6.5): 4, (-32.7, 6.5): 3, (-46.7, 3.7): 17, (-34.9, 6.7): 5, (-30.4, 6.0): 1, (-50.3, -0.9): 21, (-32.9, 5.6): 4, (-35.0, 6.6): 6, (-39.7, 9.3): 10, (-46.0, 4.2): 16, (-35.5, 6.3): 6, (-31.1, 6.2): 2, (-34.7, 6.1): 5, (-33.1, 5.9): 4, (-41.4, 6.3): 12, (-36.0, 7.6): 6, (-45.7, 4.2): 16, (-33.0, 6.6): 3, (-39.3, 11.4): 10, (-40.4, 8.9): 11, (-33.4, 5.7): 4, (-48.7, 1.8): 19, (-37.3, 9.5): 8, (-36.3, 8.5): 7, (-46.4, 4.6): 17, (-42.2, 8.8): 13, (-46.7, 3.3): 17, (-40.7, 8.4): 11, (-40.6, 9.6): 11, (-48.4, 2.5): 19, (-37.3, 7.6): 8, (-36.3, 6.6): 7, (-37.7, 8.2): 8, (-30.2, 5.1): 1, (-41.7, 7.5): 12, (-30.7, 5.8): 1, (-40.7, 9.2): 11, (-48.9, 0.4): 19, (-31.2, 5.3): 2, (-43.5, 4.4): 14, (-38.3, 8.6): 9, (-35.3, 7.6): 6, (-32.4, 5.6): 3, (-44.0, 4.4): 14, (-32.6, 6.6): 3, (-36.7, 7.3): 7, (-45.7, 4.8): 16, (-33.6, 5.7): 4, (-34.0, 5.8): 5, (-35.3, 6.3): 6, (-46.1, 2.3): 17, (-45.3, 5.6): 16, (-34.1, 6.0): 5, (-47.7, 2.2): 18, (-47.6, 0.5): 18, (-47.8, 1.4): 18, (-45.1, 3.4): 16, (-36.5, 7.5): 7, (-38.3, 7.4): 9, (-49.7, 0.3): 20, (-44.5, 3.4): 15, (-49.7, 0.8): 20, (-43.0, 5.4): 14, (-32.2, 6.4): 3, (-39.9, 10.0): 10, (-43.3, 5.7): 14, (-37.9, 8.1): 8, (-36.9, 7.1): 7, (-31.7, 5.6): 2, (-43.2, 7.7): 14, (-39.1, 10.6): 9, (-38.1, 9.6): 8, (-47.8, 2.7): 18, (-44.3, 6.6): 15, (-42.0, 6.4): 12, (-43.7, 6.8): 14, (-34.5, 6.2): 5, (-30.9, 5.2): 1, (-39.7, 10.1): 10, (-42.7, 7.3): 13, (-42.7, 7.8): 13, (-37.0, 8.6): 8, (-38.2, 10.4): 9, (-48.1, 2.0): 19, (-34.3, 6.9): 5, (-35.7, 7.1): 6, (-47.4, 3.6): 18, (-41.2, 7.8): 12, (-41.2, 9.8): 12, (-48.6, -0.6): 19, (-30.2, 6.0): 1, (-35.1, 6.9): 6, (-35.0, 7.1): 5, (-34.0, 6.1): 4, (-41.2, 7.9): 12, (-30.9, 5.3): 1, (-30.9, 5.8): 1, (-44.1, 5.8): 15, (-31.5, 6.2): 2, (-35.5, 6.5): 6, (-42.5, 5.4): 13, (-37.4, 7.8): 8, (-36.4, 6.8): 7, (-32.0, 5.9): 3, (-33.4, 6.2): 4, (-31.9, 6.3): 2, (-39.3, 9.6): 10, (-47.9, 2.2): 18, (-44.3, 5.0): 15, (-47.3, 2.1): 18, (-37.4, 6.5): 8, (-32.2, 6.1): 3, (-43.3, 6.0): 14, (-38.3, 8.8): 9, (-44.3, 4.7): 15, (-40.3, 8.7): 11, (-39.4, 9.7): 10, (-46.6, 1.5): 17, (-37.0, 7.0): 8, (-43.1, 6.8): 14, (-31.4, 5.4): 2, (-41.7, 8.3): 12, (-41.7, 8.8): 12, (-39.3, 8.4): 10, (-45.8, 3.5): 17, (-38.0, 8.0): 9, (-49.0, 1.1): 19, (-46.3, 3.1): 16, (-31.5, 5.5): 2, (-32.4, 6.4): 3, (-38.9, 9.1): 9, (-40.3, 10.7): 11, (-48.1, 0.3): 18, (-45.6, 2.5): 16, (-48.9, 1.3): 20, (-47.2, 1.7): 18, (-44.8, 5.3): 15, (-31.9, 5.6): 2, (-44.8, 5.8): 16, (-30.5, 5.7): 1, (-48.4, 1.1): 19, (-30.5, 5.2): 1, (-31.3, 5.2): 2, (-35.9, 6.3): 6, (-36.0, 6.2): 6, (-45.1, 4.8): 16, (-47.2, 2.9): 17, (-41.0, 9.1): 12, (-43.8, 5.5): 14, (-42.3, 6.8): 13}
+finish running
+start clustering
+value function is ok :)
+<data.InstanceData object at 0x2b576c7e2550>
+Starting graph generation...
+Height:  1
+Height:  2
+Height:  3
+Height:  4
+Height:  5
+Height:  6
+Height:  7
+Height:  8
+Height:  9
+Height:  10
+information is here
+{(-46.2, 2.7): 1.0, (-33.1, 6.4): 1.0, (-50.4, 0.5): 1.0, (-42.8, 6.5): 1.0, (-38.7, 8.3): 1.0, (-49.9, -0.6): 1.0, (-46.2, 3.9): 1.0, (-49.4, 0.2): 1.0, (-35.3, 6.1): 1.0, (-36.4, 7.2): 1.0, (-37.7, 7.3): 1.0, (-44.0, 6.1): 1.0, (-40.0, 8.2): 1.0, (-37.5, 8.5): 1.0, (-30.3, 5.9): 1.0, (-44.9, 4.5): 1.0, (-45.3, 4.1): 1.0, (-32.1, 5.5): 1.0, (-45.2, 3.7): 1.0, (-36.7, 6.4): 1.0, (-35.8, 6.4): 1.0, (-34.4, 6.4): 1.0, (-33.3, 5.6): 1.0, (-47.2, 1.3): 1.0, (-41.1, 8.8): 1.0, (-33.8, 5.8): 1.0, (-43.0, 7.1): 1.0, (-48.7, 1.2): 1.0, (-39.6, 10.6): 1.0, (-41.1, 7.2): 1.0, (-34.3, 6.6): 1.0, (-42.1, 7.9): 1.0, (-40.1, 9.8): 1.0, (-49.3, 1.4): 1.0, (-42.0, 8.1): 1.0, (-46.7, 2.4): 1.0, (-45.0, 5.3): 1.0, (-38.7, 9.2): 1.0, (-34.6, 6.6): 1.0, (-42.2, 7.0): 1.0, (-47.0, 3.2): 1.0, (-43.8, 6.3): 1.0, (-38.5, 9.6): 1.0, (-40.4, 7.2): 1.0, (-33.2, 5.9): 1.0, (-39.0, 9.1): 1.0, (-33.8, 6.5): 1.0, (-32.7, 6.5): 1.0, (-46.7, 3.7): 1.0, (-34.9, 6.7): 1.0, (-30.4, 6.0): 1.0, (-50.3, -0.9): 1.0, (-32.9, 5.6): 1.0, (-35.0, 6.6): 1.0, (-39.7, 9.3): 1.0, (-46.0, 4.2): 1.0, (-35.5, 6.3): 1.0, (-31.1, 6.2): 1.0, (-34.7, 6.1): 1.0, (-33.1, 5.9): 1.0, (-41.4, 6.3): 1.0, (-36.0, 7.6): 1.0, (-45.7, 4.2): 1.0, (-33.0, 6.6): 1.0, (-39.3, 11.4): 1.0, (-40.4, 8.9): 1.0, (-33.4, 5.7): 1.0, (-48.7, 1.8): 1.0, (-37.3, 9.5): 1.0, (-36.3, 8.5): 1.0, (-46.4, 4.6): 1.0, (-42.2, 8.8): 1.0, (-46.7, 3.3): 1.0, (-40.7, 8.4): 1.0, (-40.6, 9.6): 1.0, (-48.4, 2.5): 1.0, (-37.3, 7.6): 1.0, (-36.3, 6.6): 1.0, (-37.7, 8.2): 1.0, (-30.2, 5.1): 1.0, (-41.7, 7.5): 1.0, (-30.7, 5.8): 1.0, (-40.7, 9.2): 1.0, (-48.9, 0.4): 1.0, (-31.2, 5.3): 1.0, (-43.5, 4.4): 1.0, (-38.3, 8.6): 1.0, (-35.3, 7.6): 1.0, (-32.4, 5.6): 1.0, (-44.0, 4.4): 1.0, (-32.6, 6.6): 1.0, (-36.7, 7.3): 1.0, (-45.7, 4.8): 1.0, (-33.6, 5.7): 1.0, (-34.0, 5.8): 1.0, (-35.3, 6.3): 1.0, (-46.1, 2.3): 1.0, (-45.3, 5.6): 1.0, (-34.1, 6.0): 1.0, (-47.7, 2.2): 1.0, (-47.6, 0.5): 1.0, (-47.8, 1.4): 1.0, (-45.1, 3.4): 1.0, (-36.5, 7.5): 1.0, (-38.3, 7.4): 1.0, (-49.7, 0.3): 1.0, (-44.5, 3.4): 1.0, (-49.7, 0.8): 1.0, (-43.0, 5.4): 1.0, (-32.2, 6.4): 1.0, (-39.9, 10.0): 1.0, (-43.3, 5.7): 1.0, (-37.9, 8.1): 1.0, (-36.9, 7.1): 1.0, (-31.7, 5.6): 1.0, (-43.2, 7.7): 1.0, (-39.1, 10.6): 1.0, (-38.1, 9.6): 1.0, (-47.8, 2.7): 1.0, (-44.3, 6.6): 1.0, (-42.0, 6.4): 1.0, (-43.7, 6.8): 1.0, (-34.5, 6.2): 1.0, (-30.9, 5.2): 1.0, (-39.7, 10.1): 1.0, (-42.7, 7.3): 1.0, (-42.7, 7.8): 1.0, (-37.0, 8.6): 1.0, (-38.2, 10.4): 1.0, (-48.1, 2.0): 1.0, (-34.3, 6.9): 1.0, (-35.7, 7.1): 1.0, (-47.4, 3.6): 1.0, (-41.2, 7.8): 1.0, (-41.2, 9.8): 1.0, (-48.6, -0.6): 1.0, (-30.2, 6.0): 1.0, (-35.1, 6.9): 1.0, (-35.0, 7.1): 1.0, (-34.0, 6.1): 1.0, (-41.2, 7.9): 1.0, (-30.9, 5.3): 1.0, (-30.9, 5.8): 1.0, (-44.1, 5.8): 1.0, (-31.5, 6.2): 1.0, (-35.5, 6.5): 1.0, (-42.5, 5.4): 1.0, (-37.4, 7.8): 1.0, (-36.4, 6.8): 1.0, (-32.0, 5.9): 1.0, (-33.4, 6.2): 1.0, (-31.9, 6.3): 1.0, (-39.3, 9.6): 1.0, (-47.9, 2.2): 1.0, (-44.3, 5.0): 1.0, (-47.3, 2.1): 1.0, (-37.4, 6.5): 1.0, (-32.2, 6.1): 1.0, (-43.3, 6.0): 1.0, (-38.3, 8.8): 1.0, (-44.3, 4.7): 1.0, (-40.3, 8.7): 1.0, (-39.4, 9.7): 1.0, (-46.6, 1.5): 1.0, (-37.0, 7.0): 1.0, (-43.1, 6.8): 1.0, (-31.4, 5.4): 1.0, (-41.7, 8.3): 1.0, (-41.7, 8.8): 1.0, (-39.3, 8.4): 1.0, (-45.8, 3.5): 1.0, (-38.0, 8.0): 1.0, (-49.0, 1.1): 1.0, (-46.3, 3.1): 1.0, (-31.5, 5.5): 1.0, (-32.4, 6.4): 1.0, (-38.9, 9.1): 1.0, (-40.3, 10.7): 1.0, (-48.1, 0.3): 1.0, (-45.6, 2.5): 1.0, (-48.9, 1.3): 1.0, (-47.2, 1.7): 1.0, (-44.8, 5.3): 1.0, (-31.9, 5.6): 1.0, (-44.8, 5.8): 1.0, (-30.5, 5.7): 1.0, (-48.4, 1.1): 1.0, (-30.5, 5.2): 1.0, (-31.3, 5.2): 1.0, (-35.9, 6.3): 1.0, (-36.0, 6.2): 1.0, (-45.1, 4.8): 1.0, (-47.2, 2.9): 1.0, (-41.0, 9.1): 1.0, (-43.8, 5.5): 1.0, (-42.3, 6.8): 1.0, (0, 0): 0}
+{(-46.2, 2.7): 16, (-33.1, 6.4): 4, (-50.4, 0.5): 21, (-42.8, 6.5): 13, (-38.7, 8.3): 9, (-49.9, -0.6): 21, (-46.2, 3.9): 17, (-49.4, 0.2): 20, (-35.3, 6.1): 6, (-36.4, 7.2): 7, (-37.7, 7.3): 8, (-44.0, 6.1): 15, (-40.0, 8.2): 11, (-37.5, 8.5): 8, (-30.3, 5.9): 1, (-44.9, 4.5): 15, (-45.3, 4.1): 16, (-32.1, 5.5): 3, (-45.2, 3.7): 16, (-36.7, 6.4): 7, (-35.8, 6.4): 6, (-34.4, 6.4): 5, (-33.3, 5.6): 4, (-47.2, 1.3): 18, (-41.1, 8.8): 12, (-33.8, 5.8): 5, (-43.0, 7.1): 14, (-48.7, 1.2): 19, (-39.6, 10.6): 10, (-41.1, 7.2): 11, (-34.3, 6.6): 5, (-42.1, 7.9): 13, (-40.1, 9.8): 10, (-49.3, 1.4): 20, (-42.0, 8.1): 12, (-46.7, 2.4): 17, (-45.0, 5.3): 15, (-38.7, 9.2): 9, (-34.6, 6.6): 5, (-42.2, 7.0): 13, (-47.0, 3.2): 17, (-43.8, 6.3): 14, (-38.5, 9.6): 9, (-40.4, 7.2): 11, (-33.2, 5.9): 4, (-39.0, 9.1): 9, (-33.8, 6.5): 4, (-32.7, 6.5): 3, (-46.7, 3.7): 17, (-34.9, 6.7): 5, (-30.4, 6.0): 1, (-50.3, -0.9): 21, (-32.9, 5.6): 4, (-35.0, 6.6): 6, (-39.7, 9.3): 10, (-46.0, 4.2): 16, (-35.5, 6.3): 6, (-31.1, 6.2): 2, (-34.7, 6.1): 5, (-33.1, 5.9): 4, (-41.4, 6.3): 12, (-36.0, 7.6): 6, (-45.7, 4.2): 16, (-33.0, 6.6): 3, (-39.3, 11.4): 10, (-40.4, 8.9): 11, (-33.4, 5.7): 4, (-48.7, 1.8): 19, (-37.3, 9.5): 8, (-36.3, 8.5): 7, (-46.4, 4.6): 17, (-42.2, 8.8): 13, (-46.7, 3.3): 17, (-40.7, 8.4): 11, (-40.6, 9.6): 11, (-48.4, 2.5): 19, (-37.3, 7.6): 8, (-36.3, 6.6): 7, (-37.7, 8.2): 8, (-30.2, 5.1): 1, (-41.7, 7.5): 12, (-30.7, 5.8): 1, (-40.7, 9.2): 11, (-48.9, 0.4): 19, (-31.2, 5.3): 2, (-43.5, 4.4): 14, (-38.3, 8.6): 9, (-35.3, 7.6): 6, (-32.4, 5.6): 3, (-44.0, 4.4): 14, (-32.6, 6.6): 3, (-36.7, 7.3): 7, (-45.7, 4.8): 16, (-33.6, 5.7): 4, (-34.0, 5.8): 5, (-35.3, 6.3): 6, (-46.1, 2.3): 17, (-45.3, 5.6): 16, (-34.1, 6.0): 5, (-47.7, 2.2): 18, (-47.6, 0.5): 18, (-47.8, 1.4): 18, (-45.1, 3.4): 16, (-36.5, 7.5): 7, (-38.3, 7.4): 9, (-49.7, 0.3): 20, (-44.5, 3.4): 15, (-49.7, 0.8): 20, (-43.0, 5.4): 14, (-32.2, 6.4): 3, (-39.9, 10.0): 10, (-43.3, 5.7): 14, (-37.9, 8.1): 8, (-36.9, 7.1): 7, (-31.7, 5.6): 2, (-43.2, 7.7): 14, (-39.1, 10.6): 9, (-38.1, 9.6): 8, (-47.8, 2.7): 18, (-44.3, 6.6): 15, (-42.0, 6.4): 12, (-43.7, 6.8): 14, (-34.5, 6.2): 5, (-30.9, 5.2): 1, (-39.7, 10.1): 10, (-42.7, 7.3): 13, (-42.7, 7.8): 13, (-37.0, 8.6): 8, (-38.2, 10.4): 9, (-48.1, 2.0): 19, (-34.3, 6.9): 5, (-35.7, 7.1): 6, (-47.4, 3.6): 18, (-41.2, 7.8): 12, (-41.2, 9.8): 12, (-48.6, -0.6): 19, (-30.2, 6.0): 1, (-35.1, 6.9): 6, (-35.0, 7.1): 5, (-34.0, 6.1): 4, (-41.2, 7.9): 12, (-30.9, 5.3): 1, (-30.9, 5.8): 1, (-44.1, 5.8): 15, (-31.5, 6.2): 2, (-35.5, 6.5): 6, (-42.5, 5.4): 13, (-37.4, 7.8): 8, (-36.4, 6.8): 7, (-32.0, 5.9): 3, (-33.4, 6.2): 4, (-31.9, 6.3): 2, (-39.3, 9.6): 10, (-47.9, 2.2): 18, (-44.3, 5.0): 15, (-47.3, 2.1): 18, (-37.4, 6.5): 8, (-32.2, 6.1): 3, (-43.3, 6.0): 14, (-38.3, 8.8): 9, (-44.3, 4.7): 15, (-40.3, 8.7): 11, (-39.4, 9.7): 10, (-46.6, 1.5): 17, (-37.0, 7.0): 8, (-43.1, 6.8): 14, (-31.4, 5.4): 2, (-41.7, 8.3): 12, (-41.7, 8.8): 12, (-39.3, 8.4): 10, (-45.8, 3.5): 17, (-38.0, 8.0): 9, (-49.0, 1.1): 19, (-46.3, 3.1): 16, (-31.5, 5.5): 2, (-32.4, 6.4): 3, (-38.9, 9.1): 9, (-40.3, 10.7): 11, (-48.1, 0.3): 18, (-45.6, 2.5): 16, (-48.9, 1.3): 20, (-47.2, 1.7): 18, (-44.8, 5.3): 15, (-31.9, 5.6): 2, (-44.8, 5.8): 16, (-30.5, 5.7): 1, (-48.4, 1.1): 19, (-30.5, 5.2): 1, (-31.3, 5.2): 2, (-35.9, 6.3): 6, (-36.0, 6.2): 6, (-45.1, 4.8): 16, (-47.2, 2.9): 17, (-41.0, 9.1): 12, (-43.8, 5.5): 14, (-42.3, 6.8): 13, (0, 0): 0}
+start generating the graph
+***********************************************
+Clusters at height 0
+fail is [1.0]
+ts is [10.387755102040817]
+Group 1 to Group 1 with p=0.9489795918367308 and action 2 and random -40
+Group 1 to Group 2 with p=0.0510204081632653 and action 4 and random -31
+[0.         0.08163265 0.48469388 0.         0.         0.
+ 0.         0.50510204 0.         0.         0.         0.14795918
+ 0.        ]
+Group 1: (Near the start or Left to risk area), failrue prob 1.0 and expected ts 10.387755102040817
+Critical value: 1.0. Entropy: -19.89
+----------------------------------------
+***********************************************
+Clusters at height 1
+fail is [1.0, 1.0]
+ts is [13.906976744186046, 9.398692810457517]
+Group 1 to Group 1 with p=0.3488372093023255 and action 0 and random -46
+Group 1 to Group 2 with p=0.627906976744186 and action 0 and random -42
+Group 1 to Group 3 with p=0.023255813953488372 and action 1 and random -30
+Group 2 to Group 1 with p=0.12418300653594774 and action 4 and random -40
+Group 2 to Group 2 with p=0.8169934640522857 and action 3 and random -39
+Group 2 to Group 3 with p=0.0588235294117647 and action 5 and random -31
+[0.         0.34883721 0.6744186  0.         0.         0.
+ 0.         0.30232558 0.         0.         0.         0.09302326
+ 0.        ]
+[0.         0.00653595 0.43137255 0.         0.         0.
+ 0.         0.5620915  0.         0.         0.         0.16339869
+ 0.        ]
+Group 1: (At the start or Near the start or Left to risk area), failrue prob 1.0 and expected ts 13.906976744186046
+Critical value: 0.0. Entropy: -18.57
+Group 2: (Near the start or Left to risk area), failrue prob 1.0 and expected ts 9.398692810457517
+Critical value: 1.0. Entropy: -20.26
+----------------------------------------
+***********************************************
+Clusters at height 2
+fail is [1.0, 1.0, 1.0]
+ts is [13.906976744186046, 21.0, 9.322368421052632]
+Group 1 to Group 1 with p=0.3488372093023255 and action 0 and random -46
+Group 1 to Group 3 with p=0.627906976744186 and action 0 and random -42
+Group 1 to Group 4 with p=0.023255813953488372 and action 1 and random -30
+Group 2 to Group 1 with p=1.0 and action 1 and random -50
+Group 3 to Group 1 with p=0.1184210526315789 and action 4 and random -40
+Group 3 to Group 3 with p=0.8223684210526304 and action 3 and random -39
+Group 3 to Group 4 with p=0.05921052631578947 and action 5 and random -31
+[0.         0.34883721 0.6744186  0.         0.         0.
+ 0.         0.30232558 0.         0.         0.         0.09302326
+ 0.        ]
+[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0.         0.         0.43421053 0.         0.         0.
+ 0.         0.56578947 0.         0.         0.         0.16447368
+ 0.        ]
+Group 1: (At the start or Near the start or Left to risk area), failrue prob 1.0 and expected ts 13.906976744186046
+Critical value: 0.0. Entropy: -18.57
+Group 2: (At the start), failrue prob 1.0 and expected ts 21.0
+Critical value: 0.0. Entropy: -18.49
+Group 3: (Near the start or Left to risk area), failrue prob 1.0 and expected ts 9.322368421052632
+Critical value: 1.0. Entropy: -20.27
+----------------------------------------
+***********************************************
+Clusters at height 3
+fail is [1.0, 1.0, 1.0, 1.0, 1.0]
+ts is [17.741935483870968, 4.0, 21.0, 19.0, 9.258278145695364]
+Group 1 to Group 1 with p=0.38709677419354827 and action 1 and random -48
+Group 1 to Group 2 with p=0.03225806451612903 and action 0 and random -36
+Group 1 to Group 4 with p=0.03225806451612903 and action 1 and random -49
+Group 1 to Group 5 with p=0.5483870967741933 and action 1 and random -46
+Group 2 to Group 2 with p=0.16666666666666666 and action 0 and random -35
+Group 2 to Group 5 with p=0.75 and action 0 and random -34
+Group 2 to Group 6 with p=0.08333333333333333 and action 1 and random -30
+Group 3 to Group 1 with p=1.0 and action 1 and random -50
+Group 4 to Group 5 with p=1.0 and action 1 and random -48
+Group 5 to Group 1 with p=0.059602649006622516 and action 1 and random -45
+Group 5 to Group 2 with p=0.059602649006622516 and action 7 and random -34
+Group 5 to Group 5 with p=0.8211920529801334 and action 3 and random -39
+Group 5 to Group 6 with p=0.059602649006622516 and action 5 and random -31
+[0.         0.48387097 0.93548387 0.         0.         0.
+ 0.         0.03225806 0.         0.         0.         0.
+ 0.        ]
+[0.         0.         0.         0.         0.         0.
+ 0.         1.         0.         0.         0.         0.33333333
+ 0.        ]
+[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0.         0.         0.43046358 0.         0.         0.
+ 0.         0.56953642 0.         0.         0.         0.16556291
+ 0.        ]
+Group 1: (At the start or Near the start), failrue prob 1.0 and expected ts 17.741935483870968
+Critical value: 0.0. Entropy: -16.95
+Group 2: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 4.0
+Critical value: 1.0. Entropy: -22.75
+Group 3: (At the start), failrue prob 1.0 and expected ts 21.0
+Critical value: 0.0. Entropy: -18.49
+Group 4: (Near the start), failrue prob 1.0 and expected ts 19.0
+Critical value: 0.0. Entropy: -15.96
+Group 5: (Near the start or Left to risk area), failrue prob 1.0 and expected ts 9.258278145695364
+Critical value: 0.0. Entropy: -20.30
+----------------------------------------
+***********************************************
+Clusters at height 4
+fail is [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+ts is [18.1, 7.0, 4.2727272727272725, 1.0, 21.0, 19.0, 18.0, 9.08108108108108]
+Group 1 to Group 1 with p=0.39999999999999997 and action 1 and random -48
+Group 1 to Group 6 with p=0.03333333333333333 and action 1 and random -49
+Group 1 to Group 7 with p=0.1 and action 1 and random -48
+Group 1 to Group 8 with p=0.4666666666666666 and action 1 and random -46
+Group 2 to Group 3 with p=1.0 and action 0 and random -36
+Group 3 to Group 3 with p=0.18181818181818182 and action 0 and random -35
+Group 3 to Group 8 with p=0.8181818181818183 and action 0 and random -34
+Group 4 to Group 9 with p=1.0 and action 1 and random -30
+Group 5 to Group 1 with p=1.0 and action 1 and random -50
+Group 6 to Group 8 with p=1.0 and action 1 and random -48
+Group 7 to Group 1 with p=1.0 and action 1 and random -47
+Group 8 to Group 1 with p=0.033783783783783786 and action 1 and random -46
+Group 8 to Group 2 with p=0.006756756756756757 and action 7 and random -38
+Group 8 to Group 3 with p=0.05405405405405406 and action 7 and random -35
+Group 8 to Group 4 with p=0.006756756756756757 and action 7 and random -31
+Group 8 to Group 8 with p=0.8378378378378392 and action 3 and random -39
+Group 8 to Group 9 with p=0.060810810810810814 and action 5 and random -31
+[0.         0.5        0.96666667 0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+[0.         0.         0.         0.         0.         0.
+ 0.         1.         0.         0.         0.         0.27272727
+ 0.        ]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0.         0.         0.41891892 0.         0.         0.
+ 0.         0.58108108 0.         0.         0.         0.16891892
+ 0.        ]
+Group 1: (At the start or Near the start), failrue prob 1.0 and expected ts 18.1
+Critical value: 0.0. Entropy: -16.70
+Group 2: (Left to risk area), failrue prob 1.0 and expected ts 7.0
+Critical value: 1.0. Entropy: -24.60
+Group 3: (Left to risk area), failrue prob 1.0 and expected ts 4.2727272727272725
+Critical value: 1.0. Entropy: -23.01
+Group 4: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 1.0
+Critical value: 0.0. Entropy: -19.84
+Group 5: (At the start), failrue prob 1.0 and expected ts 21.0
+Critical value: 0.0. Entropy: -18.49
+Group 6: (Near the start), failrue prob 1.0 and expected ts 19.0
+Critical value: 0.0. Entropy: -15.96
+Group 7: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.61
+Group 8: (Near the start or Left to risk area), failrue prob 1.0 and expected ts 9.08108108108108
+Critical value: 0.0. Entropy: -20.38
+----------------------------------------
+***********************************************
+Clusters at height 5
+fail is [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+ts is [18.24137931034483, 14.0, 7.0, 4.2727272727272725, 1.0, 21.0, 19.0, 18.0, 18.0, 8.89655172413793]
+Group 1 to Group 1 with p=0.41379310344827597 and action 1 and random -48
+Group 1 to Group 7 with p=0.034482758620689655 and action 1 and random -49
+Group 1 to Group 8 with p=0.10344827586206896 and action 1 and random -48
+Group 1 to Group 9 with p=0.06896551724137931 and action 1 and random -48
+Group 1 to Group 10 with p=0.3793103448275863 and action 1 and random -46
+Group 2 to Group 10 with p=1.0 and action 1 and random -43
+Group 3 to Group 4 with p=1.0 and action 0 and random -36
+Group 4 to Group 4 with p=0.18181818181818182 and action 0 and random -35
+Group 4 to Group 10 with p=0.8181818181818183 and action 0 and random -34
+Group 5 to Group 11 with p=1.0 and action 1 and random -30
+Group 6 to Group 1 with p=1.0 and action 1 and random -50
+Group 7 to Group 9 with p=1.0 and action 1 and random -48
+Group 8 to Group 1 with p=1.0 and action 1 and random -47
+Group 9 to Group 1 with p=0.6666666666666666 and action 1 and random -47
+Group 9 to Group 10 with p=0.3333333333333333 and action 1 and random -47
+Group 10 to Group 1 with p=0.013793103448275862 and action 1 and random -46
+Group 10 to Group 2 with p=0.006896551724137931 and action 1 and random -44
+Group 10 to Group 3 with p=0.006896551724137931 and action 7 and random -38
+Group 10 to Group 4 with p=0.05517241379310345 and action 7 and random -35
+Group 10 to Group 5 with p=0.006896551724137931 and action 7 and random -31
+Group 10 to Group 10 with p=0.8482758620689669 and action 3 and random -39
+Group 10 to Group 11 with p=0.06206896551724138 and action 5 and random -31
+[0.         0.51724138 0.96551724 0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+[0.         0.         0.         0.         0.         0.
+ 0.         1.         0.         0.         0.         0.27272727
+ 0.        ]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0.         0.         0.40689655 0.         0.         0.
+ 0.         0.59310345 0.         0.         0.         0.17241379
+ 0.        ]
+Group 1: (At the start or Near the start), failrue prob 1.0 and expected ts 18.24137931034483
+Critical value: 0.0. Entropy: -16.72
+Group 2: (Near the start), failrue prob 1.0 and expected ts 14.0
+Critical value: 0.0. Entropy: -16.13
+Group 3: (Left to risk area), failrue prob 1.0 and expected ts 7.0
+Critical value: 1.0. Entropy: -24.60
+Group 4: (Left to risk area), failrue prob 1.0 and expected ts 4.2727272727272725
+Critical value: 1.0. Entropy: -23.01
+Group 5: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 1.0
+Critical value: 0.0. Entropy: -19.84
+Group 6: (At the start), failrue prob 1.0 and expected ts 21.0
+Critical value: 0.0. Entropy: -18.49
+Group 7: (Near the start), failrue prob 1.0 and expected ts 19.0
+Critical value: 0.0. Entropy: -15.96
+Group 8: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.61
+Group 9: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.95
+Group 10: (Near the start or Left to risk area), failrue prob 1.0 and expected ts 8.89655172413793
+Critical value: 0.0. Entropy: -20.45
+----------------------------------------
+***********************************************
+Clusters at height 6
+fail is [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+ts is [18.357142857142858, 15.0, 14.0, 7.0, 2.0, 4.5, 1.0, 21.0, 19.0, 18.0, 18.0, 16.0, 8.847222222222221]
+Group 1 to Group 1 with p=0.42857142857142844 and action 1 and random -48
+Group 1 to Group 9 with p=0.03571428571428571 and action 1 and random -49
+Group 1 to Group 10 with p=0.10714285714285714 and action 1 and random -48
+Group 1 to Group 11 with p=0.07142857142857142 and action 1 and random -48
+Group 1 to Group 12 with p=0.03571428571428571 and action 1 and random -47
+Group 1 to Group 13 with p=0.32142857142857134 and action 1 and random -46
+Group 2 to Group 13 with p=1.0 and action 1 and random -45
+Group 3 to Group 13 with p=1.0 and action 1 and random -43
+Group 4 to Group 6 with p=1.0 and action 0 and random -36
+Group 5 to Group 13 with p=1.0 and action 0 and random -31
+Group 6 to Group 6 with p=0.2 and action 0 and random -35
+Group 6 to Group 13 with p=0.7999999999999999 and action 0 and random -34
+Group 7 to Group 14 with p=1.0 and action 1 and random -30
+Group 8 to Group 1 with p=1.0 and action 1 and random -50
+Group 9 to Group 11 with p=1.0 and action 1 and random -48
+Group 10 to Group 1 with p=1.0 and action 1 and random -47
+Group 11 to Group 1 with p=0.6666666666666666 and action 1 and random -47
+Group 11 to Group 13 with p=0.3333333333333333 and action 1 and random -47
+Group 12 to Group 13 with p=1.0 and action 1 and random -46
+Group 13 to Group 1 with p=0.006944444444444444 and action 1 and random -46
+Group 13 to Group 2 with p=0.006944444444444444 and action 1 and random -45
+Group 13 to Group 3 with p=0.006944444444444444 and action 1 and random -44
+Group 13 to Group 4 with p=0.006944444444444444 and action 7 and random -38
+Group 13 to Group 5 with p=0.006944444444444444 and action 7 and random -33
+Group 13 to Group 6 with p=0.04861111111111112 and action 7 and random -35
+Group 13 to Group 7 with p=0.006944444444444444 and action 7 and random -31
+Group 13 to Group 13 with p=0.8472222222222202 and action 3 and random -39
+Group 13 to Group 14 with p=0.06250000000000001 and action 5 and random -31
+[0.         0.53571429 0.96428571 0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.2 0. ]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0.         0.         0.40277778 0.         0.         0.
+ 0.         0.59722222 0.         0.         0.         0.17361111
+ 0.        ]
+Group 1: (At the start or Near the start), failrue prob 1.0 and expected ts 18.357142857142858
+Critical value: 0.0. Entropy: -16.84
+Group 2: (Near the start), failrue prob 1.0 and expected ts 15.0
+Critical value: 0.0. Entropy: -13.29
+Group 3: (Near the start), failrue prob 1.0 and expected ts 14.0
+Critical value: 0.0. Entropy: -16.13
+Group 4: (Left to risk area), failrue prob 1.0 and expected ts 7.0
+Critical value: 1.0. Entropy: -24.60
+Group 5: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 2.0
+Critical value: 0.0. Entropy: -21.07
+Group 6: (Left to risk area), failrue prob 1.0 and expected ts 4.5
+Critical value: 1.0. Entropy: -23.21
+Group 7: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 1.0
+Critical value: 0.0. Entropy: -19.84
+Group 8: (At the start), failrue prob 1.0 and expected ts 21.0
+Critical value: 0.0. Entropy: -18.49
+Group 9: (Near the start), failrue prob 1.0 and expected ts 19.0
+Critical value: 0.0. Entropy: -15.96
+Group 10: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.61
+Group 11: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.95
+Group 12: (Near the start), failrue prob 1.0 and expected ts 16.0
+Critical value: 0.0. Entropy: -16.72
+Group 13: (Near the start or Left to risk area), failrue prob 1.0 and expected ts 8.847222222222221
+Critical value: 0.0. Entropy: -20.47
+----------------------------------------
+***********************************************
+Clusters at height 7
+fail is [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+ts is [18.48148148148148, 15.0, 15.0, 14.0, 7.0, 2.0, 6.0, 4.333333333333333, 1.0, 21.0, 19.0, 18.0, 18.0, 16.0, 17.0, 8.79020979020979]
+Group 1 to Group 1 with p=0.4444444444444444 and action 1 and random -48
+Group 1 to Group 11 with p=0.037037037037037035 and action 1 and random -49
+Group 1 to Group 12 with p=0.1111111111111111 and action 1 and random -48
+Group 1 to Group 13 with p=0.07407407407407407 and action 1 and random -48
+Group 1 to Group 14 with p=0.037037037037037035 and action 1 and random -47
+Group 1 to Group 16 with p=0.2962962962962963 and action 1 and random -46
+Group 2 to Group 16 with p=1.0 and action 1 and random -45
+Group 3 to Group 16 with p=1.0 and action 1 and random -45
+Group 4 to Group 16 with p=1.0 and action 1 and random -43
+Group 5 to Group 8 with p=1.0 and action 0 and random -36
+Group 6 to Group 16 with p=1.0 and action 0 and random -31
+Group 7 to Group 16 with p=1.0 and action 0 and random -36
+Group 8 to Group 8 with p=0.2222222222222222 and action 0 and random -35
+Group 8 to Group 16 with p=0.7777777777777779 and action 0 and random -34
+Group 9 to Group 17 with p=1.0 and action 1 and random -30
+Group 10 to Group 1 with p=1.0 and action 1 and random -50
+Group 11 to Group 13 with p=1.0 and action 1 and random -48
+Group 12 to Group 1 with p=1.0 and action 1 and random -47
+Group 13 to Group 1 with p=0.6666666666666666 and action 1 and random -47
+Group 13 to Group 15 with p=0.3333333333333333 and action 1 and random -47
+Group 14 to Group 16 with p=1.0 and action 1 and random -46
+Group 15 to Group 16 with p=1.0 and action 1 and random -46
+Group 16 to Group 2 with p=0.006993006993006993 and action 1 and random -46
+Group 16 to Group 3 with p=0.006993006993006993 and action 1 and random -45
+Group 16 to Group 4 with p=0.006993006993006993 and action 1 and random -44
+Group 16 to Group 5 with p=0.006993006993006993 and action 7 and random -38
+Group 16 to Group 6 with p=0.006993006993006993 and action 7 and random -33
+Group 16 to Group 7 with p=0.006993006993006993 and action 7 and random -37
+Group 16 to Group 8 with p=0.04195804195804196 and action 7 and random -35
+Group 16 to Group 9 with p=0.006993006993006993 and action 7 and random -31
+Group 16 to Group 16 with p=0.8461538461538451 and action 3 and random -39
+Group 16 to Group 17 with p=0.06293706293706294 and action 5 and random -31
+[0.         0.55555556 0.96296296 0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+[0.         0.         0.         0.         0.         0.
+ 0.         1.         0.         0.         0.         0.22222222
+ 0.        ]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0.         0.         0.3986014  0.         0.         0.
+ 0.         0.6013986  0.         0.         0.         0.17482517
+ 0.        ]
+Group 1: (At the start or Near the start), failrue prob 1.0 and expected ts 18.48148148148148
+Critical value: 0.0. Entropy: -16.84
+Group 2: (Near the start), failrue prob 1.0 and expected ts 15.0
+Critical value: 0.0. Entropy: -16.75
+Group 3: (Near the start), failrue prob 1.0 and expected ts 15.0
+Critical value: 0.0. Entropy: -13.29
+Group 4: (Near the start), failrue prob 1.0 and expected ts 14.0
+Critical value: 0.0. Entropy: -16.13
+Group 5: (Left to risk area), failrue prob 1.0 and expected ts 7.0
+Critical value: 1.0. Entropy: -24.60
+Group 6: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 2.0
+Critical value: 0.0. Entropy: -21.07
+Group 7: (Left to risk area), failrue prob 1.0 and expected ts 6.0
+Critical value: 1.0. Entropy: -24.21
+Group 8: (Left to risk area), failrue prob 1.0 and expected ts 4.333333333333333
+Critical value: 1.0. Entropy: -23.09
+Group 9: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 1.0
+Critical value: 0.0. Entropy: -19.84
+Group 10: (At the start), failrue prob 1.0 and expected ts 21.0
+Critical value: 0.0. Entropy: -18.49
+Group 11: (Near the start), failrue prob 1.0 and expected ts 19.0
+Critical value: 0.0. Entropy: -15.96
+Group 12: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.61
+Group 13: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.95
+Group 14: (Near the start), failrue prob 1.0 and expected ts 16.0
+Critical value: 0.0. Entropy: -16.72
+Group 15: (Near the start), failrue prob 1.0 and expected ts 17.0
+Critical value: 0.0. Entropy: -16.98
+Group 16: (Near the start or Left to risk area), failrue prob 1.0 and expected ts 8.79020979020979
+Critical value: 0.0. Entropy: -20.50
+----------------------------------------
+***********************************************
+Clusters at height 8
+fail is [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+ts is [18.48148148148148, 15.0, 15.0, 14.0, 7.0, 2.0, 6.0, 4.625, 2.0, 1.0, 21.0, 19.0, 18.0, 18.0, 18.0, 16.0, 17.0, 16.0, 8.73943661971831]
+Group 1 to Group 1 with p=0.4444444444444444 and action 1 and random -48
+Group 1 to Group 12 with p=0.037037037037037035 and action 1 and random -49
+Group 1 to Group 13 with p=0.07407407407407407 and action 1 and random -48
+Group 1 to Group 14 with p=0.037037037037037035 and action 1 and random -48
+Group 1 to Group 15 with p=0.07407407407407407 and action 1 and random -48
+Group 1 to Group 16 with p=0.037037037037037035 and action 1 and random -47
+Group 1 to Group 18 with p=0.037037037037037035 and action 1 and random -46
+Group 1 to Group 19 with p=0.25925925925925924 and action 1 and random -46
+Group 2 to Group 19 with p=1.0 and action 1 and random -45
+Group 3 to Group 19 with p=1.0 and action 1 and random -45
+Group 4 to Group 19 with p=1.0 and action 1 and random -43
+Group 5 to Group 8 with p=1.0 and action 0 and random -36
+Group 6 to Group 19 with p=1.0 and action 0 and random -31
+Group 7 to Group 19 with p=1.0 and action 0 and random -36
+Group 8 to Group 8 with p=0.25 and action 0 and random -35
+Group 8 to Group 19 with p=0.75 and action 0 and random -34
+Group 9 to Group 19 with p=1.0 and action 0 and random -32
+Group 10 to Group 20 with p=1.0 and action 1 and random -30
+Group 11 to Group 1 with p=1.0 and action 1 and random -50
+Group 12 to Group 15 with p=1.0 and action 1 and random -48
+Group 13 to Group 1 with p=1.0 and action 1 and random -47
+Group 14 to Group 1 with p=1.0 and action 1 and random -47
+Group 15 to Group 1 with p=0.6666666666666666 and action 1 and random -47
+Group 15 to Group 17 with p=0.3333333333333333 and action 1 and random -47
+Group 16 to Group 19 with p=1.0 and action 1 and random -46
+Group 17 to Group 19 with p=1.0 and action 1 and random -46
+Group 18 to Group 19 with p=1.0 and action 1 and random -45
+Group 19 to Group 2 with p=0.007042253521126761 and action 1 and random -46
+Group 19 to Group 3 with p=0.007042253521126761 and action 1 and random -45
+Group 19 to Group 4 with p=0.007042253521126761 and action 1 and random -44
+Group 19 to Group 5 with p=0.007042253521126761 and action 7 and random -38
+Group 19 to Group 6 with p=0.007042253521126761 and action 7 and random -33
+Group 19 to Group 7 with p=0.007042253521126761 and action 7 and random -37
+Group 19 to Group 8 with p=0.035211267605633804 and action 7 and random -35
+Group 19 to Group 9 with p=0.007042253521126761 and action 7 and random -33
+Group 19 to Group 10 with p=0.007042253521126761 and action 7 and random -31
+Group 19 to Group 19 with p=0.8450704225352104 and action 3 and random -39
+Group 19 to Group 20 with p=0.06338028169014084 and action 5 and random -31
+[0.         0.55555556 0.96296296 0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+[0.    0.    0.    0.    0.    0.    0.    1.    0.    0.    0.    0.125
+ 0.   ]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0.         0.         0.3943662  0.         0.         0.
+ 0.         0.6056338  0.         0.         0.         0.17605634
+ 0.        ]
+Group 1: (At the start or Near the start), failrue prob 1.0 and expected ts 18.48148148148148
+Critical value: 0.0. Entropy: -16.84
+Group 2: (Near the start), failrue prob 1.0 and expected ts 15.0
+Critical value: 0.0. Entropy: -16.75
+Group 3: (Near the start), failrue prob 1.0 and expected ts 15.0
+Critical value: 0.0. Entropy: -13.29
+Group 4: (Near the start), failrue prob 1.0 and expected ts 14.0
+Critical value: 0.0. Entropy: -16.13
+Group 5: (Left to risk area), failrue prob 1.0 and expected ts 7.0
+Critical value: 1.0. Entropy: -24.60
+Group 6: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 2.0
+Critical value: 0.0. Entropy: -21.07
+Group 7: (Left to risk area), failrue prob 1.0 and expected ts 6.0
+Critical value: 1.0. Entropy: -24.21
+Group 8: (Left to risk area), failrue prob 1.0 and expected ts 4.625
+Critical value: 1.0. Entropy: -23.36
+Group 9: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 2.0
+Critical value: 0.0. Entropy: -20.96
+Group 10: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 1.0
+Critical value: 0.0. Entropy: -19.84
+Group 11: (At the start), failrue prob 1.0 and expected ts 21.0
+Critical value: 0.0. Entropy: -18.49
+Group 12: (Near the start), failrue prob 1.0 and expected ts 19.0
+Critical value: 0.0. Entropy: -15.96
+Group 13: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.78
+Group 14: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.26
+Group 15: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.95
+Group 16: (Near the start), failrue prob 1.0 and expected ts 16.0
+Critical value: 0.0. Entropy: -16.72
+Group 17: (Near the start), failrue prob 1.0 and expected ts 17.0
+Critical value: 0.0. Entropy: -16.98
+Group 18: (Near the start), failrue prob 1.0 and expected ts 16.0
+Critical value: 0.0. Entropy: -12.65
+Group 19: (Near the start or Left to risk area), failrue prob 1.0 and expected ts 8.73943661971831
+Critical value: 0.0. Entropy: -20.55
+----------------------------------------
+***********************************************
+Clusters at height 9
+fail is [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+ts is [18.53846153846154, 17.0, 15.0, 15.0, 14.0, 7.0, 2.0, 6.0, 5.0, 2.0, 2.0, 1.0, 21.0, 19.0, 18.0, 18.0, 18.0, 18.0, 16.0, 17.0, 16.0, 15.5, 8.642857142857142]
+Group 1 to Group 1 with p=0.46153846153846145 and action 1 and random -48
+Group 1 to Group 14 with p=0.038461538461538464 and action 1 and random -49
+Group 1 to Group 15 with p=0.07692307692307693 and action 1 and random -48
+Group 1 to Group 16 with p=0.038461538461538464 and action 1 and random -48
+Group 1 to Group 17 with p=0.038461538461538464 and action 1 and random -48
+Group 1 to Group 18 with p=0.038461538461538464 and action 1 and random -48
+Group 1 to Group 19 with p=0.038461538461538464 and action 1 and random -47
+Group 1 to Group 21 with p=0.038461538461538464 and action 1 and random -46
+Group 1 to Group 23 with p=0.23076923076923078 and action 1 and random -46
+Group 2 to Group 23 with p=1.0 and action 1 and random -46
+Group 3 to Group 23 with p=1.0 and action 1 and random -45
+Group 4 to Group 23 with p=1.0 and action 1 and random -45
+Group 5 to Group 23 with p=1.0 and action 1 and random -43
+Group 6 to Group 9 with p=1.0 and action 0 and random -36
+Group 7 to Group 23 with p=1.0 and action 0 and random -31
+Group 8 to Group 23 with p=1.0 and action 0 and random -36
+Group 9 to Group 9 with p=0.2857142857142857 and action 0 and random -35
+Group 9 to Group 23 with p=0.7142857142857142 and action 0 and random -34
+Group 10 to Group 23 with p=1.0 and action 0 and random -32
+Group 11 to Group 23 with p=1.0 and action 0 and random -32
+Group 12 to Group 24 with p=1.0 and action 1 and random -30
+Group 13 to Group 1 with p=1.0 and action 1 and random -50
+Group 14 to Group 17 with p=1.0 and action 1 and random -48
+Group 15 to Group 1 with p=1.0 and action 1 and random -47
+Group 16 to Group 1 with p=1.0 and action 1 and random -47
+Group 17 to Group 1 with p=0.5 and action 1 and random -47
+Group 17 to Group 2 with p=0.5 and action 1 and random -47
+Group 18 to Group 20 with p=1.0 and action 1 and random -47
+Group 19 to Group 23 with p=1.0 and action 1 and random -46
+Group 20 to Group 22 with p=1.0 and action 1 and random -46
+Group 21 to Group 22 with p=1.0 and action 1 and random -45
+Group 22 to Group 23 with p=1.0 and action 1 and random -44
+Group 23 to Group 3 with p=0.007142857142857143 and action 1 and random -46
+Group 23 to Group 4 with p=0.007142857142857143 and action 1 and random -45
+Group 23 to Group 5 with p=0.007142857142857143 and action 1 and random -44
+Group 23 to Group 6 with p=0.007142857142857143 and action 7 and random -38
+Group 23 to Group 7 with p=0.007142857142857143 and action 7 and random -33
+Group 23 to Group 8 with p=0.007142857142857143 and action 7 and random -37
+Group 23 to Group 9 with p=0.02857142857142857 and action 7 and random -36
+Group 23 to Group 10 with p=0.007142857142857143 and action 7 and random -33
+Group 23 to Group 11 with p=0.007142857142857143 and action 7 and random -33
+Group 23 to Group 12 with p=0.007142857142857143 and action 7 and random -31
+Group 23 to Group 23 with p=0.8428571428571409 and action 3 and random -39
+Group 23 to Group 24 with p=0.0642857142857143 and action 5 and random -31
+[0.         0.57692308 0.96153846 0.         0.         0.
+ 0.         0.         0.         0.         0.         0.
+ 0.        ]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[0.         0.         0.38571429 0.         0.         0.
+ 0.         0.61428571 0.         0.         0.         0.17857143
+ 0.        ]
+Group 1: (At the start or Near the start), failrue prob 1.0 and expected ts 18.53846153846154
+Critical value: 0.0. Entropy: -16.83
+Group 2: (Near the start), failrue prob 1.0 and expected ts 17.0
+Critical value: 0.0. Entropy: -17.17
+Group 3: (Near the start), failrue prob 1.0 and expected ts 15.0
+Critical value: 0.0. Entropy: -16.75
+Group 4: (Near the start), failrue prob 1.0 and expected ts 15.0
+Critical value: 0.0. Entropy: -13.29
+Group 5: (Near the start), failrue prob 1.0 and expected ts 14.0
+Critical value: 0.0. Entropy: -16.13
+Group 6: (Left to risk area), failrue prob 1.0 and expected ts 7.0
+Critical value: 1.0. Entropy: -24.60
+Group 7: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 2.0
+Critical value: 0.0. Entropy: -21.07
+Group 8: (Left to risk area), failrue prob 1.0 and expected ts 6.0
+Critical value: 1.0. Entropy: -24.21
+Group 9: (Left to risk area), failrue prob 1.0 and expected ts 5.0
+Critical value: 1.0. Entropy: -23.59
+Group 10: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 2.0
+Critical value: 1.0. Entropy: -21.73
+Group 11: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 2.0
+Critical value: 0.0. Entropy: -20.96
+Group 12: (Left to risk area or Very close to risk area), failrue prob 1.0 and expected ts 1.0
+Critical value: 0.0. Entropy: -19.84
+Group 13: (At the start), failrue prob 1.0 and expected ts 21.0
+Critical value: 0.0. Entropy: -18.49
+Group 14: (Near the start), failrue prob 1.0 and expected ts 19.0
+Critical value: 0.0. Entropy: -15.96
+Group 15: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.78
+Group 16: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.26
+Group 17: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -16.90
+Group 18: (Near the start), failrue prob 1.0 and expected ts 18.0
+Critical value: 0.0. Entropy: -17.06
+Group 19: (Near the start), failrue prob 1.0 and expected ts 16.0
+Critical value: 0.0. Entropy: -16.72
+Group 20: (Near the start), failrue prob 1.0 and expected ts 17.0
+Critical value: 0.0. Entropy: -16.98
+Group 21: (Near the start), failrue prob 1.0 and expected ts 16.0
+Critical value: 0.0. Entropy: -12.65
+Group 22: (Near the start), failrue prob 1.0 and expected ts 15.5
+Critical value: 0.0. Entropy: -16.05
+Group 23: (Near the start or Left to risk area), failrue prob 1.0 and expected ts 8.642857142857142
+Critical value: 0.0. Entropy: -20.62
+----------------------------------------
+Max memory consumption for Job 1811796 on host usb-gpu-01 is: 1669455872.0B

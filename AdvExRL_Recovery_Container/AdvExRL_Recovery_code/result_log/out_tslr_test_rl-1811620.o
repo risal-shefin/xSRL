@@ -1,0 +1,61 @@
+#########################BEGIN-PROLOG#########################
+JobId             = 1811620
+JobName           = gpu-%j
+UserId            = liut18(20383)
+GroupId           = liut18(20383)
+MCS_label         = N/A
+Priority          = 135
+Nice              = 0
+Account           = alqahtanigrp
+QOS               = normal
+Requeue           = 1
+Restarts          = 0
+BatchFlag         = 1
+Reboot            = 0
+ExitCode          = 0:0
+RunTime           = 00:00:00
+TimeLimit         = 2-00:00:00
+TimeMin           = N/A
+SubmitTime        = 2022-10-16T16:24:21
+EligibleTime      = 2022-10-16T16:24:21
+AccrueTime        = 2022-10-16T16:24:21
+StartTime         = 2022-10-16T16:24:21
+EndTime           = 2022-10-18T16:24:21
+Deadline          = N/A
+Partition         = gpu
+AllocNode:Sid     = pegasus:56821
+NodeList          = usb-gpu-01
+BatchHost         = usb-gpu-01
+NumNodes          = 1
+NumCPUs           = 4
+NumTasks          = 1
+CPUs/Task         = 4
+ReqB:S:C:T        = 0:0:*:*
+TRES=cpu=4,mem=32G,node=1,billing= cpu=4,mem=32G,node=1,billing=4
+Socks/Node        = *
+NtasksPerN:B:S:C  = 0:0:*:*
+CoreSpec          = *
+MinCPUsNode       = 4
+MinMemoryNode     = 32G
+MinTmpDiskNode    = 0
+Command           = /deac/csc/alqahtaniGrp/liut18/AdvExRL_Submission/AdvExRL_code/run.slurm
+WorkDir           = /deac/csc/alqahtaniGrp/liut18/AdvExRL_Submission/AdvExRL_code
+StdErr            = /deac/csc/alqahtaniGrp/liut18/AdvExRL_Submission/AdvExRL_code/result_log/err_tslr_tests_rl-1811620.e
+StdOut            = /deac/csc/alqahtaniGrp/liut18/AdvExRL_Submission/AdvExRL_code/result_log/out_tslr_test_rl-1811620.o
+Power             = 
+TresPerNode       = gpu:1
+MailUser          = liut18@wfu.edu
+MailType          = BEGIN,END,FAIL
+NtasksPerTRES:0   = NtasksPerTRES:0
+###########################END-PROLOG#########################
+start running
+state space 2
+action space 2
+#######################
+episode #0
+start state [-50.16390738  -0.28648587]
+state is [-50.16390738  -0.28648587]
+rounded state is [-50.2, -0.3]
+Not attack
+shield threshold is 0.5
+Max memory consumption for Job 1811620 on host usb-gpu-01 is: 1654771712.0B
