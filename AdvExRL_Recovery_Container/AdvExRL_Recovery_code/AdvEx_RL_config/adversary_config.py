@@ -17,7 +17,8 @@ def parse_maze():
     parser.add_argument('--model_path', default='runs', help='exterior log directory')
     #===============================================================
     parser.add_argument('--hidden_size', type=int, default=512, help='hidden size (default: 256)')
-    parser.add_argument('--saved_model_path', default='/AdvEx_RL_Trained_Models/Adversary/Jul-28-2022_02_55_AM_SAC_maze_Gaussian/adversary_agent/Agent_model/Best_Agent_Model/DateTime_Jul-28-2022_reward_1.0', help='exterior log directory')
+    # parser.add_argument('--saved_model_path', default='/AdvEx_RL_Trained_Models/Adversary/Jul-28-2022_02_55_AM_SAC_maze_Gaussian/adversary_agent/Agent_model/Best_Agent_Model/DateTime_Jul-28-2022_reward_1.0', help='exterior log directory')
+    parser.add_argument('--saved_model_path', default='/AdvEx_RL_Trained_Models/Adversary/Nov-07-2024_16_35_PM_SAC_maze_Gaussian/adversary_agent/Agent_model/Best_Agent_Model/DateTime_Nov-08-2024_reward_1.0', help='exterior log directory')
     parser.add_argument('--shield_threshold', type=float, default=0.90, help='Shield threshold value default .97')  
     #=========================================================================================================
     parser.add_argument('--gamma',type=float,default=0.99,help='discount factor for reward (default: 0.99)')

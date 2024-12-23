@@ -16,7 +16,8 @@ def parse_maze():
     parser.add_argument('--model_path', default='runs', help='exterior log directory')
     #=========================================================================================================
     parser.add_argument('--hidden_size', type=int, default=256, help='hidden size (default: 256)')
-    parser.add_argument('--saved_model_path', default='/AdvEx_RL_Trained_Models/Safety_policy/Jul-28-2022_04_15_AM_SafetyAgent_maze/Recovery_model/Best/Jul-28-2022_Best_Recovery_Model_safety_ratio1.0/recovery_policy', help='exterior log directory')
+    # parser.add_argument('--saved_model_path', default='/AdvEx_RL_Trained_Models/Safety_policy/Jul-28-2022_04_15_AM_SafetyAgent_maze/Recovery_model/Best/Jul-28-2022_Best_Recovery_Model_safety_ratio1.0/recovery_policy', help='exterior log directory')
+    parser.add_argument('--saved_model_path', default='/AdvEx_RL_Trained_Models/Safety_policy/Nov-08-2024_22_29_PM_SafetyAgent_maze/Recovery_model/Best/Nov-10-2024_Best_Recovery_Model_safety_ratio1.0/recovery_policy', help='exterior log directory')
     #=========================================================================================================
     parser.add_argument('--gamma',type=float,default=0.99,help='discount factor for reward (default: 0.99)')
     parser.add_argument( '--tau',type=float,default=0.005, help='target smoothing coefficient(τ) (default: 0.005)')

@@ -157,13 +157,10 @@ class MazeNavigation(Env, utils.EzPickle):
         self.done = self.steps >= self.horizon or constraint or (
             self.get_distance_score() < GOAL_THRESH)
         
-        if constraint and (not self.got_adv_reward):
+        if constraint:
             adv_reward = 1.0
-            self.got_adv_reward = True
-        if constraint and self.got_adv_reward:
-            adv_reward = 0.0
         else:
-            adv_reward = 0.0
+            adv_reward = -0.1
         
         if not self.dense_reward:
             reward = -(self.get_distance_score() > GOAL_THRESH).astype(float)
