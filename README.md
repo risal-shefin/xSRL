@@ -1,4 +1,4 @@
-# Setup
+## Setup
 Tested Python Version: 3.10
 
 Create & activate a virtual environment:
@@ -31,6 +31,11 @@ python run.py
 
 ## Configuration Instructions
 
-- To choose between Nav2 and Maze environment, you need to set the `args.env` variable in the `run.py`. Also, in the `set_nav_maze_args(args)` method of the `run.py`, you can also modify other configurations.<br>
+- To choose between Nav2 and Maze environment, you need to set the `args.env` variable in the `run.py`. Also, in the `set_nav_maze_args(args)` method of the `run.py`, you can also modify other configurations.<be>
 - The AdvExRL trained models are placed inside the directory: `/xSRL/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/AdvEx_RL_Trained_Models`. The corresponding configs are placed inside the directory: `/xSRL/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/AdvEx_RL_config`.<br>
 - The RecoveryRL trained models are placed inside the directory: `/xSRL/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/RecoveryRL/RecoveryRL_Model` and the corresponding model directory with the best reward is automatically picked through the function `get_model_directories()` of `/xSRL/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/RecoveryRL/recRL_comparison_exp_aaa_atk.py`.
+
+## Acknowledgements
+- CAPS: https://github.com/mccajl/CAPS
+- AdvEx-RL: https://github.com/asifurrahman1/AdvEx-RL
+- RecoveryRL: https://github.com/abalakrishna123/recovery-rl
