@@ -1,3 +1,8 @@
+## xSRL: Safety-Aware Explainable RL - Safety as a Product of Explainability
+This is the code repository of the paper "xSRL: Safety-Aware Explainable RL - Safety as a Product of Explainability".<br>
+Authors: Risal Shahriar Shefin, Md Asifur Rahman, Thai Le, Sarra Alqahtani<br>
+Paper Link: https://arxiv.org/abs/2412.19311
+
 ## Setup
 Tested Python Version: 3.10
 
