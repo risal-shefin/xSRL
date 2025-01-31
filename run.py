@@ -26,6 +26,8 @@ from AdvExRL_Recovery_Container.AdvExRL_Recovery_code.test_nav_maze import calcu
 def set_nav_maze_args(args):
     args.num_episodes = 1
     args.attack_rate = 0.0 # [0,1] range
+    ## To use recovery_rl, you must set the args.use_safety to True.
+    ## If args.use_safety=True and no args.recovery_rl is set, AdvExRL's safety agent will be used.
     # args.use_safety = True
     # args.recovery_rl = 'RRL_MF'
     # args.recovery_rl = 'SQRL'
