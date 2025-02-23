@@ -43,11 +43,6 @@ if __name__ == '__main__':
     args = argparser()
     model_path = args.path
 
-    # Due to some argparse conflicts existing in this project, command line arguments produce errors for nav2.
-    # So, we need to set the arguments manually here if we don't want to use the default values.
-    args.env = 'nav2'
-    # args.env = 'maze'
-
     # if args.env != 'safety_grid':
     #   assert model_path != ''
     fidelity_fn = None
@@ -99,7 +94,7 @@ if __name__ == '__main__':
         
         dataset = Data(data, value_fn)
         #print(dataset)
-        print('value function is ok :)')
+        # print('value function is ok :)')
 
         if args.env == 'nav2':
             translator = Nav2Predicates(num_feats=num_feats)
@@ -119,7 +114,7 @@ if __name__ == '__main__':
         gen_apg(abstract_baseline, model_path, fidelity_fn, mode=args.alg)
     else: # what is running at the end
         abstract_baseline = APG(num_actions, value_fn, translator)
-        print("run fail user: ", fail_dic_user)
+        # print("run fail user: ", fail_dic_user)
         explain(args, dataset, model_path, translator, num_feats, num_actions, fidelity_fn, abstract_baseline, mode=args.alg, 
                 fail=fail_dic, ts=ts_dic, fail_user=fail_dic_user, ts_user=ts_dic_user, user_test=user_test, reward=reward_dic, reward_user=reward_dic_user, extra_dicts=extra_dicts_list)
         

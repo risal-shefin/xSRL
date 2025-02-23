@@ -118,13 +118,13 @@ def explain(args, dataset, model_path, translator, num_feats, num_actions, fidel
         print('information is here')
         fail[(0,0)] = 0
         ts[(0,0)] = 0
-        print(fail)
-        print(ts)
+        # print(fail)
+        # print(ts)
         print('start generating the graph')
         for h, clusters in enumerate(all_clusters):
         #for h, clusters in enumerate(best_clusters):
-            if h != 2: #rss-comment - to analyze the output.
-              continue
+            # if h != 2: #rss-comment - to analyze the output.
+            #   continue
             print('***********************************************')
             #print('Clusters at height {}'.format(best_heights[h]+1))
             print('Clusters at height {}'.format(h))
@@ -208,9 +208,9 @@ def explain(args, dataset, model_path, translator, num_feats, num_actions, fidel
               fail_ans.append(fail_ind)
               ts_ans.append(ts_ind)
               reward_ans.append(reward_ind)
-            print("fail is {}".format(fail_ans))
-            print("ts is {}".format(ts_ans))
-            print("reward is {}".format(reward_ans))
+            # print("fail is {}".format(fail_ans))
+            # print("ts is {}".format(ts_ans))
+            # print("reward is {}".format(reward_ans))
             
 
             if user_test:
@@ -276,6 +276,7 @@ def explain(args, dataset, model_path, translator, num_feats, num_actions, fidel
             l, transitions, taken_actions, taken_randoms, action_policies, action_task_critic_vals, action_safety_critic_vals = apg_baseline.compute_graph_info(abs_t, take_randoms=True)
             #print("length of transition is {}".format(len(transitions)))
             #print("length of abstract state is {}".format(len(abstract_state)))
+            print("\n ****** CAPS GRAPH's EDGES: ***********")
             for j in range(len(transitions)):
                 nonzero_idx = np.where(np.array(transitions[j])!=0)[0]
                 #nonzero_idx = np.where(np.array(transitions[j]) >= 0.01)[0] # discarding low probability edges
@@ -302,6 +303,7 @@ def explain(args, dataset, model_path, translator, num_feats, num_actions, fidel
             # print('debug CAPS.py')
             # print(bin_t)
             translations = translator.my_translation_algo(bin_t)
+            print("\n ****** CAPS GRAPH's ABSTRACT STATE INFORMATION: ***********")
             for j, t in enumerate(translations):
                 if not user_test:
                   print('Group {}: {}, failure prob {}, expected ts {} and expected reward {}'.format(j+1, t, fail_ans[j], ts_ans[j], reward_ans[j]))

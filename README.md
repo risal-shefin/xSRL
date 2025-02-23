@@ -31,12 +31,11 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.mujoco/mujoco210/bin:/usr/lib/nvidia
 ```
 To run the code, perform the following command:
 ```shell
-python run.py
+python run.py --env nav2    # maze is also tested
 ```
 
 ## Configuration Instructions
 
-- To choose between Nav2 and Maze environment, you need to set the `args.env` variable in the `run.py`. Also, in the `set_nav_maze_args(args)` method of the `run.py`, you can also modify other configurations.<be>
 - The AdvExRL trained models are placed inside the directory: `/xSRL/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/AdvEx_RL_Trained_Models`. The corresponding configs are placed inside the directory: `/xSRL/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/AdvEx_RL_config`.<br>
 - The RecoveryRL trained models are placed inside the directory: `/xSRL/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/RecoveryRL/RecoveryRL_Model` and the corresponding model directory with the best reward is automatically picked through the function `get_model_directories()` of `/xSRL/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/RecoveryRL/recRL_comparison_exp_aaa_atk.py`.
 

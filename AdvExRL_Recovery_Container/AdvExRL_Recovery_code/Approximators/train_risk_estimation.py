@@ -31,8 +31,8 @@ import torch.optim as optim
 #from DQN.models import DQN, CnnDQN, DropoutDQN
 #from risk_estimation.failure_search import Approximator, Trainer, Approx_Buffer
 #from risk_estimation.risk_estimation import EstimateRisk, Rollout
-from Nav2.failure_search import Approximator, Trainer, Approx_Buffer
-from Nav2.risk_estimation import EstimateRisk, Rollout
+from Approximators.failure_search import Approximator, Trainer, Approx_Buffer
+from Approximators.risk_estimation import EstimateRisk, Rollout
 
 USE_CUDA = torch.cuda.is_available()
 if USE_CUDA:

@@ -436,34 +436,39 @@ def get_model_directories(logdir):
     experiment_map['algos'] = {}
     best_agent_path = None
     
-    print("---\n get_model_directories(): recRL_comparison_exp_aa_atk.py ----------")
+    # print("---\n get_model_directories(): recRL_comparison_exp_aa_atk.py ----------")
     for fname in os.listdir(logdir):
-      best_agent = -999999999
-      algo.append(fname)
-      agent_path = os.path.join(logdir, fname, 'sac_agent', 'best') 
-    #   print(agent_path)
-      for model in os.listdir(agent_path):
-          name = model.split('reward_')[-1]
-          if best_agent<=float(name):
-            best_agent = float(name)
-            best_agent_path = os.path.join(agent_path, model) 
-      
-      recovery_path = os.path.join(logdir, fname, 'safety_critic_recovery')
-      for rec_model in os.listdir(recovery_path):
-          recovery_agent_path = os.path.join(recovery_path, rec_model)
+        best_agent = -999999999
+        algo.append(fname)
+        agent_path = os.path.join(logdir, fname, 'sac_agent', 'best')
+        if not os.path.exists(agent_path):
+            continue
+        #   print(agent_path)
+        for model in os.listdir(agent_path):
+            name = model.split('reward_')[-1]
+            try:
+                if best_agent<=float(name):
+                    best_agent = float(name)
+                    best_agent_path = os.path.join(agent_path, model) 
+            except ValueError:
+                continue
+        
+        recovery_path = os.path.join(logdir, fname, 'safety_critic_recovery')
+        for rec_model in os.listdir(recovery_path):
+            recovery_agent_path = os.path.join(recovery_path, rec_model)
 
-    #   if 'SQRL' in recovery_agent_path:
-    #       recovery_agent_path = os.path.join(recovery_path, 'Mar-21-2024')
-    #   if 'RRL_MF' in recovery_agent_path:
-    #       recovery_agent_path = os.path.join(recovery_path, 'Apr-25-2024')
+        #   if 'SQRL' in recovery_agent_path:
+        #       recovery_agent_path = os.path.join(recovery_path, 'Mar-21-2024')
+        #   if 'RRL_MF' in recovery_agent_path:
+        #       recovery_agent_path = os.path.join(recovery_path, 'Apr-25-2024')
 
-      result = None
-      agents_path = {'agent': best_agent_path,
-                    'recovery_agent': recovery_agent_path ,
-                    'result': result
-                    } 
-      experiment_map['algos'][fname] = agents_path
-      print(fname, agent_path, agents_path)
+        result = None
+        agents_path = {'agent': best_agent_path,
+                        'recovery_agent': recovery_agent_path ,
+                        'result': result
+                        } 
+        experiment_map['algos'][fname] = agents_path
+        # print(fname, agent_path, agents_path)
 
     return experiment_map 
     
@@ -480,7 +485,7 @@ def run_comparison(env, env_model_path, atk_rt=0.5, eps=0.0, aaa_agent_path=None
         args = set_algo_configuration(algo, args)
         expert_path =  algo_model_path_map['algos'][algo]['agent']
         recovery_path = algo_model_path_map['algos'][algo]['recovery_agent']
-        print("-----\n run_comparison() -----\n", expert_path, recovery_path)
+        # print("-----\n run_comparison() -----\n", expert_path, recovery_path)
         evaluate_algo = Comparative_Experiment(env, args, expert_path, recovery_path, aaa_agent_path, aaa_cfg)
         #print(" >>>> Use Recovery, EPS SAFE, EXP CFG: ", evaluate_algo.exp_cfg.use_recovery, evaluate_algo.exp_cfg.eps_safe, evaluate_algo.exp_cfg)
         #exp_data = evaluate_algo.run_test_experiment(eval_episode, atk_rate=atk_rate, epsilon= epsilon)
@@ -488,5 +493,5 @@ def run_comparison(env, env_model_path, atk_rt=0.5, eps=0.0, aaa_agent_path=None
        
         algo_model_path_map['algos'][algo]['result'] = exp_data
 
-        print("all_states count: ", len(all_states), ", Number of episodes: ", eval_episode)
+        # print("all_states count: ", len(all_states), ", Number of episodes: ", eval_episode)
     return algo_model_path_map

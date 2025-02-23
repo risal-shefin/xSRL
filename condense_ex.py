@@ -16,7 +16,7 @@ class Explainer:
     def full_translate(self):
         self.group_states()
         p, c = self.calc_statistics()
-        print(p)
+        # print(p)
         f = self.pick_feats(p)
         c_sets, n_c_sets = self.get_corr_sets(f, c)
         n = self.group_feats(n_c_sets)

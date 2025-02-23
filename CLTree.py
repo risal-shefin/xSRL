@@ -22,7 +22,7 @@ class CLTree:
 
     def buildTree(self):
         b = BuildTree(self.min_split)
-        print(self.dataset) 
+        # print(self.dataset)
         self.root = b.build(self.dataset)       
 
     def pruneTree(self, interactive, prune_config):

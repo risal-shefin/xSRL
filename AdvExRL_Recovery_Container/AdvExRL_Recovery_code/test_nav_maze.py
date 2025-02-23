@@ -395,13 +395,13 @@ def run(env_name, args):
     episode_all_state = episode_all_state.union(all_state)
     # ADD_end
 
-  print('finally')
-  print(episode_all_state)
-  print(len(episode_all_state))
+#   print('finally')
+#   print(episode_all_state)
+#   print(len(episode_all_state))
   print(" ---- NUMPY SEED VALUE: ", NUMPY_SEED)
-  from Nav2.failure_search import Approximator, Trainer, Approx_Buffer
-  from Nav2.risk_estimation import EstimateRisk, Rollout
-  from Nav2.train_risk_estimation import estimate_agent_capability
+  from Approximators.failure_search import Approximator, Trainer, Approx_Buffer
+  from Approximators.risk_estimation import EstimateRisk, Rollout
+  from Approximators.train_risk_estimation import estimate_agent_capability
   F_trainer = Trainer(Approximator(tuple([agent_observation_space+1])), Approx_Buffer())
 
   # FIXME 
@@ -433,8 +433,8 @@ def run(env_name, args):
     extra_dicts_list.append(DictionarySummaryModel("Safety Critic Max (by AdvExRL Model)", safety_critic_dict, SummaryMethodEnum.Max))
     extra_dicts_list.append(DictionarySummaryModel("Agent Task Critic Average", agent_critic_dict, SummaryMethodEnum.Average))
 
-    print("Fail Dic:", fail_dic, type(fail_dic))
-    print("Ts Dic:", ts_dic, type(ts_dic))
+    # print("Fail Dic:", fail_dic, type(fail_dic))
+    # print("Ts Dic:", ts_dic, type(ts_dic))
     return highlights_data, num_feats, action_dim, expert_agent, fail_dic, ts_dic, reward_dic, fail_dic_user, ts_dic_user, reward_dic_user, extra_dicts_list
   
   else:
@@ -535,12 +535,12 @@ def run(env_name, args):
     extra_dicts_list.append(DictionarySummaryModel("Agent Task Critic Min", agent_critic_dict, SummaryMethodEnum.Min))
 
         
-    print("Recovery Fail Dic: ", recovery_fail_dic, type(recovery_fail_dic))
-    print("Recovery ts Dic: ", recovery_ts_dic, type(recovery_ts_dic))
-    print("Recovery Reward Dic: ", recovery_reward_dic, type(recovery_reward_dic))
-    print("Recovery Fail User Dic: ", recovery_fail_dic_user, type(recovery_fail_dic_user))
-    print("Recovery ts User Dic: ", recovery_ts_dic_user, type(recovery_ts_dic_user))
-    print("Recovery Reward User Dic: ", recovery_reward_dic_user, type(recovery_reward_dic_user))
+    # print("Recovery Fail Dic: ", recovery_fail_dic, type(recovery_fail_dic))
+    # print("Recovery ts Dic: ", recovery_ts_dic, type(recovery_ts_dic))
+    # print("Recovery Reward Dic: ", recovery_reward_dic, type(recovery_reward_dic))
+    # print("Recovery Fail User Dic: ", recovery_fail_dic_user, type(recovery_fail_dic_user))
+    # print("Recovery ts User Dic: ", recovery_ts_dic_user, type(recovery_ts_dic_user))
+    # print("Recovery Reward User Dic: ", recovery_reward_dic_user, type(recovery_reward_dic_user))
     
     return highlights_data, num_feats, action_dim, expert_agent, recovery_fail_dic, recovery_ts_dic, recovery_reward_dic, recovery_fail_dic_user, recovery_ts_dic_user, recovery_reward_dic_user, extra_dicts_list
 

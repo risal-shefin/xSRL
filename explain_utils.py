@@ -10,9 +10,9 @@ def cluster_data(translator, abstraction_helper, dataset, attr_names, alpha, num
     cltree.buildTree()
                     
 
-    # height = max_height
+    height = max_height
     # height = 25
-    height = 5
+    # height = 5
     interactive_config = {'height': height}
     interactive = True
 
