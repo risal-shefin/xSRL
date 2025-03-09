@@ -21,23 +21,6 @@ from translation import MazePredicates, Nav2Predicates
 from AdvExRL_Recovery_Container.AdvExRL_Recovery_code.test_nav_maze import run as run_nav_maze
 from AdvExRL_Recovery_Container.AdvExRL_Recovery_code.test_nav_maze import calculate_fidelity_nav2
 
-
-# it is called from inside "elif args.env == 'nav2' or args.env == 'maze':" section
-def set_nav_maze_args(args):
-    args.num_episodes = 1
-    args.attack_rate = 0.0 # [0,1] range
-    ## To use recovery_rl, you must set the args.use_safety to True.
-    ## If args.use_safety=True and no args.recovery_rl is set, AdvExRL's safety agent will be used.
-    # args.use_safety = True
-    # args.recovery_rl = 'RRL_MF'
-    # args.recovery_rl = 'SQRL'
-    args.user_test_nav2 = False # Experimental. Set True to get failure probability and timestep transition. May need fixes.
-    # args.numpy_seed = np.random.randint((1<<31)-1)
-    # args.numpy_seed = 1433448179
-    # args.numpy_seed = 123456
-    #args.ctf_action_method = CtfActionMethodEnum.RiskyAlways
-    # args.calc_fidelity = True
-
 if __name__ == '__main__':
 
     args = argparser()
@@ -54,9 +37,7 @@ if __name__ == '__main__':
         def torchify(x, device):
             return torch.FloatTensor(x).to(device).unsqueeze(0)
         
-        set_nav_maze_args(args)
-        
-        user_test = args.user_test_nav2 # True to get RE and TS transition
+        user_test = args.user_test # True to get RE and TS transition
         device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
         # path = '/content/drive/MyDrive/XRL/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/Experimental_Data/random/render'
         print('start running')

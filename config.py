@@ -18,9 +18,9 @@ def argparser():
     parser.add_argument('--recovery_rl', type=str, default='') #Recovery RL Algorithm. Empty, RRL_MF and SQRL are tested. Currently, only applicable for test_nav2.py.
     parser.add_argument('--attack_rate', type=float, default=0) #Currently, only being used in test_nav2.py.
     parser.add_argument('--use_safety', default=False) #Whether to use safety algorithms or not.
-    parser.add_argument('--user_test_nav2', default=False) #Experimental. To produce FP and TS transition.
+    parser.add_argument('--user_test', default=False) #Experimental. To produce FP and TS transition.
     parser.add_argument('--numpy_seed', type=int, default=0) #numpy seed. Currently, being used in test_nav2.py.
-    parser.add_argument('--ctf_action_method', type=CtfActionMethodEnum, default=None) # Counterfactual action methods. Currently, being used in recRL_comparison_exp_aaa_atk.py.
+    parser.add_argument('--ctf_action_method', type=CtfActionMethodEnum.ctf_action_method_type, default=None) # Counterfactual action methods. Currently, being used in recRL_comparison_exp_aaa_atk.py.
     args = parser.parse_args()
 
     return args

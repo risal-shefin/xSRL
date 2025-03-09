@@ -33,6 +33,21 @@ To run the code, perform the following command:
 ```shell
 python run.py --env nav2    # maze is also tested
 ```
+There are several command-line arguments you can use:
+- `--num_episodes <int>` – Number of episodes to run.
+- `--attack_rate <float>` – Probability of adversarial attack (range: `[0,1]`).
+- `--use_safety <bool>` – Enables safety mechanisms. Default is AdvExRL safety agent if `--recovery_rl` is not set.
+- `--recovery_rl <str>` – Specifies the recovery RL agent (`RRL_MF`, `SQRL` are tested. You can find other algo names [here](https://github.com/risal-shefin/xSRL/blob/6ddb6d044ae3f6ef5271288aaf4c8243c16dfbd4/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/RecoveryRL/recRL_comparison_exp_aaa_atk.py#L372).). `--use_safety` must be **True** to use Recovery RL.
+- `--numpy_seed <int>` – Sets the random seed for NumPy.
+- `--max_height <int>` - Maximum height of the CAPS graph.
+- `--calc_fidelity <bool>` – Enables fidelity calculations for evaluating specific components.
+- `--ctf_action_method <enum>` – Defines the agent's counterfactual action selection strategy. One use case is [here](https://github.com/risal-shefin/xSRL/blob/6ddb6d044ae3f6ef5271288aaf4c8243c16dfbd4/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/RecoveryRL/recRL_comparison_exp_aaa_atk.py#L84). (Options: 'RiskyAlways' or 'RiskyOnce'). May need more work.
+- `--user_test <bool>` – Experimental. Used to observe data transitions from one scenario to another scenario. One use case is [here](https://github.com/risal-shefin/xSRL/blob/6ddb6d044ae3f6ef5271288aaf4c8243c16dfbd4/AdvExRL_Recovery_Container/AdvExRL_Recovery_code/test_nav_maze.py#L462). May need more work.
+
+Example run command with some arguments:
+```shell
+python run.py --env nav2 --num_episodes 10 --attack_rate 0.5 --use_safety True --recovery_rl RRL_MF --max_height 3
+```
 
 ## Configuration Instructions
 

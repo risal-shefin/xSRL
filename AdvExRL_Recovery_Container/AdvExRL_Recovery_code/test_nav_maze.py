@@ -262,7 +262,7 @@ def run(env_name, args):
   eval_epi_no = args.num_episodes if hasattr(args, 'num_episodes') else 100
   base_atk_rt = args.attack_rate if hasattr(args, 'attack_rate') else 0.0
   recovery_rl_algo_name = args.recovery_rl if hasattr(args, 'recovery_rl') else ''
-  user_test = args.user_test_nav2 if hasattr(args, 'user_test_nav2') else False
+  user_test = args.user_test if hasattr(args, 'user_test') else False
   use_safety = args.use_safety if hasattr(args, 'use_safety') else False
   numpy_seed = args.numpy_seed if hasattr(args, 'numpy_seed') else 0
   ctf_action_method = args.ctf_action_method if hasattr(args, 'ctf_action_method') else None
@@ -403,9 +403,6 @@ def run(env_name, args):
   from Approximators.risk_estimation import EstimateRisk, Rollout
   from Approximators.train_risk_estimation import estimate_agent_capability
   F_trainer = Trainer(Approximator(tuple([agent_observation_space+1])), Approx_Buffer())
-
-  # FIXME 
-  # Start from line 134 in risk_estimation.py, by replacing the loop to what I have in test nav2.py
 
   if recovery_rl_algo_name == '' or not use_safety: # Not recovery rl. We need to do tasks with SAC.
     experiment_data = estimate_agent_capability(env, expert_agent, adv_agent, safety_agent, F_trainer, model, episode_all_state, 
