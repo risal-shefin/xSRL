@@ -208,11 +208,11 @@ class MazeNavigation(Env, utils.EzPickle):
                 self.sim.data.qpos[0] = np.random.uniform(-0.04, 0.04)
             elif difficulty == 'h':
                 self.sim.data.qpos[0] = np.random.uniform(-0.22, -0.13)
-            # self.sim.data.qpos[1] = np.random.uniform(-0.22, 0.22)
+            self.sim.data.qpos[1] = np.random.uniform(-0.22, 0.22)
 
             # fixing starting point for analysis purpose
-            self.sim.data.qpos[0] = -0.17
-            self.sim.data.qpos[1] = -0.1
+            # self.sim.data.qpos[0] = -0.17
+            # self.sim.data.qpos[1] = -0.1
 
         self.steps = 0
 
