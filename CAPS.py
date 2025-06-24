@@ -290,8 +290,17 @@ def explain(args, dataset, model_path, translator, num_feats, num_actions, fidel
                         else:
                             safety_policy_count += 1
 
+                    avg_action = int(np.mean(taken_actions[j][idx]))
+                    if args.env in ['nav2', 'maze']:
+                        # Map actions to angles (assuming 0 = east, 1 = northeast, ..., 7 = southeast)
+                        angles = np.array(taken_actions[j][idx]) * (2 * np.pi / 8)  # Convert actions to radians
+                        x = np.cos(angles).sum()  # Sum of x-components
+                        y = np.sin(angles).sum()  # Sum of y-components
+                        avg_angle = np.arctan2(y, x)  # Resultant angle
+                        avg_action = int(round(avg_angle / (2 * np.pi / 8))) % 8  # Map back to action space
+
                     print('Group {} to Group {} with p={} and action {}, random {}, Task Policy Count {}, Safety Policy Count {}, Task Critic {}, Safety Critic {}'
-                          .format(j+1, idx+1, transitions[j][idx], int(np.mean(taken_actions[j][idx])), int(np.mean(taken_randoms[j][idx])), task_policy_count, safety_policy_count, np.mean(action_task_critic_vals[j][idx]), np.mean(action_safety_critic_vals[j][idx])))
+                          .format(j+1, idx+1, transitions[j][idx], avg_action, int(np.mean(taken_randoms[j][idx])), task_policy_count, safety_policy_count, np.mean(action_task_critic_vals[j][idx]), np.mean(action_safety_critic_vals[j][idx])))
                     #print('Group {} to Group {} with p={} and action {}'.format(j+1, idx+1, transitions[j][idx], int(np.mean(taken_actions[j][idx]))))
             #visualize(transitions, taken_actions, taken_randoms, translator, bin_t, best_heights[h] + 1)
             visualize(transitions, taken_actions, taken_randoms, translator, bin_t, h, critical_values)
