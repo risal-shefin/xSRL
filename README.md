@@ -25,9 +25,9 @@ wget https://mujoco.org/download/mujoco210-linux-x86_64.tar.gz
 mkdir -p ~/.mujoco
 tar -xvzf mujoco210-linux-x86_64.tar.gz -C ~/.mujoco/
 ```
-For Mujoco, we need to set the following environment variables:
+For Mujoco, we need to set the following environment variables (`./pkgs/usr/lib64` contains the libgcrypt library files):
 ```shell
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.mujoco/mujoco210/bin:/usr/lib/nvidia
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.mujoco/mujoco210/bin:/usr/lib/nvidia:$(pwd)/pkgs/usr/lib64
 ```
 To run the code, perform the following command:
 ```shell
