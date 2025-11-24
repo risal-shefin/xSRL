@@ -172,8 +172,13 @@ class Data:
         safety_critic_vals = np.reshape(scv, [-1])
 
         values = []
-        for entry in states:
-            values.append(self.value_fn(entry))
+        if self.value_fn is not None:
+            for entry in states:
+                values.append(self.value_fn(entry))
+        else:
+            for episode_data in self.dataset:
+                for value in episode_data['task_critic_vals']:
+                    values.append(value)
         values = np.reshape(np.array(values), [-1])
 
         if self.normalize_value:
