@@ -17,9 +17,10 @@ sys.path.insert(0, './AdvExRL_Recovery_Container/AdvExRL_Recovery_code')
 from data import Data
 from abstract import APG
 from zahavy_baseline import explain_zahavy
-from translation import MazePredicates, Nav2Predicates
+from translation import MazePredicates, Nav2Predicates, SimpleSpreadPredicates
 from AdvExRL_Recovery_Container.AdvExRL_Recovery_code.test_nav_maze import run as run_nav_maze
 from AdvExRL_Recovery_Container.AdvExRL_Recovery_code.test_nav_maze import calculate_fidelity_nav2
+from MAPPO_Container.test_pettingzoo import run as run_pettingzoo
 
 if __name__ == '__main__':
 
@@ -83,6 +84,65 @@ if __name__ == '__main__':
             translator = MazePredicates(num_feats=num_feats)
         #fail_dic_user = []
         #ts_dic_user = []
+    elif args.env == 'simple_spread_v3':
+        user_test = False  # No user test for MARL
+        device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+        
+        print('start running')
+        exp_data = run_pettingzoo(args.env, args)
+        
+        # Unpack all 13 return values
+        data = exp_data[0]
+        num_feats = exp_data[1]
+        num_actions = exp_data[2]
+        runner = exp_data[3]  # This is Runner_MAPPO_MPE object
+        fail_dic = exp_data[4]
+        ts_dic = exp_data[5]
+        reward_dic = exp_data[6]
+        fail_dic_user = exp_data[7]
+        ts_dic_user = exp_data[8]
+        reward_dic_user = exp_data[9]
+        extra_dicts_list = exp_data[10]
+        env = exp_data[11]
+        safety_agent = exp_data[12]
+        
+        print('finish running')
+        
+        if args.calc_fidelity:
+            # Fidelity calculation not yet implemented for MARL
+            fidelity_fn = None
+        
+        print('start clustering')
+        
+        # Define value function for the specific agent being tracked
+        def value_fn(state):
+            """Value function using MAPPO centralized critic."""
+            # For MAPPO, we need to handle individual agent observations
+            # The state here is the individual agent's observation
+            # We'll use the critic to get the value
+            agent_id = args.agent_id if hasattr(args, 'agent_id') else 0
+            
+            # Create a dummy global state from just this agent's observation
+            # Note: This is a simplification. Ideally we'd reconstruct the full global state
+            # but for explanation purposes, we use the agent's local observation
+            with torch.no_grad():
+                # Get state value from critic
+                # For MAPPO, critic takes global state, but we approximate with agent state
+                state_tensor = torch.FloatTensor(state).unsqueeze(0)
+                # Repeat to match expected dimensions if needed
+                if len(state) < runner.args.state_dim:
+                    # Pad with zeros if state is just local observation
+                    padded_state = np.zeros(runner.args.state_dim)
+                    padded_state[:len(state)] = state
+                    state_tensor = torch.FloatTensor(padded_state).unsqueeze(0)
+                
+                # Get value from critic (it returns values for all agents, we take agent_id's value)
+                v_n = runner.agent_n.critic(state_tensor.repeat(runner.args.N, 1))
+                value = v_n[agent_id].item()
+            return value
+        
+        dataset = Data(data, value_fn)
+        translator = SimpleSpreadPredicates(num_feats=num_feats)
     else:
         raise ValueError('Enter valid environment')
 

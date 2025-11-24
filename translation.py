@@ -1643,3 +1643,175 @@ class MazePredicates(PredicateTemplate):
     
 
 ######################
+
+
+class SimpleSpreadPredicates(PredicateTemplate):
+    """
+    Predicates for PettingZoo simple_spread_v3 environment.
+    State is individual agent observation: [self_vel_x, self_vel_y, self_pos_x, self_pos_y, 
+                                            landmark1_rel_x, landmark1_rel_y, ..., 
+                                            other_agent_rel_positions...]
+    For simple_spread with 3 agents and 3 landmarks:
+    - State size: 2 (vel) + 2 (pos) + 6 (3 landmarks * 2) + 4 (2 other agents * 2) + 4 communication = 18 features
+    """
+    def __init__(self, num_feats):
+        super().__init__(num_feats)
+        self.attr_names = ['vel_x', 'vel_y', 'pos_x', 'pos_y', 'landmarks', 'other_agents']
+        self.language_set = np.array([
+            'Moving fast',
+            'Nearly stationary',
+            'In center area',
+            'Near boundary',
+            'At corner',
+            'Close to landmark',
+            'Very close to landmark',
+            'Far from all landmarks',
+            'Near other agent',
+            'Isolated from agents'
+        ])
+
+    def predicate_set(self):
+        predicates = [
+            {'true': 'Moving fast', 'false': 'Not moving fast'},
+            {'true': 'Nearly stationary', 'false': 'Not nearly stationary'},
+            {'true': 'In center area', 'false': 'Not in center area'},
+            {'true': 'Near boundary', 'false': 'Not near boundary'},
+            {'true': 'At corner', 'false': 'Not at corner'},
+            {'true': 'Close to a landmark', 'false': 'Not close to a landmark'},
+            {'true': 'Very close to a landmark', 'false': 'Not very close to a landmark'},
+            {'true': 'Far from all landmarks', 'false': 'Not far from all landmarks'},
+            {'true': 'Near another agent', 'false': 'Not near another agent'},
+            {'true': 'Far from agents', 'false': 'Not far from agents'}
+        ]
+        return predicates
+     
+    def state_to_binary(self, state):
+        binary_set = [
+            self.moving_fast(state),
+            self.nearly_stationary(state),
+            self.in_center(state),
+            self.near_boundary(state),
+            self.at_corner(state),
+            self.close_to_landmark(state),
+            self.very_close_to_landmark(state),
+            self.far_from_landmarks(state),
+            self.near_other_agent(state),
+            self.isolated_from_agents(state)
+        ]
+        return np.array(binary_set)
+    
+    def translate_state(self, binary_set):
+        idx = np.where(binary_set==1)[0]
+        true_set = self.language_set[idx]
+        string = ''
+        if true_set.size != 0:
+            string = true_set[0]
+            if true_set[1:].size != 0:
+                for pred in true_set[1:]:
+                    string = string + ' and '
+                    string = string + pred
+        return string
+
+    def feat_groups(self):
+        # Group all predicates together for clustering
+        groups = [[0, 1], [2, 3, 4], [5, 6, 7], [8, 9]]
+        return groups
+
+    def num_predicates(self):
+        return 10
+    
+    ########################################################################
+    # Predicate implementations for simple_spread environment
+    # State structure: [vel_x, vel_y, pos_x, pos_y, landmark_rel_positions..., agent_rel_positions...]
+    
+    def moving_fast(self, state):
+        """Agent is moving with significant velocity."""
+        vel_x = state[0]
+        vel_y = state[1]
+        speed = math.sqrt(vel_x**2 + vel_y**2)
+        return 1 if speed > 0.1 else 0
+    
+    def nearly_stationary(self, state):
+        """Agent is nearly stationary."""
+        vel_x = state[0]
+        vel_y = state[1]
+        speed = math.sqrt(vel_x**2 + vel_y**2)
+        return 1 if speed < 0.03 else 0
+    
+    def in_center(self, state):
+        """Agent is in the center area of the environment."""
+        pos_x = state[2]
+        pos_y = state[3]
+        dist_from_center = math.sqrt(pos_x**2 + pos_y**2)
+        return 1 if dist_from_center < 0.3 else 0
+    
+    def near_boundary(self, state):
+        """Agent is near the boundary of the environment."""
+        pos_x = state[2]
+        pos_y = state[3]
+        # Assuming environment boundary is roughly at ±1.0
+        return 1 if abs(pos_x) > 0.8 or abs(pos_y) > 0.8 else 0
+    
+    def at_corner(self, state):
+        """Agent is at a corner of the environment."""
+        pos_x = state[2]
+        pos_y = state[3]
+        return 1 if abs(pos_x) > 0.8 and abs(pos_y) > 0.8 else 0
+    
+    def close_to_landmark(self, state):
+        """Agent is close to at least one landmark."""
+        if self.very_close_to_landmark(state):
+            return 0
+        # Landmark positions start at index 4
+        # Assuming 3 landmarks with 2D positions each (indices 4-9)
+        min_dist = float('inf')
+        for i in range(4, 10, 2):
+            landmark_rel_x = state[i]
+            landmark_rel_y = state[i+1]
+            dist = math.sqrt(landmark_rel_x**2 + landmark_rel_y**2)
+            min_dist = min(min_dist, dist)
+        return 1 if min_dist < 0.2 else 0
+    
+    def very_close_to_landmark(self, state):
+        """Agent is very close to at least one landmark (almost touching)."""
+        min_dist = float('inf')
+        for i in range(4, 10, 2):
+            landmark_rel_x = state[i]
+            landmark_rel_y = state[i+1]
+            dist = math.sqrt(landmark_rel_x**2 + landmark_rel_y**2)
+            min_dist = min(min_dist, dist)
+        return 1 if min_dist < 0.05 else 0
+    
+    def far_from_landmarks(self, state):
+        """Agent is far from all landmarks."""
+        min_dist = float('inf')
+        for i in range(4, 10, 2):
+            landmark_rel_x = state[i]
+            landmark_rel_y = state[i+1]
+            dist = math.sqrt(landmark_rel_x**2 + landmark_rel_y**2)
+            min_dist = min(min_dist, dist)
+        return 1 if min_dist > 0.5 else 0
+    
+    def near_other_agent(self, state):
+        """Agent is near at least one other agent."""
+        # Other agent positions start after landmarks (typically index 10+)
+        min_dist = float('inf')
+        for i in range(10, 14, 2):
+            agent_rel_x = state[i]
+            agent_rel_y = state[i+1]
+            dist = math.sqrt(agent_rel_x**2 + agent_rel_y**2)
+            min_dist = min(min_dist, dist)
+        return 1 if min_dist < 0.15 else 0
+    
+    def isolated_from_agents(self, state):
+        """Agent is isolated from other agents."""
+        min_dist = float('inf')
+        for i in range(10, 14, 2):
+            agent_rel_x = state[i]
+            agent_rel_y = state[i+1]
+            dist = math.sqrt(agent_rel_x**2 + agent_rel_y**2)
+            min_dist = min(min_dist, dist)
+        return 1 if min_dist > 0.4 else 0
+
+
+######################

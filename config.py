@@ -21,6 +21,9 @@ def argparser():
     parser.add_argument('--user_test', default=False) #Experimental. To produce FP and TS transition.
     parser.add_argument('--numpy_seed', type=int, default=0) #numpy seed. Currently, being used in test_nav2.py.
     parser.add_argument('--ctf_action_method', type=CtfActionMethodEnum.ctf_action_method_type, default=None) # Counterfactual action methods. Currently, being used in recRL_comparison_exp_aaa_atk.py.
+    parser.add_argument('--agent_id', type=int, default=0) #Agent ID to track for MARL explanation (0-indexed). Used for simple_spread and other multi-agent environments.
+    parser.add_argument('--model_dir', type=str, default='') #Directory to load trained model from. Used for MAPPO and other trained agents.
+    parser.add_argument('--use_central_q', action='store_true', default=False) #Whether the MAPPO model uses centralized Q-function. Used for simple_spread and other MARL environments.
     args = parser.parse_args()
 
     return args
