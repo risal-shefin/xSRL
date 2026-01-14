@@ -275,7 +275,7 @@ def run(env_name, args):
   if env_name == "maze":
       from env.maze import MazeNavigation
       env = MazeNavigation()
-      env.seed(1234)
+    #   env.seed(1234)
       RecRL_model_path = current_path+'/RecoveryRL/RecoveryRL_Model/Maze'
   elif env_name == 'nav1':
       from env.navigation1 import Navigation1
